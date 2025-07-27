@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.rdvr2.ScheduledRecRow android:orientation="vertical" android:background="@drawable/shr_list_selector" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twc.android.ui.utils.TimeTextView android:id="@id/sectionHeader" style="@style/rdvr2DateListSectionHeaderStyle" />
+    <TextView android:gravity="center" android:id="@id/conflictInstructions" android:background="@color/recordingConflictHeader" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rdvr2CompletedRecConflictInstructions" style="@style/rdvr2InstructionsTextStyle" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/background" android:background="@color/recordingConflictBody" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.twc.android.ui.utils.DeleteCheckBox android:id="@id/deleteCheckBox" android:layout_width="@dimen/rdvr2DeleteCheckBoxWidth" android:layout_height="@dimen/rdvr2DeleteCheckBoxHeight" style="@style/rdvr2DeleteCheckBoxStyle" />
+        <com.twc.android.ui.utils.UrlImageView android:id="@id/showCard" android:layout_width="@dimen/rdvr2ShowCardWidth" android:layout_height="@dimen/rdvr2ShowCardHeight" style="@style/rdvr2ShowCardStyle" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rdvr2RecordingRowTitleStyle" />
+            <include layout="@layout/season_and_episodenumber_layout" />
+            <com.twc.android.ui.utils.TimeTextView android:id="@id/recordingDate" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rdvr2RecordingRowTimeSpanSelectableStyle" />
+        </LinearLayout>
+        <include android:layout_gravity="center_vertical" android:id="@id/networkAttribution" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/rdvr2_network_attribution" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/showBlocked" android:padding="8.0dip" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/vod_lock" />
+    </LinearLayout>
+</com.twc.android.ui.rdvr2.ScheduledRecRow>

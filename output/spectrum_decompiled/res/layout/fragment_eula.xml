@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/appLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/app_logo" />
+    <WebView android:id="@id/eulaWebView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:fadeScrollbars="false" />
+    <TextView android:textSize="@dimen/eulaTextSize" android:textStyle="bold" android:layout_gravity="center" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eulaLayoutMargin" android:text="@string/eula_bottom" />
+    <LinearLayout android:gravity="end" android:layout_gravity="right" android:orientation="horizontal" android:background="@android:color/black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/disagreeButton" android:layout_width="wrap_content" android:layout_margin="7.0dip" android:minWidth="85.0dip" android:text="@string/disagree" android:layout_weight="1.0" style="?footerButtonStyle" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/agreeButton" android:layout_width="wrap_content" android:minWidth="85.0dip" android:text="@string/agree" android:layout_weight="1.0" style="?footerButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

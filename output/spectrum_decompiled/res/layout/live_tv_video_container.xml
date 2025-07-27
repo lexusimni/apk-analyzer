@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/live_tv_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/live_tv_player_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_overlay_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/top_gradient" android:background="@drawable/fade_to_black_horizontal_top" android:layout_width="fill_parent" android:layout_height="@dimen/LiveTvOverlayTopGradientHeight" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/bottom_gradient" android:background="@drawable/fade_to_black_horizontal_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/LiveTvOverlayBottomGradientHeight" app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/player_overlay" layout="@layout/livetv_overlay" />
+    <LinearLayout android:gravity="center" android:id="@id/live_tv_parental_control_blocked" android:background="@color/kite_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/vod_lock" android:contentDescription="@null" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray4" android:gravity="left|center" android:id="@id/parental_control_blocked_text" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="@string/parentalControlBlockedText" />
+    </LinearLayout>
+    <include android:id="@id/chromecast_overlay" layout="@layout/chromecast_overlay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

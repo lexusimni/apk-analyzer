@@ -1,0 +1,18 @@
+version: 2.12.0
+apkFileName: spectrum.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 22
+  targetSdkVersion: 35
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 9820000
+  versionName: 9.82.0.193317937.release
+doNotCompress:
+- arsc
+- png
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

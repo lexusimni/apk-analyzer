@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boxed_banner_image_only_text_padding">14.0dip</dimen>
+    <dimen name="boxed_banner_live_text_content_horizontal_padding_tablet">36.0dip</dimen>
+    <dimen name="boxed_banner_live_text_content_vertical_padding_tablet">42.0dip</dimen>
+    <dimen name="boxed_banner_live_text_details_width">525.0dip</dimen>
+    <dimen name="boxed_banner_matchup_channel_logo_size">96.0dip</dimen>
+    <dimen name="boxed_banner_matchup_content_vertical_padding_tablet">48.0dip</dimen>
+    <dimen name="boxed_banner_matchup_team_details_width_tablet">254.0dip</dimen>
+    <dimen name="boxed_banner_matchup_title_width_tablet">200.0dip</dimen>
+    <dimen name="boxed_banner_show_logo_content_horizontal_padding_tablet">36.0dip</dimen>
+    <dimen name="boxed_banner_show_logo_content_vertical_padding_tablet">42.0dip</dimen>
+    <dimen name="boxed_banner_show_logo_title_description_text_width">525.0dip</dimen>
+    <dimen name="boxed_banner_show_logo_title_logo_max_height_tablet">120.0dip</dimen>
+    <dimen name="full_banner_content_vertical_padding_tablet">48.0dip</dimen>
+    <dimen name="full_banner_content_vertical_spacing_tablet">8.0dip</dimen>
+    <dimen name="full_banner_loading_button_bottom_padding_tablet">58.0dip</dimen>
+    <dimen name="full_banner_network_icon_top_padding_from_edge_tablet">32.0dip</dimen>
+    <dimen name="welcomeScreenLeftRightPadding">350.0dip</dimen>
+    <dimen name="ProductDetailsHeight">460.0dip</dimen>
+</resources>

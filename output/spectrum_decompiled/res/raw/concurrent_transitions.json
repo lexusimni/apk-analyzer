@@ -1,0 +1,366 @@
+{
+    "startSession": [
+        { "from": ["blank"], "action": "appInitializing" },
+        { "from":  ["DISABLED"], "action": "navigating" },
+        { "from":  ["*"] }
+    ],
+    "playbackSelect": [
+        { "from": ["initiating", "navigating", "failed", "DISABLED", "playing", "appInitializing"], "action": "initiating" }
+    ],
+    "playbackExitBeforeStart": [
+        { "from": ["initiating", "failed", "restarting"], "action": "navigating" }
+    ],
+    "playbackStreamUriAcquired": [
+        { "from": ["restarting", "initiating"], "action": "initiating" }
+    ],
+    "playbackStart": [
+        { "from": ["initiating", "restarting"], "action": "playing" }
+    ],
+    "playbackStartAfterRetry": [
+        { "from": ["restarting"], "action": "playing" }
+    ],
+    "playbackStop": [
+        { "from": ["restarting", "playing"], "action": "navigating" }
+    ],
+    "bufferingStart": [
+        { "from": ["playing"], "action": "+buffering" },
+        { "from": ["failed"], "action": "+buffering" }
+    ],
+    "bufferingStop": [
+        { "from": ["buffering"], "action": "-buffering" },
+        { "from": ["failed"], "action": "-buffering" }
+    ],
+    "playbackPause": [
+        { "from": ["playing"], "action": "+paused" }
+    ],
+    "playbackUnpause": [
+        { "from": ["paused"], "action": "-paused" }
+    ],
+    "playbackFailure": [
+        { "from": ["playing", "initiating", "restarting", "DISABLED"], "action": "failed" }
+    ],
+    "playbackFailureBeforeRetry": [
+        { "from": ["playing", "initiating", "restarting"], "action": "failed" },
+        { "from": ["DISABLED"], "action": "DISABLED" }
+    ],
+    "attemptRestart": [
+        { "from": ["failed"], "action": "restarting" },
+        { "from": ["navigating"], "action": "restarting" }
+    ],
+    "playbackTrickPlayStart": [
+        { "from": ["playing"], "action": "+scrubbing" }
+    ],
+    "playbackTrickPlayRateChange": [
+        { "from": ["scrubbing"] }
+    ],
+    "playbackTrickPlayStop": [
+        { "from": ["scrubbing"], "action": "-scrubbing" }
+    ],
+    "playbackBitRateUpshift": [
+        { "from": ["playing"] }
+    ],
+    "playbackBitRateDownshift": [
+        { "from": ["playing"] }
+    ],
+    "playbackHeartbeat": [
+        { "from": ["playing"], "strict": true, "action": "playing" }
+    ],
+    "loginStart": [
+        { "from": ["navigating", "appInitializing"], "action": "authenticating" },
+        { "from": ["*"] }
+    ],
+    "loginStop": [
+        { "from": ["authenticating"], "action": "navigating" }
+    ],
+    "pageView": [
+        { "from": ["*"] }
+    ],
+    "modalView": [
+        { "from": ["appInitializing"], "action": "navigating" },
+        { "from": ["*"] }
+    ],
+    "selectAction": [
+        { "from": ["*"] }
+    ],
+    "selectContent": [
+        { "from": ["*"] }
+    ],
+    "searched": [
+        { "from": ["*"] }
+    ],
+    "searchClosed": [
+        { "from": ["*"] }
+    ],
+    "adBreakStart": [
+        { "from": ["playing"] }
+    ],
+    "adBreakStop": [
+        { "from": ["playing"] }
+    ],
+    "adStart": [
+        { "from": ["playing"] }
+    ],
+    "adStop": [
+        { "from": ["playing"] }
+    ],
+    "apiCall": [
+        { "from": ["*"] }
+    ],
+    "error": [
+        { "from": ["*"] }
+    ],
+    "connectionChanged": [
+        { "from": ["*"] }
+    ],
+    "logout": [
+        { "from": ["failed", "restarting", "initiating"], "action": "navigating" },
+        { "from": ["*"] }
+    ],
+    "inVisitOauthRefresh": [
+        { "from": ["*"] }
+    ],
+    "userConfigSet": [
+        { "from": ["*"] }
+    ],
+    "pinEntry": [
+        { "from": ["*"] }
+    ],
+    "requestToRecord": [
+        { "from": ["*"] }
+    ],
+    "requestToDeleteRecording": [
+        { "from": ["*"] }
+    ],
+    "requestToEditRecording": [
+        { "from": ["*"] }
+    ],
+    "requestToCancelRecording": [
+        { "from": ["*"] }
+    ],
+    "setVideoZone": [
+        { "from": ["*"] }
+    ],
+    "setAccountFeatures": [
+        { "from": ["*"] }
+    ],
+    "setNetworkStatus": [
+        { "from": ["*"] }
+    ],
+    "setExperimentConfigurations": [
+        { "from": ["*"] }
+    ],
+    "setAutoAccessEnabled": [
+        { "from": ["*"] }
+    ],
+    "setSegment": [
+        { "from": ["*"] }
+    ],
+    "pageViewInit": [
+        { "from": ["appInitializing"], "action": "navigating" },
+        { "from": ["*"] }
+    ],
+    "pageViewPartiallyRendered": [
+        { "from": ["*"] }
+    ],
+    "purchaseStart": [
+        { "from": ["*"] }
+    ],
+    "purchaseStop": [
+        { "from": ["*"] }
+    ],
+    "applicationActivity": [
+        { "from": ["*"] }
+    ],
+    "checkAvailableChannels": [
+        { "from": ["*"] }
+    ],
+    "forcedLogin": [
+        { "from": ["*"] }
+    ],
+    "experimentStarted": [
+        { "from": ["*"] }
+    ],
+    "requestToRemind": [
+        { "from": ["*"] }
+    ],
+    "requestToEditReminder": [
+        { "from": ["*"] }
+    ],
+    "requestToDeleteReminder": [
+        { "from": ["*"] }
+    ],
+    "switchScreen": [
+        { "from": ["*"] }
+    ],
+    "setApplicationName": [
+        { "from": ["*"] }
+    ],
+    "displayChange": [
+        { "from": ["*"] }
+    ],
+    "setCpuAverageUsage": [
+        { "from": ["*"] }
+    ],
+    "setPlayerTestFields": [
+        { "from": ["*"] }
+    ],
+    "setTimeZone": [
+        { "from": ["*"] }
+    ],
+    "featureStart": [
+        { "from": ["*"] }
+    ],
+    "featureStop": [
+        { "from": ["*"] }
+    ],
+    "deviceConfigSet": [
+        { "from": ["*"] }
+    ],
+    "modalCancel": [
+        { "from": ["*"] }
+    ],
+    "modalClose": [
+        { "from": ["*"] }
+    ],
+    "setBulkMduClass": [
+        { "from": ["*"] }
+    ],
+    "setPageAdditionalInfo": [
+        { "from": ["*"] }
+    ],
+    "setOtaChannels": [
+        { "from": ["*"] }
+    ],
+    "connectionChange": [
+        { "from": ["*"] }
+    ],
+    "setPictureInPicture": [
+        { "from": ["*"] }
+    ],
+    "setEntitlements": [
+        { "from": ["*"] }
+    ],
+    "pageViewPerformance":[
+        { "from": ["*"] }
+    ],
+    "userFeedback": [
+        { "from": ["*"] }
+    ],
+    "externalAppStateChange": [
+        { "from": ["*"] }
+    ],
+    "applicationCrash": [
+        { "from": ["*"] }
+    ],
+    "customEvent": [
+        { "from": ["*"] }
+    ],
+    "impressionStart": [
+        { "from": ["*"] }
+    ],
+    "impressionStop": [
+        { "from": ["*"] }
+    ],
+    "assetDisplayed": [
+        { "from": ["*"] }
+    ],
+    "applicationPerformance": [
+        { "from": ["*"] }
+    ],
+    "deeplinkStart": [
+        { "from": ["*"] }
+    ],
+    "deeplinkStop": [
+        { "from": ["*"] }
+    ],
+    "concurrencyChange": [
+        { "from": ["*"] }
+    ],
+    "pushNotification": [
+        { "from": ["*"] }
+    ],
+    "setMirroring" : [
+        { "from": ["*"] }
+    ],
+    "setPlaybackCapping" : [
+        { "from": ["*"] }
+    ],
+    "setPermissionSettings" : [
+        { "from": ["*"] }
+    ],
+    "setReferrerLink" : [
+        { "from": ["*"] }
+    ],
+    "setReferrerLocation" : [
+        { "from": ["*"] }
+    ],
+    "setTrafficOriginId" : [
+        { "from": ["*"] }
+    ],
+    "setTechnicianQuadId" : [
+        { "from": ["*"] }
+    ],
+    "setDeviceLocation" : [
+        { "from": ["*"] }
+    ],
+    "setBuyflowPromotionFields" : [
+        { "from": ["*"] }
+    ],
+    "setSplitScreen" : [
+        { "from": ["*"] }
+    ],
+    "setId3Tags" : [
+        { "from": ["*"] }
+    ],
+    "setResolution" : [
+        { "from": ["*"] }
+    ],
+    "setMaxVideoDetails" : [
+        { "from": ["*"] }
+    ],
+    "setClientLocation" : [
+        { "from": ["*"] }
+    ],
+    "setSecondaryPlaybackId" : [
+        { "from":  ["*"] }
+    ],
+    "setLocationStatus" : [
+        { "from":  ["*"] }
+    ],
+    "setPlaybackPerformance" : [
+        { "from":  ["*"] }
+    ],
+    "setAudioBitRate" : [
+        { "from":  ["*"] }
+    ],
+    "setDevicePerformance" : [
+        { "from":  ["*"] }
+    ],
+    "webSocketActivity" : [
+        { "from":  ["*"] }
+    ],
+    "webSocketClose" : [
+        { "from":  ["*"] }
+    ],
+    "webSocketError" : [
+        { "from":  ["*"] }
+    ],
+    "webSocketOpen" : [
+        { "from":  ["*"] }
+    ],
+    "pageViewCompleteAwaitingAction": [
+        { "from": ["*"] }
+    ],
+    "temporaryView" : [
+        { "from": ["*"] }
+    ],
+    "webSocketHeartbeat" : [
+        { "from": ["*"] }
+    ],
+    "batchApiCall" : [
+        { "from": ["*"] }
+    ],
+    "setAccessibilitySettings" : [
+        { "from": ["*"] }
+    ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="@dimen/ki_text_field_icon_focus_ring_height" android:width="@dimen/ki_text_field_icon_focus_ring_width">
+        <selector>
+            <item android:state_focused="true" android:drawable="@drawable/kite_control_focus_ring" />
+        </selector>
+    </item>
+</layer-list>

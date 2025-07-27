@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/accessibilityStateReader" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    <ImageView android:id="@id/imgHeart" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="16.0dip" android:importantForAccessibility="no" />
+    <com.twc.android.ui.utils.UrlImageView android:id="@id/imgViewLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="24.0dip" />
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/txtViewTitle" android:layout_width="41.0dip" android:layout_height="24.0dip" android:layout_marginLeft="24.0dip" />
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/txtCallSign" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginLeft="17.0dip" />
+</LinearLayout>

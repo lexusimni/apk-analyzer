@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LocationWatchMoreStyle" parent="@style/KiteTextViewTitle1" />
+    <style name="NetworkScheduleRowHeaderStyle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/headerBackground</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+    <style name="NetworkScheduleRowProgramStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="NetworkScheduleRowStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+    </style>
+    <style name="NetworkScheduleRowTimeStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/Gray7</item>
+        <item name="android:layout_width">180.0dip</item>
+        <item name="android:layout_height">80.0dip</item>
+    </style>
+    <style name="STVAAppTheme.AccessibilityControlsDialog" parent="@style/STVAAppTheme.AppCompatDialog">
+        <item name="android:layout_width">380.0dip</item>
+    </style>
+    <style name="STVAAppTheme.AppCompactFullscreenDialog" parent="@style/BaseAppCompactFullscreenDialog">
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="rdvr2DeleteCheckBoxStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">14.0dip</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="rdvr2HeaderTextButtonStyle">
+        <item name="android:textAppearance">?H4</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/rdvr2HeaderButtonBgDrawable</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="rdvr2NoRecordingsTextStyle">
+        <item name="android:textAppearance">?H2</item>
+        <item name="android:textColor">?gray2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">200.0dip</item>
+        <item name="android:text">@string/rdvr2NoRecordingsText</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+    <style name="rdvr2ShowCardStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="BaseAppTheme.AppCompactFullscreenDialog" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="BaseAppTheme.TranslucentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+</resources>

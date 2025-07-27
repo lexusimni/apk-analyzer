@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="full_banner_ratio">3.20</string>
+    <string name="rdvr2CompletedTimestampFormat">EEE MM/dd/yy</string>
+    <string name="rdvr2ConflictsErrorDone">"We're sorry, we're unable to get conflicts for this recording."</string>
+    <string name="rdvr2ConflictsErrorNext">"We're sorry, we're unable to get conflicts for this recording."</string>
+</resources>

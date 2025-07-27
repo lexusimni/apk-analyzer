@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.rdvr2.SeriesRecRow android:orientation="horizontal" android:background="@drawable/shr_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?H1Light" android:textColor="?gray4" android:gravity="center" android:id="@id/priority" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rdvr2SeriesTitleMarginRight" android:layout_toLeftOf="@id/networkAttribution" android:layout_toRightOf="@id/priority" android:layout_centerVertical="true">
+        <TextView android:id="@id/seriesTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rdvr2RecordingRowTitleStyle" />
+        <TextView android:textAppearance="?H3Light" android:textColor="@color/dvr_highlighted_text_selector" android:id="@id/episodeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@id/networkAttribution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/upDownArrow" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" layout="@layout/rdvr2_network_attribution" />
+    <ImageView android:id="@id/upDownArrow" android:padding="10.0dip" android:focusableInTouchMode="false" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/rdvr2SeriesUpDownArrowMarginRight" android:src="@drawable/series_drag_handle" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.twc.android.ui.rdvr2.SeriesRecRow>

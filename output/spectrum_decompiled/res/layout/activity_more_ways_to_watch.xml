@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/rootConstraintLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/moreWaysToWatchTabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbarContainer">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moreWaysToWatchWatchHere" />
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/moreWaysToWatchWatchOnTv" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/chromecast_not_block_padding" app:layout_constraintBottom_toBottomOf="@id/cast_controller_fragment" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/moreWaysToWatchTabs" app:layout_goneMarginBottom="0.0dip" />
+    <include app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/toolbar" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/cast" />
+</androidx.constraintlayout.widget.ConstraintLayout>

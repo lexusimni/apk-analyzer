@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:paddingRight="@dimen/UnifiedCrewPaddingRight" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twc.android.ui.utils.UrlImageView android:id="@id/crewImage" android:layout_width="@dimen/UnifiedCrewImageWidth" android:layout_height="@dimen/UnifiedCrewImageHeight" android:layout_marginBottom="10.0dip" android:scaleType="fitCenter" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/crewLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/crewImage">
+        <TextView android:textAppearance="?H5Light" android:textColor="?gray2" android:ellipsize="end" android:id="@id/crewName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textAppearance="?H5Light" android:textColor="?gray2" android:ellipsize="end" android:id="@id/crewCharacter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

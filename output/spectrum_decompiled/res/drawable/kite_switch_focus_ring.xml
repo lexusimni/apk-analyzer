@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="?kiteSelectionControlFocusRingWidth" android:color="?kiteSelectionControlFocusRingColor" />
+    <solid android:color="@color/kite_transparent" />
+    <corners android:radius="@dimen/ki_switch_focus_ring_radius" />
+</shape>

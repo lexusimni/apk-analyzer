@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="?kiteButtonBorderRadius" />
+            <solid android:color="?kiteButtonBorderlessDisabledBackgroundColor" />
+            <stroke android:width="?kiteButtonBorderlessBorderWidth" android:color="?kiteButtonBorderlessDisabledBorderColor" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="?kiteButtonBorderRadius" />
+            <solid android:color="?kiteButtonBorderlessPressedBackgroundColor" />
+            <stroke android:width="?kiteButtonBorderlessBorderWidth" android:color="?kiteButtonBorderlessPressedBorderColor" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="?kiteButtonBorderRadius" />
+            <solid android:color="?kiteButtonBorderlessFocusedBackgroundColor" />
+            <stroke android:width="?kiteButtonFocusedBorderWidth" android:color="?kiteButtonFocusedBorderColor" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="?kiteButtonBorderRadius" />
+            <solid android:color="?kiteButtonBorderlessBackgroundColor" />
+            <stroke android:width="?kiteButtonBorderlessBorderWidth" android:color="?kiteButtonBorderlessBorderColor" />
+        </shape>
+    </item>
+</selector>

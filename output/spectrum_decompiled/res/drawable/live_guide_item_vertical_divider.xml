@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="1.0dip" android:width="@dimen/live_guide_filter_item_vertical_divider_width" />
+    <solid android:color="@color/kite_dark_blue_30" />
+</shape>

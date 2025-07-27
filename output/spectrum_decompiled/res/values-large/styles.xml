@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="@style/Base.Theme.AppCompat.Dialog.FixedSize" />
+    <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize" />
+    <style name="Base.Theme.MaterialComponents.DialogWhenLarge" parent="@style/Base.Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Base.Theme.MaterialComponents.Light.DialogWhenLarge" parent="@style/Base.Theme.MaterialComponents.Light.Dialog.FixedSize" />
+    <style name="STVAAppTheme.ChannelLogoIcon" parent="@style/STVAAppTheme">
+        <item name="android:layout_width">70.0dip</item>
+        <item name="android:layout_height">70.0dip</item>
+        <item name="android:alpha">0.8</item>
+    </style>
+    <style name="STVAAppTheme.RatingImage" parent="@style/STVAAppTheme">
+        <item name="android:layout_width">50.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+    <style name="Theme.Material3.Dark.DialogWhenLarge" parent="@style/Base.Theme.Material3.Dark.Dialog">
+        <item name="windowFixedHeightMajor">@dimen/abc_dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/abc_dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/abc_dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/abc_dialog_fixed_width_minor</item>
+    </style>
+    <style name="Theme.Material3.Light.DialogWhenLarge" parent="@style/Base.Theme.Material3.Light.Dialog">
+        <item name="windowFixedHeightMajor">@dimen/abc_dialog_fixed_height_major</item>
+        <item name="windowFixedHeightMinor">@dimen/abc_dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMajor">@dimen/abc_dialog_fixed_width_major</item>
+        <item name="windowFixedWidthMinor">@dimen/abc_dialog_fixed_width_minor</item>
+    </style>
+    <style name="rdvr2BottomButtonStyle">
+        <item name="android:textAppearance">?H3Light</item>
+        <item name="android:textColor">?gray4</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">350.0dip</item>
+        <item name="android:layout_height">45.0dip</item>
+    </style>
+    <style name="rdvr2DeleteCheckBoxStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">6.0dip</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_marginLeft">18.0dip</item>
+        <item name="android:layout_marginRight">12.0dip</item>
+    </style>
+    <style name="rdvr2NoRecordingsTextStyle">
+        <item name="android:textAppearance">?H2</item>
+        <item name="android:textColor">?gray2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">200.0dip</item>
+        <item name="android:layout_margin">20.0dip</item>
+        <item name="android:text">@string/rdvr2NoRecordingsText</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+</resources>

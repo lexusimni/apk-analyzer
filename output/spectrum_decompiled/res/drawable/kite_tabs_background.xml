@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="?kiteTabsIndicatorHeight">
+        <selector>
+            <item android:state_focused="true">
+                <shape>
+                    <stroke android:width="?kiteTabsItemFocusRingWidth" android:color="?kiteTabsItemFocusRingColor" />
+                    <solid android:color="@color/kite_transparent" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</layer-list>

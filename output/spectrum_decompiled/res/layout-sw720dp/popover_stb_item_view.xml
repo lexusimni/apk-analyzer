@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.devicepopover.StbPopoverItemView android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="left|center" android:id="@id/connectDisconnectImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/round_radio_button_on" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip">
+        <ProgressBar android:id="@id/percentFull" android:layout_width="200.0dip" android:layout_height="3.0dip" android:max="100" android:progress="72" android:layout_centerVertical="true" style="@style/STVAAppTheme.PlayerProgressBar" />
+        <TextView android:textAppearance="?P1Light" android:textColor="?gray4" android:id="@id/percentFullText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/percentFull" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?H3Light" android:textColor="?gray3" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/deviceNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/deviceImageView" android:layout_width="50.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/stb_dvr_connected" android:scaleType="fitCenter" />
+</com.twc.android.ui.devicepopover.StbPopoverItemView>

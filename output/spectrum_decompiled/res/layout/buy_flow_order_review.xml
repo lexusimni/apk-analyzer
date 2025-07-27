@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/order_review_page_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twc.android.ui.buyflow.components.CartContainerComponent android:id="@id/order_review_page_cart_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toTopOf="@id/order_review_page_sticky_strip" app:layout_constraintStart_toStartOf="parent" />
+    <com.twc.android.ui.buyflow.components.StickyStripComponent android:id="@id/order_review_page_sticky_strip" android:layout_width="fill_parent" android:layout_height="@dimen/sticky_strip_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

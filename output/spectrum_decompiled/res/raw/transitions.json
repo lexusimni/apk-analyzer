@@ -1,0 +1,404 @@
+{
+  "transitions": {
+    "adBreakStart": {
+      "playing": "playing"
+    },
+    "adBreakStop": {
+      "playing": "playing"
+    },
+    "adStart": {
+      "playing": "playing"
+    },
+    "adStop": {
+      "playing": "playing"
+    },
+    "additionalAppStart": {
+      "*": "*"
+    },
+    "additionalAppStop": {
+      "*": "*"
+    },
+    "apiCall": {
+      "*": "*"
+    },
+    "applicationActivity": {
+      "*": "*"
+    },
+    "applicationCrash": {
+      "*": "*"
+    },
+    "applicationPerformance": {
+      "*": "*"
+    },
+    "assetDisplayed": {
+      "*": "*"
+    },
+    "attemptRestart": {
+      "failed": "restarting"
+    },
+    "batchApiCall": {
+      "*": "*"
+    },
+    "bufferingStart": {
+      "playing": "buffering"
+    },
+    "bufferingStop": {
+      "buffering": "playing"
+    },
+    "checkAvailableChannels": {
+      "*": "*"
+    },
+    "concurrencyChange": {
+      "*": "*"
+    },
+    "connectionChange": {
+      "*": "*"
+    },
+    "customEvent": {
+      "*": "*"
+    },
+    "deeplinkStart": {
+      "*": "*"
+    },
+    "deeplinkStop": {
+      "*": "*"
+    },
+    "deviceConfigSet": {
+      "*": "*"
+    },
+    "displayChange": {
+      "*": "*"
+    },
+    "error": {
+      "*": "*"
+    },
+    "externalAppStateChange": {
+      "*": "*"
+    },
+    "featureStart": {
+      "*": "*"
+    },
+    "featureStop": {
+      "*": "*"
+    },
+    "forcedLogin": {
+      "*": "*"
+    },
+    "impressionStart": {
+      "*": "*"
+    },
+    "impressionStop": {
+      "*": "*"
+    },
+    "inVisitOauthRefresh": {
+      "*": "*"
+    },
+    "loginStart": {
+      "navigating": "authenticating",
+      "appInitializing": "authenticating"
+    },
+    "loginStop": {
+      "authenticating": "navigating"
+    },
+    "logout": {
+      "failed": "navigating",
+      "restarting": "navigating",
+      "initiating": "navigating",
+      "*": "*"
+    },
+    "modalCancel": {
+      "*": "*"
+    },
+    "modalClose": {
+      "*": "*"
+    },
+    "modalView": {
+      "appInitializing": "navigating",
+      "*": "*"
+    },
+    "pageView": {
+      "*": "*"
+    },
+    "pageViewCompleteAwaitingAction": {
+      "*": "*"
+    },
+    "pageViewInit": {
+      "appInitializing": "navigating",
+      "*": "*"
+    },
+    "pageViewPartiallyRendered": {
+      "*": "*"
+    },
+    "pageViewPerformance": {
+      "*": "*"
+    },
+    "pinEntry": {
+      "*": "*"
+    },
+    "playbackBitRateDownshift": {
+      "playing": "playing",
+      "scrubbing": "scrubbing",
+      "buffering": "buffering",
+      "paused": "paused"
+    },
+    "playbackBitRateUpshift": {
+      "playing": "playing",
+      "scrubbing": "scrubbing",
+      "buffering": "buffering",
+      "paused": "paused"
+    },
+    "playbackExitBeforeStart": {
+      "initiating": "navigating",
+      "restarting": "navigating"
+    },
+    "playbackFailure": {
+      "playing": "failed",
+      "initiating": "failed",
+      "buffering": "failed",
+      "paused": "failed",
+      "scrubbing": "failed",
+      "restarting": "failed",
+      "DISABLED": "failed"
+    },
+    "playbackFailureBeforeRetry": {
+      "playing": "failed",
+      "initiating": "failed",
+      "buffering": "failed",
+      "paused": "failed",
+      "scrubbing": "failed",
+      "restarting": "failed",
+      "DISABLED": "DISABLED"
+    },
+    "playbackHeartbeat": {
+      "playing": "playing"
+    },
+    "playbackPause": {
+      "playing": "paused"
+    },
+    "playbackSelect": {
+      "initiating": "initiating",
+      "navigating": "initiating",
+      "failed": "initiating",
+      "restarting": "initiating",
+      "DISABLED": "initiating",
+      "playing": "initiating",
+      "buffering": "initiating",
+      "appInitializing": "initiating"
+    },
+    "playbackStart": {
+      "initiating": "playing",
+      "restarting": "playing"
+    },
+    "playbackStartAfterRetry": {
+      "restarting": "playing"
+    },
+    "playbackStop": {
+      "restarting": "navigating",
+      "playing": "navigating",
+      "buffering": "navigating",
+      "paused": "navigating"
+    },
+    "playbackStreamUriAcquired": {
+      "restarting": "initiating",
+      "initiating": "initiating"
+    },
+    "playbackTrackChange": {
+      "initiating": "initiating",
+      "playing": "playing",
+      "scrubbing": "scrubbing",
+      "buffering": "buffering",
+      "paused": "paused"
+    },
+    "playbackTrickPlayRateChange": {
+      "scrubbing": "scrubbing"
+    },
+    "playbackTrickPlayStart": {
+      "playing": "scrubbing",
+      "paused": "scrubbing",
+      "buffering": "scrubbing"
+    },
+    "playbackTrickPlayStop": {
+      "scrubbing": "playing"
+    },
+    "playbackUnpause": {
+      "paused": "playing"
+    },
+    "purchaseStart": {
+      "*": "*"
+    },
+    "purchaseStop": {
+      "*": "*"
+    },
+    "pushNotification": {
+      "*": "*"
+    },
+    "requestToCancelRecording": {
+      "*": "*"
+    },
+    "requestToDeleteRecording": {
+      "*": "*"
+    },
+    "requestToEditRecording": {
+      "*": "*"
+    },
+    "requestToRecord": {
+      "*": "*"
+    },
+    "searchClosed": {
+      "*": "*"
+    },
+    "searched": {
+      "*": "*"
+    },
+    "selectAction": {
+      "*": "*"
+    },
+    "selectContent": {
+      "*": "*"
+    },
+    "startSession": {
+      "blank": "appInitializing"
+    },
+    "subModalClose": {
+      "*": "*"
+    },
+    "subModalView": {
+      "*": "*"
+    },
+    "switchScreen": {
+      "*": "*"
+    },
+    "systemMessage": {
+      "*": "*"
+    },
+    "temporaryView": {
+      "*": "*"
+    },
+    "userConfigSet": {
+      "*": "*"
+    },
+    "userFeedback": {
+      "*": "*"
+    },
+    "webSocketActivity": {
+      "*": "*"
+    },
+    "webSocketClose": {
+      "*": "*"
+    },
+    "webSocketError": {
+      "*": "*"
+    },
+    "webSocketHeartbeat": {
+      "*": "*"
+    },
+    "webSocketOpen": {
+      "*": "*"
+    },
+    "setAccountFeatures": {
+      "*": "*"
+    },
+    "setApplicationName": {
+      "*": "*"
+    },
+    "setAudioBitRate": {
+      "*": "*"
+    },
+    "setAutoAccessEnabled": {
+      "*": "*"
+    },
+    "setBulkMduClass": {
+      "*": "*"
+    },
+    "setBuyflowPromotionFields": {
+      "*": "*"
+    },
+    "setClientLocation": {
+      "*": "*"
+    },
+    "setCpuAverageUsage": {
+      "*": "*"
+    },
+    "setDeviceLocation": {
+      "*": "*"
+    },
+    "setDevicePerformance": {
+      "*": "*"
+    },
+    "setEntitlements": {
+      "*": "*"
+    },
+    "setExperimentConfigurations": {
+      "*": "*"
+    },
+    "setId3Tags": {
+      "*": "*"
+    },
+    "setLocationStatus": {
+      "*": "*"
+    },
+    "setMaxVideoDetails": {
+      "*": "*"
+    },
+    "setMirroring": {
+      "*": "*"
+    },
+    "setNetworkStatus": {
+      "*": "*"
+    },
+    "setOtaChannels": {
+      "*": "*"
+    },
+    "setPageAdditionalInfo": {
+      "*": "*"
+    },
+    "setPermissionSettings": {
+      "*": "*"
+    },
+    "setPictureInPicture": {
+      "*": "*"
+    },
+    "setPlaybackCapping": {
+      "*": "*"
+    },
+    "setPlaybackPerformance": {
+      "*": "*"
+    },
+    "setPlayerTestFields": {
+      "*": "*"
+    },
+    "setReferrerLink": {
+      "*": "*"
+    },
+    "setReferrerLocation": {
+      "*": "*"
+    },
+    "setResolution": {
+      "*": "*"
+    },
+    "setSecondaryPlaybackId": {
+      "*": "*"
+    },
+    "setSegment": {
+      "*": "*"
+    },
+    "setSplitScreen": {
+      "*": "*"
+    },
+    "setTechnicianQuadId": {
+      "*": "*"
+    },
+    "setTimeZone": {
+      "*": "*"
+    },
+    "setTrafficOriginId": {
+      "*": "*"
+    },
+    "setVideoZone": {
+      "*": "*"
+    },
+    "setAccessibilitySettings": {
+      "*": "*"
+    }
+  }
+}

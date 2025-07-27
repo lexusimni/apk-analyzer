@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="watch_next_currently_playing_height">350.0dip</dimen>
+    <dimen name="watch_next_default_image_height">600.0dip</dimen>
+    <dimen name="watch_next_default_image_width">800.0dip</dimen>
+</resources>

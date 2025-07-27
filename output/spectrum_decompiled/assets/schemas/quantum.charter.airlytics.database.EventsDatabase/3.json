@@ -1,0 +1,422 @@
+{
+	"formatVersion": 1,
+	"database": {
+		"version": 3,
+		"identityHash": "8cbfc182d901396d1c77ce9b151a5ecc",
+		"entities": [
+			{
+				"tableName": "Events",
+				"createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`session_id` TEXT NOT NULL, `event_name` TEXT NOT NULL, `core_version` TEXT NOT NULL, `app_name` TEXT NOT NULL, `encoded_event_byte_array` BLOB, `initial_size` INTEGER, `timestamp` INTEGER NOT NULL, `sequence_number` INTEGER NOT NULL, `priority` INTEGER NOT NULL, PRIMARY KEY(`timestamp`, `sequence_number`, `priority`))",
+				"fields": [
+					{
+						"fieldPath": "sessionId",
+						"columnName": "session_id",
+						"affinity": "TEXT",
+						"notNull": true
+					},
+					{
+						"fieldPath": "eventName",
+						"columnName": "event_name",
+						"affinity": "TEXT",
+						"notNull": true
+					},
+					{
+						"fieldPath": "coreVersion",
+						"columnName": "core_version",
+						"affinity": "TEXT",
+						"notNull": true
+					},
+					{
+						"fieldPath": "appName",
+						"columnName": "app_name",
+						"affinity": "TEXT",
+						"notNull": true
+					},
+					{
+						"fieldPath": "encodedEventByteArray",
+						"columnName": "encoded_event_byte_array",
+						"affinity": "BLOB",
+						"notNull": false
+					},
+					{
+						"fieldPath": "initialEventSize",
+						"columnName": "initial_size",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "eventPrimaryInfo.timestamp",
+						"columnName": "timestamp",
+						"affinity": "INTEGER",
+						"notNull": true
+					},
+					{
+						"fieldPath": "eventPrimaryInfo.sequenceNumber",
+						"columnName": "sequence_number",
+						"affinity": "INTEGER",
+						"notNull": true
+					},
+					{
+						"fieldPath": "eventPrimaryInfo.priority",
+						"columnName": "priority",
+						"affinity": "INTEGER",
+						"notNull": true
+					}
+				],
+				"primaryKey": {
+					"columnNames": [
+						"timestamp",
+						"sequence_number",
+						"priority"
+					],
+					"autoGenerate": false
+				},
+				"indices": [],
+				"foreignKeys": []
+			},
+			{
+				"tableName": "PurgedEvents",
+				"createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`session_id` TEXT NOT NULL, `initialization` INTEGER, `collecting_start` INTEGER, `collecting_stop` INTEGER, `location_update` INTEGER, `mobility_start` INTEGER, `mobility_stop` INTEGER, `airplane_mode_on` INTEGER, `airplane_mode_off` INTEGER, `data_path_start` INTEGER, `data_path_stop` INTEGER, `cellular_on` INTEGER, `cellular_off` INTEGER, `cell_session_start` INTEGER, `cell_session_stop` INTEGER, `periodic_cell_data_usage` INTEGER, `cell_signal_changed` INTEGER, `low_cell_signal` INTEGER, `cell_unavailable` INTEGER, `cell_neighbors` INTEGER, `change_configuration` INTEGER, `error` INTEGER, `cm_wifi_on` INTEGER, `cm_wifi_off` INTEGER, `doze_in` INTEGER, `doze_out` INTEGER, `wifi_on` INTEGER, `wif_off` INTEGER, `wifi_bssid_session_start` INTEGER, `wifi_bssid_session_stop` INTEGER, `wifi_ssid_session_start` INTEGER, `wifi_ssid_session_stop` INTEGER, `periodic_wifi_data_usage` INTEGER, `link_speed` INTEGER, `latency` INTEGER, `scan_result` INTEGER, `satellite_count` INTEGER, `rssi_info` INTEGER, `wifi_throughput` INTEGER, `wifi_connect_failure` INTEGER, `wifi_suggest_auth_failure` INTEGER, `wifi_disconnect` INTEGER, `reboot` INTEGER, `cell_transition` INTEGER, `dsds_cell_signal_strength` INTEGER, `dsds_latency` INTEGER, `dsds_throughput` INTEGER, `dsds_cbrs_session_start` INTEGER, `dsds_cbrs_session_stop` INTEGER, `periodic_cbrs_data_usage` INTEGER, `subscription_info` INTEGER, `time_zone_changed` INTEGER, `purged_events` INTEGER, `permission_changed` INTEGER, PRIMARY KEY(`session_id`))",
+				"fields": [
+					{
+						"fieldPath": "sessionId",
+						"columnName": "session_id",
+						"affinity": "TEXT",
+						"notNull": true
+					},
+					{
+						"fieldPath": "Initialization",
+						"columnName": "initialization",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CollectingStart",
+						"columnName": "collecting_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CollectingStop",
+						"columnName": "collecting_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "LocationUpdate",
+						"columnName": "location_update",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "MobilityStart",
+						"columnName": "mobility_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "MobilityStop",
+						"columnName": "mobility_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "AirplaneModeOn",
+						"columnName": "airplane_mode_on",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "AirplaneModeOff",
+						"columnName": "airplane_mode_off",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DataPathStart",
+						"columnName": "data_path_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DataPathStop",
+						"columnName": "data_path_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellularOn",
+						"columnName": "cellular_on",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellularOff",
+						"columnName": "cellular_off",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellSessionStart",
+						"columnName": "cell_session_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellSessionStop",
+						"columnName": "cell_session_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "PeriodicCellDataUsage",
+						"columnName": "periodic_cell_data_usage",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellSignalChanged",
+						"columnName": "cell_signal_changed",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "LowCellSignal",
+						"columnName": "low_cell_signal",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellUnavailable",
+						"columnName": "cell_unavailable",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellNeighbors",
+						"columnName": "cell_neighbors",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "ChangeConfiguration",
+						"columnName": "change_configuration",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "Error",
+						"columnName": "error",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CMWiFiOn",
+						"columnName": "cm_wifi_on",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CMWiFiOff",
+						"columnName": "cm_wifi_off",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DozeIn",
+						"columnName": "doze_in",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DozeOut",
+						"columnName": "doze_out",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiOn",
+						"columnName": "wifi_on",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiOff",
+						"columnName": "wif_off",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiBSSIDSessionStart",
+						"columnName": "wifi_bssid_session_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiBSSIDSessionStop",
+						"columnName": "wifi_bssid_session_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiSSIDSessionStart",
+						"columnName": "wifi_ssid_session_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiSSIDSessionStop",
+						"columnName": "wifi_ssid_session_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "PeriodicWifiDataUsage",
+						"columnName": "periodic_wifi_data_usage",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "LinkSpeed",
+						"columnName": "link_speed",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "Latency",
+						"columnName": "latency",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "ScanResult",
+						"columnName": "scan_result",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "SatelliteCount",
+						"columnName": "satellite_count",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "RSSIInfo",
+						"columnName": "rssi_info",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiThroughput",
+						"columnName": "wifi_throughput",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiConnectFailure",
+						"columnName": "wifi_connect_failure",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiSuggestAuthFailure",
+						"columnName": "wifi_suggest_auth_failure",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "WifiDisconnect",
+						"columnName": "wifi_disconnect",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "Reboot",
+						"columnName": "reboot",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "CellTransition",
+						"columnName": "cell_transition",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DSDSCellSignalStrength",
+						"columnName": "dsds_cell_signal_strength",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DSDSLatency",
+						"columnName": "dsds_latency",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DSDSThroughput",
+						"columnName": "dsds_throughput",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DSDSCBRSSessionStart",
+						"columnName": "dsds_cbrs_session_start",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "DSDSCBRSSessionStop",
+						"columnName": "dsds_cbrs_session_stop",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "PeriodicCBRSDataUsage",
+						"columnName": "periodic_cbrs_data_usage",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "SubscriptionInfo",
+						"columnName": "subscription_info",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "TimeZoneChanged",
+						"columnName": "time_zone_changed",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "PurgedEvents",
+						"columnName": "purged_events",
+						"affinity": "INTEGER",
+						"notNull": false
+					},
+					{
+						"fieldPath": "PermissionChanged",
+						"columnName": "permission_changed",
+						"affinity": "INTEGER",
+						"notNull": false
+					}
+				],
+				"primaryKey": {
+					"columnNames": [
+						"session_id"
+					],
+					"autoGenerate": false
+				},
+				"indices": [],
+				"foreignKeys": []
+			}
+		],
+		"views": [],
+		"setupQueries": [
+			"CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+			"INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8cbfc182d901396d1c77ce9b151a5ecc')"
+		]
+	}
+}

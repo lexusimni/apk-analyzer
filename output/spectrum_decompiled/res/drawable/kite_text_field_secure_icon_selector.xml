@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="@dimen/ki_text_field_icon_height" android:width="@dimen/ki_text_field_icon_width">
+        <selector>
+            <item android:state_checked="true" android:id="@id/visible" android:drawable="@drawable/ki_eye_cross_f" />
+            <item android:id="@id/masked" android:drawable="@drawable/ki_eye_f" />
+        </selector>
+    </item>
+</layer-list>

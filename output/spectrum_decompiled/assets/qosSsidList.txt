@@ -1,0 +1,69 @@
+AlticeWiFi
+ASUS
+ASUS_5G
+attwifi
+att-wifi
+attwifi - Passpoint
+BHN.*
+Boingo.*
+Bright House Networks
+BTWIFI
+BTWi-fi
+BTWifi-with-FON
+BTWifi-X
+cablewifi
+CableWiFi
+Charter.*
+CHARTER_GUEST
+Courtyard_GUEST
+Courtyard_Guest
+coxwifi
+CoxWiFi
+Disney-Guest
+dlink
+eduroam
+Free Public WiFi
+Free_Spectrum_WiFi
+Free_SpectrumWiFi
+Google Starbucks
+hhonors
+HomeDepot Public Wi-Fi
+IHGConnect
+Kohls Guest WiFi
+Linksys
+linksys
+Lowes-Guest-WiFi
+LinkNYC Free Wi-Fi
+LinkNYC Private
+Macysfreewifi
+Marriott_Guest
+Marriott_GUEST
+McDonalds Free WiFi
+MyCharter.*
+MySpectrum.*
+NETGEAR
+optimum
+optimumwifi
+optimumwifi_Passpoint
+orange
+Passpoint Secure
+Spectrum.*
+Spectrum Mobile
+Spectrum Free Trial
+SpectrumWiFi Plus
+Target Guest Wi-Fi
+tmobile
+TransitWirelessWiFi
+TWCWiFi
+TWCWiFi-Passpoint
+Walmart
+walmartwifi
+Walmartwifi
+Wayport_Access
+xFi
+XFINITY
+xfinitywifi
+XFI
+Xfinity Mobile
+xfinity public
+ZTE

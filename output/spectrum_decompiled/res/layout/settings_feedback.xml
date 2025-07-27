@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:theme="@style/SpectrumKiteDarkTheme" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/feedbackInput" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <View android:id="@id/bogusFocusHolder" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <com.charter.kite.KiteTextViewCaption1 android:id="@id/feedbackSourceAppSpinnerCaption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/settingsFeedbackSourceAppNameHeader" />
+        <com.charter.kite.KiteSpinner android:id="@id/feedbackSourceAppSpinner" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        <com.charter.kite.KiteTextViewBody android:gravity="center_vertical" android:id="@id/feedbackDefaultSourceApp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="8.0dip" android:text="@string/android" />
+        <com.charter.kite.KiteTextViewCaption1 android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="@string/settingsFeedbackCategoryHeader" />
+        <com.charter.kite.KiteSpinner android:id="@id/feedbackCategorySpinner" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" style="@style/Widget.Kite.TextInputLayout.ClearText">
+            <com.charter.kite.KiteInputEditText android:id="@id/feedbackUserFeedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/settingsFeedbackUserInfoHint" android:maxLength="255" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>

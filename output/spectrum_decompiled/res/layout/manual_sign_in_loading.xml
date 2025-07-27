@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/darkBlue1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/spectrum_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:layout_above="@id/loadingIndicator" android:layout_centerHorizontal="true" android:contentDescription="@string/app_logo_description" app:srcCompat="@drawable/app_logo" />
+    <com.twc.android.ui.widget.SpectrumProgressBar android:id="@id/loadingIndicator" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

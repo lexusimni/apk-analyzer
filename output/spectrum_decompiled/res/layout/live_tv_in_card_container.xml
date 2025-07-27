@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/live_tv_in_card_video_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/live_tv_in_card_static_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

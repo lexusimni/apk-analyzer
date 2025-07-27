@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/SpectrumKiteDarkTheme" android:layout_gravity="center" android:background="@color/kite_white" android:layout_width="@dimen/device_picker_dialog_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="@color/kite_dark_blue_30" android:id="@id/device_picker_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/device_picker_title" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Kite.TextView.Title3" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/device_picker_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:layout_constraintHeight_max="270.0dip" app:layout_constraintTop_toBottomOf="@id/device_picker_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

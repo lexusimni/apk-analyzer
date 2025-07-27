@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="@bool/doAnimateLayoutTransition"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/headerLayout" android:background="?headerBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <Button android:id="@id/dateRecorded" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/rdvr2HeaderButtonHeight" android:text="@string/dvr_date_recorded" style="@style/rdvr2HeaderTextButtonStyle" />
+        <Button android:id="@id/aToZ" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/rdvr2HeaderButtonHeight" android:text="@string/a_to_z" style="@style/rdvr2HeaderTextButtonStyle" />
+        <Button android:id="@id/myRecordings" android:layout_width="wrap_content" android:layout_height="@dimen/rdvr2HeaderButtonHeight" android:text="@string/recorded" style="@style/rdvr2HeaderTextButtonStyle" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/scheduledLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/scheduled" android:layout_width="fill_parent" android:layout_height="@dimen/rdvr2HeaderButtonHeight" android:text="@string/scheduled" style="@style/rdvr2HeaderTextButtonStyle" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="right|top" android:id="@id/conflictCount" android:background="@drawable/conflict_count_background" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="23.0dip" android:layout_height="23.0dip" />
+        </FrameLayout>
+        <Button android:id="@id/seriesPriority" android:layout_width="wrap_content" android:layout_height="@dimen/rdvr2HeaderButtonHeight" android:text="@string/series_manager" style="@style/rdvr2HeaderTextButtonStyle" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/recordingListFragmentContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <View android:background="@drawable/fade_to_black_horizontal_top" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    </FrameLayout>
+</LinearLayout>

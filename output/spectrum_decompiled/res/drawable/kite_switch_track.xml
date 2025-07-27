@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/abc_switch_track_mtrl_alpha" />
+    <item android:left="@dimen/ki_switch_focus_ring_horizontal_inset" android:top="@dimen/ki_switch_focus_ring_vertical_inset" android:right="@dimen/ki_switch_focus_ring_horizontal_inset" android:bottom="@dimen/ki_switch_focus_ring_vertical_inset">
+        <selector>
+            <item android:state_focused="true" android:drawable="@drawable/kite_switch_focus_ring" />
+        </selector>
+    </item>
+</layer-list>

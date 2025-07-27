@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:theme="@style/Theme.Kite.Dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/constraintLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/topLine" android:background="@color/kite_dark_blue_20" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/settingsRecyclerView" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/topLine" app:layout_constraintWidth_percent="@dimen/settingsWidthPercentage" />
+        <View android:id="@id/bottomLine" android:background="@color/kite_dark_blue_20" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginBottom="20.0dip" app:layout_constraintBottom_toTopOf="@id/bottomButton" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/settingsRecyclerView" app:layout_constraintWidth_percent="@dimen/settingsWidthPercentage" />
+        <com.charter.kite.KiteButtonSecondary android:id="@id/bottomButton" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="@dimen/SettingsMenuSignOutButtonMarginTop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/settingsRecyclerView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

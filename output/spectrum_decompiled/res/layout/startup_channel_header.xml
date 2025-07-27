@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:theme="@style/SpectrumKiteDarkTheme" android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/heading" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" android:importantForAccessibility="yes" android:accessibilityHeading="true" style="@style/Widget.Kite.TextView.Title3"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

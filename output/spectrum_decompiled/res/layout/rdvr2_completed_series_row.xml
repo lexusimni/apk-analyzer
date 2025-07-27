@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.rdvr2.CompletedRecRowSeries android:orientation="horizontal" android:background="@drawable/shr_list_selector" android:padding="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twc="http://schemas.android.com/apk/res-auto">
+    <com.twc.android.ui.utils.HierarchicalCheckBox android:id="@id/delete" android:layout_width="@dimen/rdvr2DeleteCheckBoxWidth" android:layout_height="@dimen/rdvr2DeleteCheckBoxHeight" style="@style/rdvr2DeleteCheckBoxStyle" />
+    <com.twc.android.ui.utils.UrlImageView android:id="@id/showCard" android:layout_width="@dimen/rdvr2ShowCardWidth" android:layout_height="@dimen/rdvr2ShowCardHeight" style="@style/rdvr2ShowCardStyle" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/seriesTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rdvr2RecordingRowTitleStyle" />
+        <TextView android:textAppearance="?H3Light" android:textColor="@color/dvr_highlighted_text_selector" android:id="@id/numberOfEpisodes" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.twc.android.ui.utils.TimeTextView android:textAppearance="?H3Light" android:textColor="?gray2" android:id="@id/recordingDate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" twc:timeFormat="@string/rdvr2CompletedTimestampFormat" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/expandArrow" android:padding="10.0dip" android:focusableInTouchMode="false" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/arrow_down_white" android:scaleType="fitCenter" />
+</com.twc.android.ui.rdvr2.CompletedRecRowSeries>

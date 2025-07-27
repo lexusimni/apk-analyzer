@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/visitIdContainer" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutVisitId" />
+    <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/visitId" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

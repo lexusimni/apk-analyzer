@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?darkBlue2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twc="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/toolbar" />
+    <LinearLayout android:orientation="horizontal" android:background="?headerBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/channelHeaderLayoutHeight">
+        <TextView android:textSize="@dimen/networkScheduleChlMinus" android:textColor="#ff808080" android:layout_gravity="left|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/networkScheduleChlMinusMargin" android:text="@string/newtorkScheduleChlMinus" android:drawableLeft="@drawable/guide_time_backward_selector" android:drawablePadding="5.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.twc.android.ui.utils.UrlImageView android:layout_gravity="center" android:id="@id/networkScheduleChlLogo" android:layout_width="60.0dip" android:layout_height="60.0dip" android:scaleType="fitXY" android:alpha="0.8" />
+            <LinearLayout android:gravity="right|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="@dimen/networkScheduleChannelNumberTextSize" android:layout_gravity="center_vertical" android:id="@id/networkScheduleChlNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/networkScheduleCallSignTextSize" android:layout_gravity="center_vertical" android:id="@id/networkScheduleCallSign" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/networkScheduleChlPlus" android:textColor="#ff808080" android:layout_gravity="right|center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/networkScheduleChlPlusMargin" android:text="@string/newtorkScheduleChlPlus" android:drawableRight="@drawable/guide_time_forwardward_selector" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/networkScheduleList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/shr_tranparent_selector" android:cacheColorHint="#00000000" android:fastScrollEnabled="false" android:smoothScrollbar="false" android:fadeScrollbars="false" />
+        <com.twc.android.ui.utils.TimeTextView android:id="@id/networkScheduleListHeader" android:paddingLeft="@dimen/networkScheduleListHdrPaddingLeft" twc:showTodayAndTomorrow="true" twc:timeFormat="@string/timeFormat_dayOfWeekMonthDayOfMonth" twc:todayAndTomorrowTimeFormat="@string/timeFormat_monthNameDay" style="@style/NetworkScheduleRowHeaderStyle" />
+    </RelativeLayout>
+</LinearLayout>

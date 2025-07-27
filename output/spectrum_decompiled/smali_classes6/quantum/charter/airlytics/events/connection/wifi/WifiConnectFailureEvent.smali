@@ -1,0 +1,465 @@
+.class public final Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;
+.super Lquantum/charter/airlytics/events/DefaultEvent;
+.source "SourceFile"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\n\n\u0002\u0010\u0006\n\u0002\u0008\t\n\u0002\u0010\u0002\n\u0002\u0008\u0002\u0008\u0000\u0018\u00002\u00020\u0001B\u000f\u0008\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004B\u0005\u00a2\u0006\u0002\u0010\u0005J\u0010\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0002\u001a\u00020\u0003H\u0016J\u0008\u0010\u0019\u001a\u00020\u0003H\u0016R\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u0007\u0010\u0008\"\u0004\u0008\t\u0010\u0004R\u001c\u0010\n\u001a\u0004\u0018\u00010\u0003X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\u0008\u000b\u0010\u0008\"\u0004\u0008\u000c\u0010\u0004R\u001e\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0013\u001a\u0004\u0008\u000f\u0010\u0010\"\u0004\u0008\u0011\u0010\u0012R\u001e\u0010\u0014\u001a\u0004\u0018\u00010\u000eX\u0086\u000e\u00a2\u0006\u0010\n\u0002\u0010\u0013\u001a\u0004\u0008\u0015\u0010\u0010\"\u0004\u0008\u0016\u0010\u0012\u00a8\u0006\u001a"
+    }
+    d2 = {
+        "Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;",
+        "Lquantum/charter/airlytics/events/DefaultEvent;",
+        "json",
+        "",
+        "(Ljava/lang/String;)V",
+        "()V",
+        "bssid",
+        "getBssid",
+        "()Ljava/lang/String;",
+        "setBssid",
+        "failureReason",
+        "getFailureReason",
+        "setFailureReason",
+        "latitude",
+        "",
+        "getLatitude",
+        "()Ljava/lang/Double;",
+        "setLatitude",
+        "(Ljava/lang/Double;)V",
+        "Ljava/lang/Double;",
+        "longitude",
+        "getLongitude",
+        "setLongitude",
+        "deserialize",
+        "",
+        "toString",
+        "core_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field private bssid:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private failureReason:Ljava/lang/String;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private latitude:Ljava/lang/Double;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+.field private longitude:Ljava/lang/Double;
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lquantum/charter/airlytics/events/DefaultEvent;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    const-string v0, "json"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-direct {p0}, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;-><init>()V
+
+    .line 3
+    invoke-virtual {p0, p1}, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->deserialize(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public clone()Ljava/lang/Object;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public deserialize(Ljava/lang/String;)V
+    .locals 1
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+
+    .line 1
+    const-string v0, "json"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1}, Lquantum/charter/airlytics/utils/SerializationUtilsKt;->toJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    if-nez p1, :cond_0
+
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_0
+    invoke-virtual {p0, p1}, Lquantum/charter/airlytics/events/DefaultEvent;->deserialize(Lorg/json/JSONObject;)Lquantum/charter/airlytics/events/DefaultEvent;
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v0, "failureReason"
+
+    .line 17
+    .line 18
+    invoke-static {p1, v0}, Lquantum/charter/airlytics/utils/SerializationUtilsKt;->getStringOrNull(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    iput-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->failureReason:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    const-string v0, "bssid"
+
+    .line 25
+    .line 26
+    invoke-static {p1, v0}, Lquantum/charter/airlytics/utils/SerializationUtilsKt;->getStringOrNull(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    iput-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->bssid:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    const-string v0, "latitude"
+
+    .line 33
+    .line 34
+    invoke-static {p1, v0}, Lquantum/charter/airlytics/utils/SerializationUtilsKt;->getDoubleOrNull(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Double;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    iput-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->latitude:Ljava/lang/Double;
+
+    .line 39
+    .line 40
+    const-string v0, "longitude"
+
+    .line 41
+    .line 42
+    invoke-static {p1, v0}, Lquantum/charter/airlytics/utils/SerializationUtilsKt;->getDoubleOrNull(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Double;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    iput-object p1, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->longitude:Ljava/lang/Double;
+
+    .line 47
+    .line 48
+    return-void
+.end method
+
+.method public final getBssid()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->bssid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getFailureReason()Ljava/lang/String;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->failureReason:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getLatitude()Ljava/lang/Double;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->latitude:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getLongitude()Ljava/lang/Double;
+    .locals 1
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->longitude:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final setBssid(Ljava/lang/String;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->bssid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setFailureReason(Ljava/lang/String;)V
+    .locals 0
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->failureReason:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setLatitude(Ljava/lang/Double;)V
+    .locals 0
+    .param p1    # Ljava/lang/Double;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->latitude:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setLongitude(Ljava/lang/Double;)V
+    .locals 0
+    .param p1    # Ljava/lang/Double;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    iput-object p1, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->longitude:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 7
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    .line 1
+    invoke-super {p0}, Lquantum/charter/airlytics/events/DefaultEvent;->toString()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->failureReason:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    iget-object v2, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->bssid:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iget-object v3, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->latitude:Ljava/lang/Double;
+
+    .line 10
+    .line 11
+    iget-object v4, p0, Lquantum/charter/airlytics/events/connection/wifi/WifiConnectFailureEvent;->longitude:Ljava/lang/Double;
+
+    .line 12
+    .line 13
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v6, "{"
+
+    .line 19
+    .line 20
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string v0, ",\"failureReason\" : \""
+
+    .line 27
+    .line 28
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string v0, "\",\"bssid\" : \""
+
+    .line 35
+    .line 36
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    const-string v0, "\",\"latitude\" : "
+
+    .line 43
+    .line 44
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    const-string v0, ",\"longitude\" : "
+
+    .line 51
+    .line 52
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    const-string v0, "}"
+
+    .line 59
+    .line 60
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    return-object v0
+.end method

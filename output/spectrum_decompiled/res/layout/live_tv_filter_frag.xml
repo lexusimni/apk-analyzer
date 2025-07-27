@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?darkBlue2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twc.android.ui.utils.ScrollViewWithOverScrollListener android:scrollbarStyle="insideOverlay" android:id="@id/liveTvFilterScrollView" android:background="?darkBlue2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?H2Light" android:textStyle="bold" android:textColor="?gray4" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="5.0dip" android:text="@string/sortHeader" android:singleLine="true" />
+            <RadioGroup android:id="@id/liveSortRadioGroup" android:paddingLeft="20.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textAppearance="?H2Light" android:textStyle="bold" android:textColor="?gray4" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="5.0dip" android:text="@string/filterHeader" android:singleLine="true" />
+            <RadioGroup android:id="@id/liveFilterRadioGroup" android:paddingLeft="20.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.twc.android.ui.utils.ScrollViewWithOverScrollListener>
+</LinearLayout>

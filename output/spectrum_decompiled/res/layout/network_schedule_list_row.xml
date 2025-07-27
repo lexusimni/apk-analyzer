@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.networkschedule.NetworkScheduleRow android:background="@drawable/shr_list_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twc="http://schemas.android.com/apk/res-auto">
+    <com.twc.android.ui.utils.TimeTextView android:id="@id/networkScheduleRowHeader" android:paddingLeft="@dimen/networkScheduleListHdrPaddingLeft" android:layout_width="fill_parent" twc:showTodayAndTomorrow="true" twc:timeFormat="@string/timeFormat_dayOfWeekMonthDayOfMonth" twc:todayAndTomorrowTimeFormat="@string/timeFormat_monthNameDay" style="@style/NetworkScheduleRowHeaderStyle" />
+    <com.twc.android.ui.utils.TimeTextView android:textColor="@color/gray4" android:id="@id/networkScheduleTime" android:layout_below="@id/networkScheduleRowHeader" twc:timeFormat="@string/timeFormat_hourMinuteAmPm" style="@style/NetworkScheduleRowTimeStyle" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_toRightOf="@id/networkScheduleTime" android:layout_below="@id/networkScheduleRowHeader" style="@style/NetworkScheduleRowStyle">
+        <TextView android:textColor="@color/gray4" android:gravity="center_vertical" android:id="@id/networkScheduleProgramName" style="@style/NetworkScheduleRowProgramStyle" />
+        <TextView android:textColor="@color/blue3" android:id="@id/networkScheduleEpisodeName" android:layout_below="@id/networkScheduleProgramName" style="@style/NetworkScheduleRowEpisodeStyle" />
+    </RelativeLayout>
+</com.twc.android.ui.networkschedule.NetworkScheduleRow>

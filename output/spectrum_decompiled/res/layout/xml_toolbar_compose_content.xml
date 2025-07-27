@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/kite_dark_blue_30" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/xml_toolbar" android:background="@color/kite_dark_blue_30" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <ImageView android:id="@id/xml_toolbar_navigation_button" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="4.0dip" android:contentDescription="@null" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ki_arrow_left" app:tint="@color/kite_white" />
+        <TextView android:textColor="@color/kite_white" android:id="@id/xml_toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.Kite.TextView.Title3" />
+        <com.twc.android.ui.devicepicker.EnabledMediaRouteButton android:id="@id/xml_toolbar_chromecast_button" android:background="@drawable/menu_item_circle_background" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="16.0dip" android:contentDescription="@string/cast" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

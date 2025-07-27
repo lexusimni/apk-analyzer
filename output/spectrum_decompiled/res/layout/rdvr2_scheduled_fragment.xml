@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="@bool/doAnimateLayoutTransition"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/instructions" android:background="#ff202020" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dvr_cancel_schedule" style="@style/rdvr2InstructionsTextStyle" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.twc.android.ui.rdvr2.RecordingListView android:id="@id/recordingList" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/rdvr2ListViewStyle" />
+            <View android:id="@id/bottomOfListSeparator" android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <com.twc.android.ui.utils.TimeTextView android:id="@id/recordingListHeader" style="@style/rdvr2DateListSectionHeaderStyle" />
+        <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <include layout="@layout/rdvr2_norecordingtext_layout" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/deleteButtonLayout" android:background="@drawable/phone_header" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/deleteButton" android:background="@drawable/bubble_button_bgrd_red" style="@style/rdvr2BottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

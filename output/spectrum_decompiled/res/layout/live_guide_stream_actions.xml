@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/audio_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SwitchCompat android:theme="@style/SpectrumKiteDarkTheme" android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/action" android:layout_width="fill_parent" android:layout_height="48.0dip" android:fontFamily="@font/kite_medium" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" style="@style/Widget.Kite.Switch" />
+    <TextView android:theme="@style/SpectrumKiteDarkTheme" android:gravity="center_vertical" android:id="@id/audio_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:drawableRightCompat="@drawable/ki_chevron_right" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.Kite.Button" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/testCard" android:layout_width="fill_parent" android:layout_height="233.0dip" style="@style/Widget.Kite.Card"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

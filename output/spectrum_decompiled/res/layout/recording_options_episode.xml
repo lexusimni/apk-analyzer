@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/saveMaxTimeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <TextView android:textColor="@color/gray4" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/RecordingOptionsSave" style="@style/KiteTextViewBody" />
+        <Spinner android:gravity="left" android:id="@id/saveMaxTimeSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dropDownSelector="@drawable/recording_dropdown_selector" android:dropDownWidth="wrap_content" style="@style/KiteSpinner" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/startTimeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <TextView android:textColor="@color/gray4" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RecordingOptionsStartTime" style="@style/KiteTextViewBody" />
+        <Spinner android:layout_gravity="left" android:id="@id/startSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dropDownWidth="fill_parent" style="@style/KiteSpinner" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/stopTimeLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+        <TextView android:textColor="@color/gray4" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/RecordingOptionsStopTime" style="@style/KiteTextViewBody" />
+        <Spinner android:layout_gravity="left" android:id="@id/stopSpinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dropDownWidth="fill_parent" style="@style/KiteSpinner" />
+    </LinearLayout>
+</LinearLayout>

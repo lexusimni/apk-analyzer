@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/STVAAppTheme" android:orientation="vertical" android:id="@id/event_root_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mainContentContainerView" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <View android:id="@id/mainContentContainerBackgroundView" android:background="?darkBlue2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="?P1Medium" android:textColor="?lightBlue" android:gravity="center_horizontal" android:id="@id/primaryFallbackTextView" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/primaryImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+        <ProgressBar android:id="@id/eventProgressBar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:indeterminate="false" android:layout_alignParentBottom="true" style="@style/STVAAppTheme.PlayerProgressBar" />
+        <ImageView android:id="@id/unavailableMediaIcon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_margin="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@null" app:tint="@color/kite_light_blue_10" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?P4" android:textColor="@color/kite_yellow_10" android:id="@id/expiringTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/mainContentContainerView" android:textAllCaps="true" />
+    <RelativeLayout android:id="@id/secondaryContentContainerView" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/mainContentContainerView" android:layout_alignLeft="@id/mainContentContainerView" android:layout_alignRight="@id/mainContentContainerView">
+        <ImageView android:id="@id/secondaryImageView" android:layout_width="wrap_content" android:layout_height="@dimen/eventSecondaryContentHeight" android:layout_marginBottom="-10.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" />
+        <TextView android:textAppearance="?P1Medium" android:textColor="?lightBlue" android:id="@id/secondaryFallbackTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textAppearance="?P1" android:textColor="?white" android:ellipsize="end" android:id="@id/subtitleTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textAppearance="?P1" android:textColor="?gold" android:gravity="right" android:id="@id/tvodPriceTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    </RelativeLayout>
+</RelativeLayout>

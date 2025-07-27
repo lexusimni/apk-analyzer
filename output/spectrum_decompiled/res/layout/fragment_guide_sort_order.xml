@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:theme="@style/SpectrumKiteDarkTheme" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/channel_number_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settingsPreferencesGuideChannelSort" />
+    <RadioButton android:id="@id/network_name_sort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settingsPreferencesGuideNetworkSort" />
+</RadioGroup>

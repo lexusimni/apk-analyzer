@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/Theme.Kite.Dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/clearAllContainer" android:paddingLeft="16.0dip" android:paddingTop="4.0dip" android:paddingRight="16.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="4.0dip">
+        <com.charter.kite.KiteButtonBorderless android:textColor="@color/kite_gray_10" android:id="@id/clearAllButton" android:layout_width="0.0dip" android:layout_height="@dimen/minTouchHeight" android:text="@string/parentalControlsClearAll" android:layout_weight="12.0" android:textAlignment="viewStart" />
+        <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_light_blue_10" android:gravity="end" android:id="@id/blockedChannelsCount" android:layout_width="0.0dip" android:layout_height="18.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/channelsRecyclerView" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="@dimen/fav_list_scroll_width" android:layout_below="@id/clearAllContainer" style="@style/STVAAppKiteTheme.ListViewStyle" />
+    <com.twc.android.ui.utils.FastNavIndexView android:id="@id/fastNavIndexView" android:layout_width="@dimen/fav_list_scroll_width" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_below="@id/clearAllContainer" android:layout_alignParentRight="true" />
+    <Spinner android:theme="@style/STVAAppTheme" android:id="@id/fastNavIndexAccessibleView" android:visibility="gone" android:layout_width="@dimen/accessibleFastNavWidth" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:popupBackground="@color/darkBlue3" android:layout_alignParentRight="true" android:contentDescription="@string/favorites_accessibility_fast_nav_message" />
+</RelativeLayout>

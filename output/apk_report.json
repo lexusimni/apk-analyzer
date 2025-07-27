@@ -1,0 +1,74 @@
+{
+    "permissions": [
+        "android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.BLUETOOTH",
+        "com.google.android.gms.permission.AD_ID",
+        "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+        "android.permission.ACCESS_ADSERVICES_AD_ID",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.READ_PHONE_NUMBERS",
+        "android.permission.CHANGE_NETWORK_STATE",
+        "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.FOREGROUND_SERVICE",
+        "com.google.android.c2dm.permission.RECEIVE",
+        "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+        "com.TWCableTV.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "suspicious_permissions": [
+        "android.permission.ACCESS_FINE_LOCATION"
+    ],
+    "services": [
+        "com.google.firebase.components.ComponentDiscoveryService",
+        "com.google.firebase.sessions.SessionLifecycleService",
+        "com.spectrum.cm.analytics.NoDozeJobService",
+        "com.google.android.gms.cast.framework.ReconnectionService",
+        "com.google.android.gms.measurement.AppMeasurementService",
+        "com.google.android.gms.measurement.AppMeasurementJobService",
+        "androidx.work.impl.background.systemalarm.SystemAlarmService",
+        "androidx.work.impl.background.systemjob.SystemJobService",
+        "androidx.work.impl.foreground.SystemForegroundService",
+        "androidx.room.MultiInstanceInvalidationService",
+        "com.google.android.datatransport.runtime.backends.TransportBackendDiscovery",
+        "com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+    ],
+    "receivers": [
+        "com.twc.android.receiver.AppUpgradeReceiver",
+        "com.spectrum.cm.analytics.receivers.BootCompletedBroadcastReceiver",
+        "com.spectrum.cm.analytics.receivers.ShutdownReceiver",
+        "com.google.android.gms.cast.framework.media.MediaIntentReceiver",
+        "com.google.android.gms.measurement.AppMeasurementReceiver",
+        "androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver",
+        "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy",
+        "androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy",
+        "androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy",
+        "androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy",
+        "androidx.work.impl.background.systemalarm.RescheduleReceiver",
+        "androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver",
+        "androidx.work.impl.diagnostics.DiagnosticsReceiver",
+        "androidx.profileinstaller.ProfileInstallReceiver",
+        "com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+    ],
+    "exported_components": [
+        "service: androidx.work.impl.background.systemjob.SystemJobService",
+        "receiver: com.twc.android.receiver.AppUpgradeReceiver",
+        "receiver: com.spectrum.cm.analytics.receivers.BootCompletedBroadcastReceiver",
+        "receiver: com.spectrum.cm.analytics.receivers.ShutdownReceiver",
+        "receiver: androidx.work.impl.diagnostics.DiagnosticsReceiver",
+        "receiver: androidx.profileinstaller.ProfileInstallReceiver"
+    ],
+    "flagged_items": [
+        "suspicious permission: android.permission.ACCESS_FINE_LOCATION",
+        "service (no export flag): com.spectrum.cm.analytics.NoDozeJobService"
+    ],
+    "risk_score": 6,
+    "risk_level": "High"
+}

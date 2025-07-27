@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_search" android:id="@id/menu_search" android:orderInCategory="100" android:title="@string/search" android:voiceLanguageModel="free_form" app:actionViewClass="androidx.appcompat.widget.SearchView" app:showAsAction="always|collapseActionView" />
+    <item android:icon="@drawable/ic_settings" android:id="@id/menu_settings" android:orderInCategory="101" android:title="@string/settings" android:voiceLanguageModel="free_form" app:iconTint="#ffffffff" app:showAsAction="always" />
+    <item android:id="@id/menu_cast" android:orderInCategory="102" android:title="@string/cast" android:voiceLanguageModel="free_form" app:actionProviderClass="com.twc.android.ui.devicepicker.DevicePickerActionProvider" app:showAsAction="always" />
+</menu>

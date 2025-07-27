@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/search_list_selector" android:padding="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?H3" android:id="@id/resultName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/vodLockIcon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_toStartOf="@id/vodLockIcon" />
+    <View android:id="@id/vodLockIcon" android:background="@drawable/vod_lock" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="20.0dip" android:layout_toLeftOf="@id/resultType" android:layout_centerVertical="true" android:layout_toStartOf="@id/resultType" />
+    <TextView android:textAppearance="?H3" android:textColor="@color/search_result_type_selector" android:id="@id/resultType" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

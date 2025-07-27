@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/vod_show_card_banner_width" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout2" android:background="@color/darkBlue2" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="4:3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/unauthorize_banner" android:layout_width="@dimen/vodNetworkUnauthorizedBannerWidth" android:layout_height="@dimen/vodNetworkUnauthorizedBannerHeight" android:layout_marginBottom="7.0dip" app:tint="@color/kite_light_blue_10" />
+        <TextView android:gravity="center_horizontal" android:id="@id/textViewPlaceholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="0.0dip" android:paddingStart="7.0dip" android:paddingEnd="7.0dip" style="@style/P1" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

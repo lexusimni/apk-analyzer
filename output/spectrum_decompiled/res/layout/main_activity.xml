@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main_activity_app_frame" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/rootCoordinatorLayout" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/navigationContainer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <include layout="@layout/toolbar" />
+            <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/toolbar_height" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <ViewStub android:id="@id/developerSettings" android:visibility="gone" android:layout="@layout/devprefs_fab_layout" android:inflatedId="@id/developerSettings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="60.0dip" android:contentDescription="@string/developer_preferences" app:layout_constraintBottom_toTopOf="@id/navigationContainer" app:layout_constraintStart_toStartOf="parent" />
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/navigationContainer" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0" layout="@layout/cast_lazy" />
+        <include android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/navigationContainer" app:layout_constraintTop_toTopOf="parent" layout="@layout/mini_player_fragment" />
+        <androidx.fragment.app.FragmentContainerView android:id="@id/navigationContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main_activity_fullscreen_frame" android:background="@color/kite_black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no">
+        <FrameLayout android:id="@id/fullscreen_video_frame" android:background="@color/kite_black" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/fullscreen_compose_player_overlay" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/full_screen_compose_recent_channels_overlay" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

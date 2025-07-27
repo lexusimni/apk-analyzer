@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="@color/kite_control_highlight_selector" android:radius="@dimen/ki_control_ripple_radius" />
+    </item>
+    <item android:gravity="center_vertical" android:height="@dimen/ki_control_focus_ring_size" android:width="@dimen/ki_control_focus_ring_size" android:left="@dimen/ki_control_focus_ring_inset">
+        <selector>
+            <item android:state_focused="true" android:drawable="@drawable/kite_control_focus_ring" />
+        </selector>
+    </item>
+</layer-list>

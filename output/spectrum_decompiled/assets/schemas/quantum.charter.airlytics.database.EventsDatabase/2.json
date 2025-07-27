@@ -1,0 +1,84 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "a32a9d2b8f15850b538547f4a5bec89a",
+    "entities": [
+      {
+        "tableName": "Events",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`session_id` TEXT NOT NULL, `event_name` TEXT NOT NULL, `core_version` TEXT NOT NULL, `app_name` TEXT NOT NULL, `encoded_event_byte_array` BLOB, `initial_size` INTEGER, `timestamp` INTEGER NOT NULL, `sequence_number` INTEGER NOT NULL, `priority` INTEGER NOT NULL, PRIMARY KEY(`timestamp`, `sequence_number`, `priority`))",
+        "fields": [
+          {
+            "fieldPath": "sessionId",
+            "columnName": "session_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventName",
+            "columnName": "event_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coreVersion",
+            "columnName": "core_version",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "appName",
+            "columnName": "app_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "encodedEventByteArray",
+            "columnName": "encoded_event_byte_array",
+            "affinity": "BLOB",
+            "notNull": false
+          },
+          {
+            "fieldPath": "initialEventSize",
+            "columnName": "initial_size",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "eventPrimaryInfo.timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventPrimaryInfo.sequenceNumber",
+            "columnName": "sequence_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventPrimaryInfo.priority",
+            "columnName": "priority",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "timestamp",
+            "sequence_number",
+            "priority"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a32a9d2b8f15850b538547f4a5bec89a')"
+    ]
+  }
+}

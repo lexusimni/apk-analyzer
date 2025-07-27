@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.rdvr2.Rdvr2NetworkAttribution android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.twc.android.ui.utils.UrlImageView android:layout_gravity="center_vertical" android:id="@id/rdvrNetworkLogo" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="90.0dip">
+        <TextView android:textAppearance="?H3" android:textColor="@color/dvr_secondary_text_selector" android:layout_gravity="right" android:id="@id/rdvrChannelNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?H3" android:textColor="@color/dvr_secondary_text_selector" android:layout_gravity="right" android:id="@id/rdvrCallLetters" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.twc.android.ui.rdvr2.Rdvr2NetworkAttribution>

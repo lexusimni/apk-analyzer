@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/favRecyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/fav_list_scroll_width" style="@style/STVAAppKiteTheme.ListViewStyle" />
+    <com.twc.android.ui.utils.FastNavIndexView android:id="@id/fastNavIndexView" android:layout_width="@dimen/fav_list_scroll_width" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+    <Spinner android:id="@id/fastNavIndexAccessibleView" android:visibility="gone" android:layout_width="@dimen/accessibleFastNavWidth" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:popupBackground="@color/darkBlue3" android:layout_alignParentRight="true" android:contentDescription="@string/favorites_accessibility_fast_nav_message" />
+</RelativeLayout>

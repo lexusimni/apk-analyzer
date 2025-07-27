@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DevPrefEventGatewayServiceCallReportingLevel">
+        <item>@string/DevPrefActivityConfig</item>
+        <item>@string/DevPrefEventGatewayServiceCallReportingLevelAll</item>
+        <item>@string/DevPrefEventGatewayServiceCallReportingLevelFailuresOnly</item>
+        <item>@string/DevPrefEventGatewayServiceCallReportingLevelNone</item>
+    </string-array>
+    <string-array name="DevPrefPlayerType">
+        <item>@string/DevPrefExolayerType</item>
+    </string-array>
+    <string-array name="DevPrefRootPI">
+        <item>@string/DevPrefRootPI_prod</item>
+        <item>@string/DevPrefRootPI_pi_sit_a</item>
+        <item>@string/DevPrefRootPI_pi_sit_b</item>
+    </string-array>
+    <string-array name="DevPrefTDCSUrl">
+        <item>@string/DevPrefRootPI_prod</item>
+        <item>@string/DevPrefRootPI_pi_sit_b</item>
+    </string-array>
+    <string-array name="DevPrefVenonaUrl">
+        <item>@string/venona_endpoint</item>
+        <item>@string/venona_endpoint_prod</item>
+    </string-array>
+    <string-array name="DevPrefVideoAbrPolicy">
+        <item>@string/DevPrefVideoAbrPolicyModerate</item>
+        <item>@string/DevPrefVideoAbrPolicyConservative</item>
+        <item>@string/DevPrefVideoAbrPolicyAggressive</item>
+    </string-array>
+    <string-array name="PreferenceBooleanWithConfigDefault">
+        <item>@string/DevPrefActivityConfig</item>
+        <item>@string/DevPrefBooleanFalse</item>
+        <item>@string/DevPrefBooleanTrue</item>
+    </string-array>
+    <array name="cast_expanded_controller_default_control_buttons">
+        <item>@id/cast_button_type_closed_caption</item>
+        <item>@id/cast_button_type_skip_previous</item>
+        <item>@id/cast_button_type_skip_next</item>
+        <item>@id/cast_button_type_mute_toggle</item>
+    </array>
+    <array name="cast_mini_controller_default_control_buttons">
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_play_pause_toggle</item>
+    </array>
+    <string-array name="cdvdr_stop_time_array">
+        <item>Original stop time</item>
+        <item>3 minutes late</item>
+        <item>5 minutes late</item>
+        <item>30 minutes late</item>
+        <item>1 hour late</item>
+        <item>2 hours late</item>
+    </string-array>
+    <integer-array name="cdvdr_stop_time_values_array">
+        <item>0</item>
+        <item>3</item>
+        <item>5</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </integer-array>
+    <string-array name="cdvr_record_array">
+        <item>New only</item>
+        <item>All episodes</item>
+    </string-array>
+    <string-array name="cdvr_start_time_array">
+        <item>Original start time</item>
+        <item>1 minute early</item>
+        <item>3 minutes early</item>
+        <item>5 minutes early</item>
+    </string-array>
+    <integer-array name="cdvr_start_time_values_array">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+    </integer-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="rdvr_airtime_array">
+        <item>All showings</item>
+        <item>Within Selected Time Slots</item>
+    </string-array>
+    <string-array name="rdvr_keep_until_array">
+        <item>Until Space is Needed</item>
+        <item>Do Not Delete</item>
+    </string-array>
+    <string-array name="rdvr_record_array">
+        <item>New Episodes</item>
+        <item>All episodes</item>
+    </string-array>
+    <string-array name="rdvr_save_atmost_array">
+        <item>1 Episode</item>
+        <item>3 Episodes</item>
+        <item>5 Episodes</item>
+        <item>7 Episodes</item>
+        <item>All Episodes</item>
+    </string-array>
+    <integer-array name="rdvr_save_atmost_values_array">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>-1</item>
+    </integer-array>
+    <string-array name="rdvr_start_time_array">
+        <item>Original Start Time</item>
+        <item>1 minute earlier</item>
+        <item>2 minutes earlier</item>
+        <item>3 minutes earlier</item>
+        <item>4 minutes earlier</item>
+        <item>5 minutes earlier</item>
+        <item>15 minutes earlier</item>
+        <item>30 minutes earlier</item>
+        <item>1 minute later</item>
+        <item>2 minutes later</item>
+        <item>3 minutes later</item>
+        <item>4 minutes later</item>
+        <item>5 minutes later</item>
+        <item>15 minutes later</item>
+    </string-array>
+    <integer-array name="rdvr_start_time_values_array">
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>-15</item>
+        <item>-30</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>15</item>
+    </integer-array>
+    <string-array name="rdvr_stop_time_array">
+        <item>Original Stop Time</item>
+        <item>1 minute later</item>
+        <item>2 minutes later</item>
+        <item>3 minutes later</item>
+        <item>4 minutes later</item>
+        <item>5 minutes later</item>
+        <item>15 minutes later</item>
+        <item>30 minutes later</item>
+        <item>60 minutes later</item>
+        <item>120 minutes later</item>
+        <item>1 minute earlier</item>
+        <item>2 minutes earlier</item>
+        <item>3 minutes earlier</item>
+        <item>4 minutes earlier</item>
+        <item>5 minutes earlier</item>
+        <item>15 minutes earlier</item>
+    </string-array>
+    <integer-array name="rdvr_stop_time_values_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-3</item>
+        <item>-4</item>
+        <item>-5</item>
+        <item>-15</item>
+    </integer-array>
+</resources>

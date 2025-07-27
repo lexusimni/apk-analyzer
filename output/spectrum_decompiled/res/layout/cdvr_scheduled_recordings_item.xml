@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?P1" android:textColor="?lightBlue" android:ellipsize="end" android:id="@id/scheduledDate" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:maxHeight="14.0dip" android:minHeight="14.0dip" android:singleLine="true" />
+    <RelativeLayout android:id="@id/mainLayout" android:background="@color/darkBlue2" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/titleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="25.0dip" android:layout_toLeftOf="@id/scheduledOptions">
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?H4" android:textColor="?white" android:ellipsize="end" android:id="@id/scheduledTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?P1" android:textColor="?lightBlue" android:ellipsize="end" android:id="@id/scheduledTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/scheduledTitle" />
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/scheduledOptions" android:paddingLeft="20.0dip" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="@dimen/minTouchWidth" android:layout_height="@dimen/minTouchHeight" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

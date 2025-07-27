@@ -1,0 +1,1210 @@
+{
+  "errorCodes": [{
+    "name": "CDVR_ERROR_RECORDING_FAIL",
+    "header": "Unable to Schedule Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1000",
+    "full_customer_message": "We’re sorry, we were unable to schedule your recording. Please try again later.\nReference Code:"
+  }, {
+    "name": "DVR Management Unavailable",
+    "header": "DVR Management Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1008",
+    "full_customer_message": "No Spectrum receivers are associated with your account.  If you believe you've received this message in error, please visit twc.com/tvapp."
+  }, {
+    "name": "Play Channel Failure",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVS-1001",
+    "full_customer_message": "We're sorry, this channel is temporarily unavailable. Please try again later."
+  }, {
+    "name": "Cancel Recording Failed",
+    "header": "Unable to Cancel Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1003",
+    "full_customer_message": "We're sorry, we were unable to cancel some recordings. Please try again later."
+  }, {
+    "name": "No Favorite channels are available.",
+    "header": "Connect to Spectrum Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFV-1002",
+    "full_customer_message": "Due to programming restrictions, your favorites are unavailable. For full access, connect to your home Spectrum Internet service."
+  }, {
+    "name": "Oauth RC_CONSUMER_PATH_UNAUTHORIZED",
+    "header": "Please Try Again",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-9001",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Screencast not supported",
+    "header": "Mirroring Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1100",
+    "full_customer_message": "To continue watching, connect to your home Spectrum Internet or disable mirroring.\nReference Code:"
+  }, {
+    "name": "Collections Load Failure",
+    "header": "Collections Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DML-1002",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "Program Info not available",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DGU-1006",
+    "full_customer_message": "Program info unavailable."
+  }, {
+    "name": "Generic unknown error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1039",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Generic unknown error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1039",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Cellular - some channels available",
+    "header": "Connect to Spectrum Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1008",
+    "full_customer_message": "Due to programming restrictions, some channels are unavailable. For full access, connect to your home Spectrum Internet service."
+  }, {
+    "name": "External Display Not Supported",
+    "header": "Mirroring Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1000",
+    "full_customer_message": "To continue watching, disconnect your device from any external displays.\nReference Code:"
+  }, {
+    "name": "Multiple Recordings Already Canceled",
+    "header": "Already Deleted",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-2404",
+    "full_customer_message": "You've already deleted these recordings. It may take a few minutes for the app to update."
+  }, {
+    "name": "Network OOH Unavailable",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1003",
+    "full_customer_message": "To watch this channel, please connect to your home Spectrum Internet service.\nReference Code:"
+  }, {
+    "name": "VOD Title Not Entitled",
+    "header": "Upgrade to Watch",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DEN-1000",
+    "full_customer_message": "This program isn't included in your subscription. To upgrade and get this program, please call us at (855) 757-7328."
+  }, {
+    "name": "Companion VOD Failure",
+    "header": "Unable to Play",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1001",
+    "full_customer_message": "We're sorry, we were unable to play this recording on your TV. Please try again later."
+  }, {
+    "name": "Droid Available",
+    "header": null,
+    "status": "active",
+    "altText": "Some channels are currently available. For full access, connect to your Spectrum Internet service.",
+    "full_error_code": "DLC-1004",
+    "full_customer_message": "Some channels (including %s) are currently available. For full access, connect to your home Spectrum Internet service."
+  }, {
+    "name": "Stream Buffer Timeout",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1999",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "Cancel Recordings Error",
+    "header": "Unable To Cancel Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1476",
+    "full_customer_message": "We're sorry, this show is unavailable. Please try again later."
+  }, {
+    "name": "Rooted Device Unsupported",
+    "header": "Device Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1009",
+    "full_customer_message": "We're sorry, the app is unavailable on this device. Please try another device."
+  }, {
+    "name": "Generic Error",
+    "header": "Service Temporarily Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DGE-1001",
+    "full_customer_message": "We're sorry, we're having trouble loading Spectrum TV. Please wait a few moments and try again.\nReference Code:"
+  }, {
+    "name": "Live TV Unavailable OOH",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1011",
+    "full_customer_message": "We're sorry, live TV is unavailable. For full access, connect to your Spectrum Internet service."
+  }, {
+    "name": "DLC Required",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1012",
+    "full_customer_message": "To watch this channel, please ensure that your location services are active and that your device isn't in low power or airplane mode. Reference Code:"
+  }, {
+    "name": "Empty VOD Category",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DOD-1001",
+    "full_customer_message": "On Demand Programming is unavailable in %s."
+  }, {
+    "name": "HDCPOutputRestricted",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-3036",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later. \nReference Code:"
+  }, {
+    "name": "Live TV Unavailable",
+    "header": "Upgrade to Watch",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DUC-1002",
+    "full_customer_message": "Live TV is not included in your subscription. To upgrade and get live TV, please call us at (866) 892-1235."
+  }, {
+    "name": "Frame Drop",
+    "header": "Unable to Continue Streaming",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1024",
+    "full_customer_message": "We're sorry, something didn't work quite right. If the issue continues, restart your device and try again.\nReference Code:"
+  }, {
+    "name": "DRM Session Failure",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "The episode, series, or movie is not currently available. Ask the user to try a different asset, or try again later.",
+    "full_error_code": "DVP-1025",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later."
+  }, {
+    "name": "On Demand Unavailable",
+    "header": "On Demand Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DUC-1000",
+    "full_customer_message": "Use of this app requires a Spectrum TV subscription."
+  }, {
+    "name": "Favorites Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFV-1001",
+    "full_customer_message": "We're sorry, we're unable to show your Favorites list. Please try again later.\nReference Code:"
+  }, {
+    "name": "Title Not Available",
+    "header": "Program Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DGU-1002",
+    "full_customer_message": "This program is unavailable on {{SERVICE}}."
+  }, {
+    "name": "Free Preview Expiration",
+    "header": "Thanks for Watching",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DBF-1000",
+    "full_customer_message": "Your free trial of Spectrum TV Stream ended. Call us at (855) 757-7328 to subscribe. \n\nReference Code:"
+  }, {
+    "name": "Open Date Settings Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1006",
+    "full_customer_message": "Unable to open date settings."
+  }, {
+    "name": "Auto Access Denied",
+    "header": "Unable to Sign In",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1027",
+    "full_customer_message": "We're sorry, we couldn't sign you in. Please make sure you're connected to your campus WiFi network, and try again.\n\nReference Code:"
+  }, {
+    "name": "Delete Recordings Error",
+    "header": "Unable to Delete Recordings",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-2405",
+    "full_customer_message": "We're sorry, we were unable to delete your recordings. Please try again later."
+  }, {
+    "name": "OOH Wifi Available",
+    "header": "Connect to Spectrum Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1005",
+    "full_customer_message": "Due to programming restrictions, some channels are unavailable. For full access, connect to your home Spectrum Internet service.\nReference Code:"
+  }, {
+    "name": "Recording Failed",
+    "header": "Unable to Schedule Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1502",
+    "full_customer_message": "We're sorry, we were unable to schedule this recording. Please try again later."
+  }, {
+    "name": "Unable to connect to STB",
+    "header": "DVR Management Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1021",
+    "full_customer_message": "Unable to connect to your Spectrum receiver."
+  }, {
+    "name": "OOH Channel is not available (Wifi)",
+    "header": "Connect to Spectrum Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1007",
+    "full_customer_message": "%s is available only when connected to your home Spectrum Internet service. Please choose from available live or On Demand programming."
+  }, {
+    "name": "Stream URL Fetch Failure",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "",
+    "full_error_code": "DLP-1035",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later.\nReference Code:"
+  }, {
+    "name": "Stream URL Fetch Failure",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "",
+    "full_error_code": "DDP-1035",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later.\nReference Code:"
+  },  {
+    "name": "Stream URL Fetch Failure",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "",
+    "full_error_code": "DRP-1035",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later.\nReference Code:"
+  }, {
+    "name": "Recording in progress",
+    "header": "Unable to Delete Recording.",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1015",
+    "full_customer_message": "Playback of this recording may be in progress. Try again later."
+  }, {
+    "name": "Unable to Update Series Priority",
+    "header": "Unable to Update Series Priority",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1013",
+    "full_customer_message": "We're sorry, we were unable to update series priority. Please try again later."
+  }, {
+    "name": "RC_AUTO_ACCESS_REJECTED",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1033",
+    "full_customer_message": ""
+  }, {
+    "name": "STB Tune Failure",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1000",
+    "full_customer_message": "We're sorry, we're unable to tune your TV to this channel. Please try again later."
+  }, {
+    "name": "Already Scheduled 439",
+    "header": "Already Scheduled",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1439",
+    "full_customer_message": "You've already scheduled this recording. It may take a few minutes for the app to update."
+  }, {
+    "name": "OOH Cellular Network Available",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1009",
+    "full_customer_message": "Some channels (including %s) are currently available. For full access, connect to your Spectrum Internet service."
+  }, {
+    "name": "DRM Session Failure - CDVR Player",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "The episode, series, or movie is not currently available. Ask the user to try a different asset, or try again later.",
+    "full_error_code": "DRP-1025",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later.\nReference Code:"
+  }, {
+    "name": "Network Blocked",
+    "header": "Channel Blocked",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DPC-1001",
+    "full_customer_message": "This channel is blocked by Parental Controls."
+  }, {
+    "name": "Internal Provider Error",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1100",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "No Channel Info",
+    "header": "No Channel Info",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCH-1001",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Recording Conflict",
+    "header": null,
+    "status": "active",
+    "altText": "We found a recording conflict.\\nTo resolve the conflict, please select a recording.",
+    "full_error_code": "DCM-1024",
+    "full_customer_message": "To record %s, please review your scheduled recordings and select %s to keep. You can record up to %s shows at the same time. \\n"
+  }, {
+    "name": "mixed stb",
+    "header": "DVR Info Unavailable on This Device",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DRDV-1000",
+    "full_customer_message": "Please view and manage your recordings from your Spectrum receiver.\nReference Code:\n"
+  }, {
+    "name": "Failure Retrieving API Config.",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCF-2004",
+    "full_customer_message": ""
+  }, {
+    "name": "Watchlist Add Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DWL-1000",
+    "full_customer_message": "We're sorry, we were unable to add this program to your Watchlist. Please try again later."
+  }, {
+    "name": "No Guide",
+    "header": "Guide Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DGU-1000",
+    "full_customer_message": "We're sorry, we're unable to load Spectrum Guide. Please try again later.\nReference Code:"
+  }, {
+    "name": "Recording List Unavailable",
+    "header": "Recording List Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1009",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Favorite Add error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFV-1003",
+    "full_customer_message": "We're sorry, we were unable to favorite this channel. Please try again."
+  }, {
+    "name": "DRM Session Failure",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "The episode, series, or movie is not currently available. Ask the user to try a different asset, or try again later.",
+    "full_error_code": "DLP-1025",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later."
+  }, {
+    "name": "Series Unavailable",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1014",
+    "full_customer_message": "Series List Unavailable"
+  }, {
+    "name": "Watchlist Remove Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DWL-1001",
+    "full_customer_message": "We're sorry, we were unable to remove this program from your Watchlist. Please try again later."
+  }, {
+    "name": "Username Locked",
+    "header": "Please Try Again Later",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1025",
+    "full_customer_message": "You've exceeded the maximum number of sign-in attempts. Please try again in 15 minutes."
+  }, {
+    "name": "Player Error",
+    "header": "Unable to Continue Streaming",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1024",
+    "full_customer_message": "We're sorry, something didn't work quite right. If the issue continues, restart your device and try again later.\nReference Code:"
+  }, {
+    "name": "DRM URL Unavailable",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVS-1004",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please wait a few moments and try again."
+  }, {
+    "name": "Channel Unavailable On DVR",
+    "header": "Unable to Schedule Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1474",
+    "full_customer_message": "This channel is currently unavailable on this DVR."
+  }, {
+    "name": "No Network Schedule",
+    "header": "Unable to Load Schedule",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DGU-1001",
+    "full_customer_message": "We're sorry, we're unable to load this channel's schedule. Please try again later.\nReference Code:"
+  }, {
+    "name": "Asset Unavailable",
+    "header": "Program Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DDP-1010",
+    "full_customer_message": "%s is unavailable. Please try again later."
+  }, {
+    "name": "Feature Unavailable",
+    "header": "Feature Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DEN-1001",
+    "full_customer_message": "The account holder has either blocked access to this feature or does not subscribe to an eligible video package."
+  }, {
+    "name": "DVR Unavailable",
+    "header": "DVR Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1020",
+    "full_customer_message": "It appears your DVR service has been turned off. Please call us at (855) 757-7328 to turn it on."
+  }, {
+    "name": "Player Error",
+    "header": "Unable to Continue Streaming",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1024",
+    "full_customer_message": "We're sorry, something didn't work quite right. If the issue continues, restart your device and try again later.\nReference Code:"
+  }, {
+    "name": "Update Recording Failure",
+    "header": "Unable to Update Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1017",
+    "full_customer_message": "We're sorry, we were unable to update this recording. Please try again later."
+  }, {
+    "name": "Application Crash",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCR-1000",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "Retrieve Conflicts Failure",
+    "header": "Unable to Retrieve Conflicts",
+    "status": "active",
+    "altText": "We're sorry, we were unable to retrieve recording conflicts. Please try again later.",
+    "full_error_code": "DCM-1019",
+    "full_customer_message": "We're sorry, we were unable to retrieve recording conflicts. Please try again later."
+  }, {
+    "name": "Resolve Conflicts Failure",
+    "header": "Unable to Resolve Conflicts",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1016",
+    "full_customer_message": "We're sorry, we were unable to resolve recording conflicts. Please try again later."
+  }, {
+    "name": "Generic Blocked Title",
+    "header": "Program Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DPC-1002",
+    "full_customer_message": "This show is blocked by Parental Controls."
+  }, {
+    "name": "DVR Not supported",
+    "header": "%s Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1023",
+    "full_customer_message": "We're sorry, your Spectrum receiver is unsupported for use with %s."
+  }, {
+    "name": "Tune VOD Failure",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1602",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "Out Of Market Unavailable",
+    "header": "Connect to Spectrum Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1041",
+    "full_customer_message": "Due to programming restrictions, some channels are unavailable. For full access, connect to your home Spectrum Internet service.\nReference Code:"
+  }, {
+    "name": "Channel Not Found",
+    "header": "We're sorry, we're unable to find this channel.",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCH-1000",
+    "full_customer_message": "%s %s"
+  }, {
+    "name": "Delete Recordings Error",
+    "header": "Unable to Delete Recordings",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1012",
+    "full_customer_message": "We're sorry, we were unable to delete your recordings. Please try again later."
+  }, {
+    "name": "Unknown Connection Status",
+    "header": "Please Restart the App",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1011",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please restart the app and try again."
+  }, {
+    "name": "Fire TV devices unsupported",
+    "header": "Device Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1001",
+    "full_customer_message": "We're sorry, Spectrum TV is unsupported on this device.\nReference Code:"
+  }, {
+    "name": "Wayfarer Error",
+    "header": "Customer Sign-In Error",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1005",
+    "full_customer_message": "Please set customer wayfarer cookie in developer preferences."
+  }, {
+    "name": "DVR Already Canceled 404",
+    "header": "Already Canceled",
+    "status": "active",
+    "altText": "This recording has already been canceled. Check your DVR for your latest scheduled recordings.",
+    "full_error_code": "DCM-1404",
+    "full_customer_message": "You've already canceled this recording. It may take a few minutes for the app to update."
+  }, {
+    "name": "Failed Unfavorite",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFV-1004",
+    "full_customer_message": "We're sorry, we were unable to remove this channel from your favorites. Please try again."
+  }, {
+    "name": "Auto Access Failure",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1127",
+    "full_customer_message": "We're sorry, we're unable to sign you in right now. Please make sure you're connected to your In-Home WiFi and try again."
+  }, {
+    "name": "Video Idle Pause",
+    "header": "Playback Stopped",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1000",
+    "full_customer_message": "Playback was stopped due to inactivity. Tap OK to resume."
+  }, {
+    "name": "Auto Access Failure",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1028",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Update the App",
+    "header": "Force Upgrade",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCF-1000",
+    "full_customer_message": "To continue using this app, please update to the current version."
+  }, {
+    "name": "STVA Unavailable for Spectrum Business",
+    "header": "Available Soon for Business Customers",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DUC-1200",
+    "full_customer_message": "We’re sorry, the SpectrumTV app is currently unavailable for business customers. For now, please continue to watch TV using your Spectrum Receiver.\n\nReference Code:"
+  }, {
+    "name": "Stream URL Fetch Failure",
+    "header": "Service Unavailable",
+    "status": "active",
+    "altText": "The episode, series, or movie is not currently available. Ask the user to try a different asset, or try again later.",
+    "full_error_code": "DVP-1035",
+    "full_customer_message": "We're sorry, %s is currently unavailable. Please try again later."
+  }, {
+    "name": "CDVR_ERROR_DELETE_FAIL",
+    "header": "Unable to Delete Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1004",
+    "full_customer_message": "We’re sorry, we were unable to delete your recording. Please try again later."
+  }, {
+    "name": "No Internet Connection",
+    "header": "Check Internet Connection",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1004",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please check your internet connection and try again.\nReference Code:"
+  }, {
+    "name": "Firmware assigned with test key",
+    "header": "Device Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1012",
+    "full_customer_message": "We're sorry, the app is unavailable on this device. Please try another device."
+  }, {
+    "name": "Concurrent Stream Limit",
+    "header": "Maximum Video Streams",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVS-1005",
+    "full_customer_message": "You’ve exceeded the maximum number of video streams. To watch this program, stop playback on one of your other devices and then try again.\nReference Code:"
+  },{
+    "name": "No Video Only Audio",
+    "header": "Video Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVS-1006",
+    "full_customer_message": "We’re sorry, something isn’t working quite right. Please try again."
+  }, {
+    "name": "DVR Action not supported",
+    "header": "Not Supported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1011",
+    "full_customer_message": "This DVR doesn\\'t support %1$s."
+  }, {
+    "name": "VOD Blocked",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DPC-1000",
+    "full_customer_message": "%s is blocked by parental controls."
+  }, {
+    "name": "Generic Blocked DRM Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1037",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Generic Oauth Error",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-9000",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Info Unavailable",
+    "header": "Program Info Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1018",
+    "full_customer_message": "We're sorry, program info is unavailable. Please try again later."
+  }, {
+    "name": "Stream Service Failed",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVS-1003",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "TVOD Unavailable",
+    "header": "Feature Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DUC-1006",
+    "full_customer_message": "We're sorry, this feature is currently unavailable."
+  }, {
+    "name": "Chromecast Connection Failure",
+    "header": "Unable to Connect",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1101",
+    "full_customer_message": "Unable to join this Chromecast session. Please check your connection and try again.\n\nReference Code:"
+  }, {
+    "name": "Guide Unavailable",
+    "header": "Guide Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DGU-1005",
+    "full_customer_message": "Guide is unavailable at the moment. Please try again later.\nReference Code:"
+  }, {
+    "name": "Search - No Results",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DSE-1000",
+    "full_customer_message": "We're sorry, we were unable to get any search results."
+  }, {
+    "name": "OOH Wifi Channel is Available",
+    "header": "Connect to Spectrum Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1006",
+    "full_customer_message": "Due to programming restrictions, some channels are unavailable. For full access, connect to your home Spectrum Internet service.\nReference Code:"
+  }, {
+    "name": "VOD not available Out Of Home",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DOD-1003",
+    "full_customer_message": "To watch VOD, you must be connected to your home network"
+  }, {
+    "name": "Unsupported On Demand Root Element",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DOD-1000",
+    "full_customer_message": "We're sorry, something didn't work quite right."
+  }, {
+    "name": "OOH Cellular - Network not available",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1010",
+    "full_customer_message": "%s is available only when connected to your home Spectrum Internet service. Please choose from available live or On Demand programming."
+  }, {
+    "name": "Live TV Unable - OS",
+    "header": "Live TV Is Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1010",
+    "full_customer_message": "Android version 4 or higher is required to watch live TV."
+  }, {
+    "name": "Delete Recordings Error",
+    "header": "Unable to Delete",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-2406",
+    "full_customer_message": "We're sorry, we're unable to delete this recording. Please try again later."
+  }, {
+    "name": "On Demand Unavailable - OS",
+    "header": "On Demand Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1007",
+    "full_customer_message": "Android version 4 or higher is required to watch On Demand programming."
+  }, {
+    "name": "Unable to Initialize Decoder",
+    "header": "Unable to Play",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1026",
+    "full_customer_message": "We're sorry, something didn't work quite right.  Please try restarting your device.\n\nReference Code:"
+  }, {
+    "name": "Schedule Recording Failed 400",
+    "header": "Unable to Schedule Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1400",
+    "full_customer_message": "We're sorry, we were unable to schedule a recording of %s. Please try again later."
+  }, {
+    "name": "STB Offline",
+    "header": "%s Offline",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1002",
+    "full_customer_message": "It looks like your DVR is offline. Please make sure your DVR is turned on and connected."
+  }, {
+    "name": "Pin Creation Error",
+    "header": "Unable to Create PIN",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DPC-1003",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please check your internet connection and restart the app before trying again."
+  }, {
+    "name": "Player Error",
+    "header": "Unable to Continue Streaming",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1024",
+    "full_customer_message": "We're sorry, something didn't work quite right. If the issue continues, restart your device and try again later.\nReference Code:"
+  }, {
+    "name": "Login Blacklist",
+    "header": "Reset Your Password",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1024",
+    "full_customer_message": "We're sorry, we're unable to sign you in using your existing info. To sign in, please reset your password at www.spectrum.net/forgot. For more help, you can call us at (855) 757-7328."
+  }, {
+    "name": "SBI Unavailable",
+    "header": "Connect to Spectrum Business Internet",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-9101",
+    "full_customer_message": "To watch Spectrum TV, please connect to your Spectrum Business Internet service.\nReference Code:"
+  }, {
+    "name": "OOH Unavailable",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1000",
+    "full_customer_message": "Available only when connected to your home Spectrum Internet service"
+  }, {
+    "name": "CDVR_ERROR_CANCEL_RECORDING_FAIL",
+    "header": "Unable to Cancel Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1005",
+    "full_customer_message": "We’re sorry, we were unable to cancel your scheduled recording. Please try again later."
+  }, {
+    "name": "CDVR_ERROR_RECORDING_LIST_UNAVAILABLE",
+    "header": "Recordings Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1006",
+    "full_customer_message": "We're sorry, we're unable to display your recordings. Please try again later. \nReference Code:"
+  }, {
+    "name": "Comercial Customer",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DUC-1105",
+    "full_customer_message": "We're sorry, this app is unavailable for business customers."
+  }, {
+    "name": "Invalid Credentials",
+    "header": "Unable to Sign In",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1010",
+    "full_customer_message": "The info you entered doesn't match our records. Please try again. \nReference Code:"
+  }, {
+    "name": "Offline STB",
+    "header": "Spectrum Receiver Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-999",
+    "full_customer_message": "We’re sorry, we’re unable to connect to your Spectrum Receiver. Please make sure the device is powered on and try again. To verify or change the receiver you’re using, visit Settings > Devices."
+  }, {
+    "name": "VPN Not Allowed",
+    "header": "VPN Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1002",
+    "full_customer_message": "This app doesn't support VPN. Please turn off VPN in Settings, and then restart the app."
+  }, {
+    "name": "OOH Unavailable",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1036",
+    "full_customer_message": "To watch this channel, please connect to your home Spectrum Internet service.\nReference Code:"
+  }, {
+    "name": "System Time Error",
+    "header": "System Time Error",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCF-1002",
+    "full_customer_message": "The time or time zone on this device is incorrect. \\n\\nDevice time : %1$s \\n\\nServer time : %2$s \\n\\n Please correct the time or time zone in device settings, and then restart {{SERVICE}}."
+  }, {
+    "name": "Sign Out Failure",
+    "header": "Unable to Sign Out",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1032",
+    "full_customer_message": "We're sorry, we were unable to sign you out. Please try again."
+  }, {
+    "name": "Debug Mode Unsupported",
+    "header": "Mode Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1008",
+    "full_customer_message": "Please turn off USB debugging in developer settings and then restart the app.\nReference Code:"
+  }, {
+    "name": "Watchlist Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DWL-1003",
+    "full_customer_message": "We're sorry, %s is unavailable. Please try again.\nReference Code:"
+  }, {
+    "name": "CDVR Space Full",
+    "header": "Unable to Schedule Recording",
+    "status": "active",
+    "altText": "",
+    "full_error_code": "DCD-1001",
+    "full_customer_message": "You're out of storage space. To record this title, please delete one or more of your recordings.\nReference Code:"
+  }, {
+    "name": "Not Available outside US",
+    "header": "Programming Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1038",
+    "full_customer_message": "Live TV and On Demand programming is available only in the U.S. and its territories."
+  }, {
+    "name": "Not Available outside US",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1002",
+    "full_customer_message": "Spectrum TV is available only in the U.S. and its territories.\n\nReference Code:"
+  }, {
+    "name": "Stream Buffer Timeout",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1999",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "Unable to Clear History",
+    "header": "Unable to Clear History",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVH-1000",
+    "full_customer_message": "We're sorry, we were unable to clear your history. Please try again later."
+  }, {
+    "name": "Not included in subscription",
+    "header": "Upgrade to Watch",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1040",
+    "full_customer_message": "Your subscription package doesn't include this channel. To upgrade, call us at (866) 892-1235.\nReference Code: DLP-1040"
+  }, {
+    "name": "DVR_PREMATURE_EDIT",
+    "header": "Unable to Save",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DDVR-2008",
+    "full_customer_message": "We're sorry, we're still saving your previous changes. Please try again later."
+  }, {
+    "name": "Tips Unavailable",
+    "header": "",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCF-1001",
+    "full_customer_message": "Tips Unavailable"
+  }, {
+    "name": "Generic Blocked DRM Error",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1037",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Video Buffering Timeout",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DDP-1005",
+    "full_customer_message": ""
+  }, {
+    "name": "Unable to Set Up",
+    "header": "Unable to Set Up",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DEA-1000",
+    "full_customer_message": "We're sorry, we were unable to set up the Emergency Alert System. Please try again later."
+  }, {
+    "name": "Subscription Required",
+    "header": "Call to Subscribe",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1012",
+    "full_customer_message": "To watch Spectrum TV,  call us at (888) 892-5590 to subscribe.\nReference Code:"
+  }, {
+    "name": "Not included in subscription",
+    "header": "Upgrade to Watch",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-1040",
+    "full_customer_message": "Your subscription package doesn't include this channel. To upgrade, call us at (866) 892-1235.\nReference Code: DVP-1040\n\n"
+  }, {
+    "name": "No DVRs",
+    "header": "DVR Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1005",
+    "full_customer_message": "We're sorry, there are no DVRs associated with this account."
+  }, {
+    "name": "Not Available outside US",
+    "header": "Programming Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1038",
+    "full_customer_message": "Live TV and On Demand programming is available only in the U.S. and its territories."
+  }, {
+    "name": "No Favorites",
+    "header": "Set Favorite Channels",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFV-1000",
+    "full_customer_message": "Select a channel logo in the Guide to set a Favorite or manage Favorites in Settings.\nReference Code:"
+  }, {
+    "name": "My Library Load Failure",
+    "header": "My Library Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DML-1001",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "STB Rename Failure",
+    "header": "Unable to Rename",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1004",
+    "full_customer_message": "We're sorry, we were unable to rename the device. Please try again later."
+  }, {
+    "name": "Schedule Recording Error",
+    "header": "Unable to Schedule Recording",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCM-1475",
+    "full_customer_message": "We're sorry, this show is unavailable. Please try again later."
+  }, {
+    "name": "Stream Buffer Timeout",
+    "header": "Unable to Complete Request.",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DRP-1999",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Schedule Recording Error",
+    "header": "Upgrade to Watch",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DEN-1008",
+    "full_customer_message": "Your subscription package doesn't include this channel. To add this channel, call us at (866) 892-1235.\nReference Code:"
+  }, {
+    "name": "Stream Initialization Timeout",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DVP-999",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "CDVR_ERROR_RECORDING_PLAYBACK_FAIL",
+    "header": "Recording Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1002",
+    "full_customer_message": "We’re sorry, we're unable to play your selection. Please try again later."
+  }, {
+    "name": "Stream Initialization Timeout",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DRP-999",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "Native Hardware Error",
+    "header": "Native Hardware Error",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DDV-1000",
+    "full_customer_message": "Native Hardware Error\nThis error is non-customer facing and only used for the development team's tracking."
+  }, {
+    "name": "Unable to Load Watch Later List",
+    "header": "Unable to Load Watch Later List",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DWL-1002",
+    "full_customer_message": "We're sorry, we were unable to load your Watch Later list. Please try again later."
+  }, {
+    "name": "Behind Modem Service Error",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLC-1001",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+  }, {
+    "name": "Proxy Not Allowed",
+    "header": "Proxy Unsupported",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1003",
+    "full_customer_message": "Please turn off the proxy server, and then restart the app.\nReference Code: DFE-1003"
+  }, {
+    "name": "OOH Unavailable",
+    "header": "Channel Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-1036",
+    "full_customer_message": "To watch this channel, please connect to your home Spectrum Internet service.\nReference Code:"
+  }, {
+    "name": "CDVR_ERROR_RECORDING_PLAYBACK_INPROGRESS_FAIL",
+    "header": "Recording Unavailable",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DCD-1003",
+    "full_customer_message": "We’re sorry, we’re unable to play your selection. Please try again later."
+  }, {
+    "name": "RC_PRIMARY_IDENTITY_CHANGED",
+    "header": null,
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1031",
+    "full_customer_message": ""
+  }, {
+    "name": "Stream Initialization Timeout",
+    "header": "Unable to Complete Request",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLP-999",
+    "full_customer_message": "We're sorry, something didn't work quite right. Please try again later."
+  }, {
+    "name": "CONSUMER_SIGNIN_AGAIN_EXPECTED",
+    "header": "Password Reset Recommended",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1300",
+    "full_customer_message": "Unusual account activity detected. Please sign in again to protect your account or visit spectrum.net/forgot to update your password.\n\nReference Code:"
+  }, {
+    "name": "CONSUMER_PASSWORD_RESET_EXPECTED",
+    "header": "Password Reset Required",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DLI-1301",
+    "full_customer_message": "Unusual account activity detected. Please visit spectrum.net/forgot to update your password before signing in again.\n\nReference Code:"
+  }, {
+    "name": "VPN Split Tunneling Allowed Only",
+    "header": "VPN Detected",
+    "status": "active",
+    "altText": null,
+    "full_error_code": "DFE-1014",
+    "full_customer_message": "We noticed you're using a VPN. To continue, either exclude {{SERVICE}} in your VPN settings or turn off your VPN and restart the app. Reference Code:"
+  },
+    {
+      "name": "Tune VOD Failure",
+      "header": "Unable to Complete Request",
+      "status": "active",
+      "altText": null,
+      "full_error_code": "DCM-1601",
+      "full_customer_message": "We're sorry, something didn't work quite right. Please try again later.\nReference Code:"
+    },
+    {
+      "name": "Widevine System ID Unsupported",
+      "header": "Update Required",
+      "status": "active",
+      "altText": null,
+      "full_error_code": "DDV-1001",
+      "full_customer_message": "To play video, you'll need to install the latest system updates for your device. Go to Device Settings > About device > Check for updates.\nReference Code:"
+    },
+    {
+      "name": "TVSA Bad Consumer Type Login Error",
+      "header": "Unsupported App",
+      "status": "active",
+      "altText": null,
+      "full_error_code": "DLI-1039",
+      "full_customer_message": "To watch TV on this network, sign in to the Spectrum Enterprise app. \nReference Code:"
+    }]
+}

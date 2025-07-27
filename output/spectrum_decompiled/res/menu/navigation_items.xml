@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/navigation_library_selector" android:id="@id/action_home" android:title="Home" />
+    <item android:icon="@drawable/navigation_live_selector" android:id="@id/action_live" android:title="Live TV" />
+    <item android:icon="@drawable/navigation_on_demand_selector" android:id="@id/action_on_demand" android:title="On Demand" />
+    <item android:icon="@drawable/navigation_dvr_selector" android:id="@id/action_dvr" android:title="DVR" />
+</menu>

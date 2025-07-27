@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <RelativeLayout android:id="@id/secondHeaderLayout" android:background="?green" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textAppearance="?H3" android:gravity="left|center" android:id="@id/sportsResultsHeader" android:background="?headerBackground" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.twc.android.ui.unified.search.UnifiedSportsSearchResultsListView android:id="@id/sportsSearchResultsListRecyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="?H5" android:gravity="left|center" android:id="@id/fixedSectionHeader" android:background="?darkBlue3" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+    </RelativeLayout>
+    <TextView android:textAppearance="?H4" android:id="@id/loadingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+</LinearLayout>

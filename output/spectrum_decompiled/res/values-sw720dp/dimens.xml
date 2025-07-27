@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="H1Text">32.0sp</dimen>
+    <dimen name="H2Text">22.0sp</dimen>
+    <dimen name="H3Text">21.0sp</dimen>
+    <dimen name="H4Text">19.0sp</dimen>
+    <dimen name="H5Text">17.0sp</dimen>
+    <dimen name="LiveTvOverlayTopGradientHeight">80.0dip</dimen>
+    <dimen name="P1Text">16.0sp</dimen>
+    <dimen name="P2Text">14.0sp</dimen>
+    <dimen name="P3Line">19.0dip</dimen>
+    <dimen name="P3Text">13.0sp</dimen>
+    <dimen name="SettingsMenuSignOutButtonMarginTop">60.0dip</dimen>
+    <dimen name="SettingsParentalControlPadding">35.0dip</dimen>
+    <dimen name="USSportsMarginLeft">10.0dip</dimen>
+    <dimen name="USSportsPadding">20.0dip</dimen>
+    <dimen name="UnifiedActionButtonHeight">75.0dip</dimen>
+    <dimen name="UnifiedActionButtonWidth">93.0dip</dimen>
+    <dimen name="UnifiedActionMarginRight">10.0dip</dimen>
+    <dimen name="UnifiedCrewImageHeight">200.0dip</dimen>
+    <dimen name="UnifiedCrewImageWidth">150.0dip</dimen>
+    <dimen name="WifiSettingsButtonWidth">336.0dip</dimen>
+    <dimen name="availabilityTopMargin">40.0dip</dimen>
+    <dimen name="channelHeaderLayoutHeight">80.0dip</dimen>
+    <dimen name="chromecast_controller_bottom_gap">20.0dip</dimen>
+    <dimen name="chromecast_controller_height">540.0dip</dimen>
+    <dimen name="chromecast_controller_right_gap">20.0dip</dimen>
+    <dimen name="chromecast_controller_width">360.0dip</dimen>
+    <dimen name="chromecast_expanded_bottom_margin">0.0dip</dimen>
+    <item type="dimen" name="chromecast_image_vertical_percent">1</item>
+    <dimen name="chromecast_mini_corner_radius">8.0dip</dimen>
+    <dimen name="chromecast_not_block_padding">0.0dip</dimen>
+    <dimen name="chromecast_peek_height">80.0dip</dimen>
+    <item type="dimen" name="chromecast_play_pause_vertical_percent">0.25</item>
+    <dimen name="ctaButtonWidth">300.0dip</dimen>
+    <dimen name="eventNetworkPosterImageHeight">116.0dip</dimen>
+    <dimen name="eventNetworkPosterImageWidth">158.0dip</dimen>
+    <dimen name="eventPosterImageWidth">158.0dip</dimen>
+    <dimen name="eventShowcardImageCondensedWidth">316.0dip</dimen>
+    <dimen name="eventShowcardImageWidth">316.0dip</dimen>
+    <dimen name="fav_list_scroll_width">60.0dip</dimen>
+    <dimen name="full_banner_network_logo_right_padding">36.0dip</dimen>
+    <dimen name="full_banner_network_logo_top_padding">32.0dip</dimen>
+    <item type="dimen" name="l">3.0</item>
+    <dimen name="liveTvChanelRowLogoSize">57.0dip</dimen>
+    <dimen name="liveTvFilterNameTextSize">25.0sp</dimen>
+    <dimen name="liveTvRecentChannelLogoWidth">90.0dip</dimen>
+    <dimen name="liveTvRecentChannelTextSize">22.0sp</dimen>
+    <dimen name="liveTvVideoErrorTextSize">22.0sp</dimen>
+    <dimen name="live_guide_blocked_text_size">22.0sp</dimen>
+    <dimen name="live_guide_filter_bottom_offset">24.0dip</dimen>
+    <dimen name="live_guide_filter_scroll_content_height">400.0dip</dimen>
+    <dimen name="live_guide_filter_top_offset">0.0dip</dimen>
+    <item type="dimen" name="live_guide_num_30_mins_columns_mini_player_open">3.28</item>
+    <dimen name="live_guide_rec_options">600.0dip</dimen>
+    <dimen name="loadingLinearProgressBarHeight">8.0dip</dimen>
+    <item type="dimen" name="m">4.0</item>
+    <dimen name="mini_player_height">256.0dip</dimen>
+    <dimen name="mini_player_not_block_padding">0.0dip</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">50.0%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">70.00001%</item>
+    <dimen name="networkScheduleCallSignTextSize">21.0sp</dimen>
+    <dimen name="networkScheduleChannelNumberTextSize">21.0sp</dimen>
+    <dimen name="networkScheduleChlMinus">21.0sp</dimen>
+    <dimen name="networkScheduleChlMinusMargin">15.0dip</dimen>
+    <dimen name="networkScheduleChlPlus">21.0sp</dimen>
+    <dimen name="networkScheduleChlPlusMargin">15.0dip</dimen>
+    <dimen name="networkScheduleListHdrPaddingLeft">10.0dip</dimen>
+    <dimen name="posterTopMargin">350.0dip</dimen>
+    <dimen name="rdvr2ConflictDoneButtonWidth">300.0dip</dimen>
+    <dimen name="rdvr2DeleteCheckBoxHeight">60.0dip</dimen>
+    <dimen name="rdvr2DeleteCheckBoxWidth">60.0dip</dimen>
+    <dimen name="rdvr2SeriesTitleMarginRight">80.0dip</dimen>
+    <dimen name="rdvr2SeriesUpDownArrowMarginRight">30.0dip</dimen>
+    <dimen name="rdvr2ShowCardHeight">90.0dip</dimen>
+    <dimen name="rdvr2ShowCardWidth">60.0dip</dimen>
+    <item type="dimen" name="s">6.0</item>
+    <dimen name="settings_about_top_margin">0.0dip</dimen>
+    <item type="dimen" name="tile_banner_m">4.0</item>
+    <item type="dimen" name="tile_banner_s">6.0</item>
+    <item type="dimen" name="tile_banner_xl">2.0</item>
+    <dimen name="tvodAreYouSureHeight">52.0dip</dimen>
+    <dimen name="tvodAreYouSureTopMargin">44.0dip</dimen>
+    <dimen name="tvodPosterMarginTop">16.0dip</dimen>
+    <dimen name="tvodTitleHeight">52.0dip</dimen>
+    <dimen name="tvodTitleMarginTop">21.0dip</dimen>
+    <dimen name="universityDomainBoundingWidth">336.0dip</dimen>
+    <dimen name="vodNetworkUnauthorizedBannerWidth">45.0dip</dimen>
+    <dimen name="vodShowCardHeight">237.0dip</dimen>
+    <dimen name="vodShowCardListHeight">267.0dip</dimen>
+    <dimen name="vodShowCardMovieHeight">237.0dip</dimen>
+    <dimen name="vodShowCardMovieWidth">316.0dip</dimen>
+    <dimen name="vodShowCardWidth">158.0dip</dimen>
+    <dimen name="vodTextWidth">158.0dip</dimen>
+    <dimen name="vod_show_card_banner_width">280.0dip</dimen>
+    <dimen name="watch_next_currently_playing_height">300.0dip</dimen>
+    <dimen name="watch_next_default_image_height">450.0dip</dimen>
+    <dimen name="watch_next_default_image_width">600.0dip</dimen>
+    <dimen name="welcomeScreenLeftRightPadding">375.0dip</dimen>
+    <item type="dimen" name="xl">2.0</item>
+    <item type="dimen" name="xs">8.0</item>
+    <dimen name="ProductDetailsHeight">670.0dip</dimen>
+    <dimen name="ProductDetailsWidth">880.0dip</dimen>
+    <dimen name="USSportsRecyclerViewHeight">300.0dip</dimen>
+    <dimen name="rdvr2CompletedEpisodeMetaDataMarginLeft">50.0dip</dimen>
+    <dimen name="rdvr2CompletedEpisodeMetaDataMarginRight">20.0dip</dimen>
+    <dimen name="rdvr2CompletedEpisodePaddingLeft">100.0dip</dimen>
+    <dimen name="unified_recording_option_dialog_width">600.0dip</dimen>
+</resources>

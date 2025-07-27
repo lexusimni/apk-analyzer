@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="124.0dip" android:layout_height="124.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/networks_content_item_image" android:layout_width="100.0dip" android:layout_height="100.0dip" android:contentDescription="@null" />
+    <ViewStub android:layout_gravity="center" android:id="@id/networks_content_fallback_text" android:layout="@layout/buy_flow_stub_networks_fallback_text" android:inflatedId="@id/networks_content_fallback_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

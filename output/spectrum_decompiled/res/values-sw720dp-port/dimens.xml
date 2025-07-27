@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ctaButtonWidth">220.0dip</dimen>
+    <dimen name="posterTopMargin">250.0dip</dimen>
+    <dimen name="welcomeScreenLeftRightPadding">200.0dip</dimen>
+    <dimen name="ProductDetailsWidth">700.0dip</dimen>
+</resources>

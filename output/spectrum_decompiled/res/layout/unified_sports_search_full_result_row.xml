@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/recycler_list_row_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twc="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?H5" android:gravity="left|center" android:id="@id/categories" android:background="?darkBlue3" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+    <RelativeLayout android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.twc.android.ui.utils.UrlImageView android:id="@id/sportsBoxArt" android:layout_width="50.0dip" android:layout_height="75.0dip" android:layout_marginRight="5.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/sportsBoxArt" android:layout_centerVertical="true">
+            <com.twc.android.ui.utils.UrlImageView android:layout_gravity="center" android:id="@id/networkLogo" style="?networkAttributionLogo" />
+            <TextView android:textAppearance="?H4" android:ellipsize="end" android:id="@id/resultTitle" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:maxLines="1" android:layout_toRightOf="@id/networkLogo" />
+            <TextView android:textAppearance="?H4" android:textColor="?blue3" android:id="@id/eventType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/networkLogo" android:layout_alignLeft="@id/networkLogo" />
+            <com.twc.android.ui.utils.TimeTextView android:textAppearance="?H4" android:textColor="?gray2" android:id="@id/airingDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/eventType" android:layout_below="@id/resultTitle" twc:timeFormat="@string/timeFormat_monthNameDayAbr" />
+            <com.twc.android.ui.utils.TimeTextView android:textAppearance="?H4" android:textColor="?gray2" android:id="@id/airingTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/airingDate" android:layout_below="@id/resultTitle" android:layout_alignWithParentIfMissing="true" twc:endTimeFormat="@string/timeFormat_hmmAmPm" twc:intervalSeparator=" - " twc:timeFormat="@string/timeFormat_hmm" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="?divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

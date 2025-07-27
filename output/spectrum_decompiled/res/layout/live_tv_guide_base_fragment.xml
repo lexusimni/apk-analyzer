@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/live_tv_root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="com.twc.android.ui.liveguide.player.LiveTvTabContainerFragment" android:id="@id/live_tv_player_frag_container" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,16:9" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.fragment.app.FragmentContainerView android:name="com.twc.android.ui.liveguide.LiveGuideMenuFragment" android:id="@id/live_tv_mini_guide_frag_container" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/live_tv_player_frag_container" />
+</androidx.constraintlayout.widget.ConstraintLayout>

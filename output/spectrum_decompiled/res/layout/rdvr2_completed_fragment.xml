@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="@bool/doAnimateLayoutTransition"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/instructions" android:background="#ff202020" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dvr_delete_instructions" style="@style/rdvr2InstructionsTextStyle" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.twc.android.ui.rdvr2.RecordingListView android:id="@id/completedRecordingList" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/rdvr2ListViewStyle" />
+            <View android:id="@id/bottomOfListSeparator" android:background="@drawable/beveled_line_horizontal" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        </LinearLayout>
+        <include layout="@layout/rdvr2_norecordingtext_layout" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/deleteButtonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/deleteButton" android:background="@drawable/bubble_button_bgrd_red" style="@style/rdvr2BottomButtonStyle" />
+    </FrameLayout>
+</LinearLayout>

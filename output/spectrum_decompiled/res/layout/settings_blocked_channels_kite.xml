@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Kite.Dark" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.charter.kite.KiteCheckbox android:id="@id/checkBoxItem" android:layout_width="wrap_content" android:layout_height="56.0dip" android:importantForAccessibility="yes" />
+    <com.twc.android.ui.utils.UrlImageView android:id="@id/imgViewLogo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="24.0dip" android:importantForAccessibility="no" />
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txtCallSign" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:maxLines="2" android:importantForAccessibility="no" />
+</LinearLayout>

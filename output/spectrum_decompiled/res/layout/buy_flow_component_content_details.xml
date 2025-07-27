@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/kite_blue_10" android:id="@id/content_details_eyebrow" android:layout_width="345.0dip" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="138.0dip" android:letterSpacing="0.1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textColor="@color/kite_white" android:id="@id/content_details_header" android:layout_width="345.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="@id/content_details_eyebrow" app:layout_constraintTop_toBottomOf="@id/content_details_eyebrow" />
+    <TextView android:textColor="@color/kite_gray_25" android:id="@id/content_details_description" android:layout_width="345.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:layout_constraintLeft_toLeftOf="@id/content_details_eyebrow" app:layout_constraintTop_toBottomOf="@id/content_details_header" />
+    <LinearLayout android:gravity="center" android:id="@id/content_details_button" android:paddingLeft="20.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="12.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:layout_constraintLeft_toLeftOf="@id/content_details_description" app:layout_constraintTop_toBottomOf="@id/content_details_description">
+        <TextView android:id="@id/content_details_button_text" android:focusable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:id="@id/content_details_backdrop_card" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="20.0dip" app:layout_constraintBottom_toBottomOf="@id/content_details_image_card" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/content_details_image_card">
+        <View android:id="@id/content_details_backdrop" android:layout_width="400.0dip" android:layout_height="373.0dip" android:contentDescription="@null" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/content_details_image_card" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="20.0dip" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/content_details_eyebrow">
+        <ImageView android:id="@id/content_details_image" android:layout_width="473.5dip" android:layout_height="266.5dip" android:contentDescription="@null" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

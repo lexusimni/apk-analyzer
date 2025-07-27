@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout android:orientation="vertical" android:id="@id/rootView" android:background="@drawable/action_item_border_selector" android:padding="5.0dip" android:layout_width="@dimen/UnifiedActionButtonWidth" android:layout_height="@dimen/UnifiedActionButtonHeight" android:layout_marginTop="3.0dip" android:layout_marginRight="@dimen/UnifiedActionMarginRight" android:layout_marginBottom="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/actionImage" android:src="@drawable/action_watch" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:layout_aspectRatio="100.0%" app:layout_heightPercent="33.000004%" app:layout_marginTopPercent="12.0%" />
+    <TextView android:textAppearance="?P3" android:gravity="center" android:id="@id/actionName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="2" android:layout_below="@id/actionImage" android:layout_alignParentBottom="true" app:autoSizeMaxTextSize="@dimen/P3Text" app:autoSizeMinTextSize="@dimen/P5Text" app:autoSizeStepGranularity="2.0sp" app:autoSizeTextType="uniform" />
+    <com.twc.android.ui.widget.SpectrumProgressBar android:id="@id/actionProgressBar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+</androidx.percentlayout.widget.PercentRelativeLayout>

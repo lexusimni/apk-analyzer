@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@drawable/kite_control_focus_ring" android:left="@dimen/ki_control_focus_ring_inset" android:top="@dimen/ki_control_focus_ring_inset" android:right="@dimen/ki_control_focus_ring_inset" android:bottom="@dimen/ki_control_focus_ring_inset" />
+            <item android:drawable="@drawable/btn_radio_on_mtrl" />
+        </layer-list>
+    </item>
+    <item android:state_focused="true" android:state_checked="false">
+        <layer-list>
+            <item android:drawable="@drawable/kite_control_focus_ring" android:left="@dimen/ki_control_focus_ring_inset" android:top="@dimen/ki_control_focus_ring_inset" android:right="@dimen/ki_control_focus_ring_inset" android:bottom="@dimen/ki_control_focus_ring_inset" />
+            <item android:drawable="@drawable/btn_radio_off_mtrl" />
+        </layer-list>
+    </item>
+    <item android:state_checked="true" android:id="@id/on" android:drawable="@drawable/btn_radio_on_mtrl" />
+    <item android:id="@id/off" android:drawable="@drawable/btn_radio_off_mtrl" />
+    <transition android:drawable="@drawable/btn_radio_on_to_off_mtrl_animation" android:toId="@id/off" android:fromId="@id/on" />
+    <transition android:drawable="@drawable/btn_radio_off_to_on_mtrl_animation" android:toId="@id/on" android:fromId="@id/off" />
+</animated-selector>

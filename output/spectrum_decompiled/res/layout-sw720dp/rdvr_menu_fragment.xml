@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/headerLayout" android:background="?headerBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="@bool/doAnimateLayoutTransition">
+        <ProgressBar android:id="@id/percentFull" android:layout_width="300.0dip" android:layout_height="20.0dip" android:max="100" android:progress="72" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/STVAAppTheme.PlayerProgressBar" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/gray4" android:id="@id/percentFullText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/percentFull" android:layout_centerVertical="true" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="7.0dip" android:layout_centerVertical="true" android:animateLayoutChanges="@bool/doAnimateLayoutTransition">
+            <TextView android:ellipsize="end" android:id="@id/dvrName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/headerTabLayout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/rdvr2HeaderTextButtonStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/dvrSortLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <Button android:id="@id/dateRecorded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dvr_date_recorded" style="@style/rdvr2HeaderTextButtonStyle" />
+                <Button android:id="@id/aToZ" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_to_z" style="@style/rdvr2HeaderTextButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/headerTabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <Button android:id="@id/myRecordings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recorded" style="@style/rdvr2HeaderTextButtonStyle" />
+                <RelativeLayout android:id="@id/scheduledLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip">
+                    <Button android:id="@id/scheduled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scheduled" style="@style/rdvr2HeaderTextButtonStyle" />
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/conflictCount" android:background="@drawable/conflict_count_background" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="-30.0dip" android:layout_toRightOf="@id/scheduled" />
+                </RelativeLayout>
+                <Button android:id="@id/seriesPriority" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/series_manager" style="@style/rdvr2HeaderTextButtonStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/recordingListFragmentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/fade_to_black_horizontal_top" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_video_runtime_minutes">
+        <item quantity="other">%1$d minutes</item>
+        <item quantity="one">%1$d minute</item>
+    </plurals>
+    <plurals name="accessibility_video_runtime_seconds">
+        <item quantity="other">%1$d seconds</item>
+        <item quantity="one">%1$d second</item>
+    </plurals>
+    <plurals name="cancel_rdvr_recording">
+        <item quantity="other">Cancel %d recordings</item>
+        <item quantity="one">Cancel %d recording</item>
+    </plurals>
+    <plurals name="cast_skip_back">
+        <item quantity="other">Skip back %d seconds</item>
+    </plurals>
+    <plurals name="cast_skip_forward">
+        <item quantity="other">Skip forward %d seconds</item>
+    </plurals>
+    <plurals name="cdvr_recorded_episodes_count">
+        <item quantity="other">%d EPISODES</item>
+        <item quantity="one">%d EPISODE</item>
+    </plurals>
+    <plurals name="cdvr_recorded_series_title">
+        <item quantity="other">%1$s, %2$d Recordings</item>
+        <item quantity="one">%1$s, %2$d Recording</item>
+    </plurals>
+    <plurals name="chromecast_advertisement_time">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">%d second</item>
+    </plurals>
+    <plurals name="delete_rdvr_recording">
+        <item quantity="other">Delete %d Recordings</item>
+        <item quantity="one">Delete %d Recording</item>
+    </plurals>
+    <plurals name="delete_rdvr_recording_progress_dialog">
+        <item quantity="other">Delete %d Recordings…</item>
+        <item quantity="one">Delete %d Recording…</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+</resources>

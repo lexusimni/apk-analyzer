@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.twc.android.ui.utils.ExpandableTextView android:ellipsize="end" android:id="@id/expandableText" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Button android:textSize="16.0sp" android:textColor="@color/kite_blue_10" android:gravity="left|center" android:id="@id/showMoreButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/showMore" android:textAllCaps="false" android:paddingStart="0.0dip" android:accessibilityLiveRegion="assertive" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/expandableText" style="@style/Widget.Kite.Button.Borderless" />
+</merge>

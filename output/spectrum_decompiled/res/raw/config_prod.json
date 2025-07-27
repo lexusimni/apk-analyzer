@@ -1,0 +1,118 @@
+{
+	"airlyticsEnabled": true,
+	"appConfiguration": {
+		"versions": {
+			"yamlVersion": "1.4.19",
+			"configurationVersion": "1.33"
+		},
+		"configurationFile": {
+			"backgroundCheckIntervalSeconds": 1200,
+			"foregroundCheckIntervalSeconds": 1200,
+			"checkEndpointURL": "https://airlytics-configuration-production.pi.spectrum.net"
+		},
+		"dataPersistence": {
+			"purgeMethod": "PRIORITY",
+			"maxDataPersistMB": 5,
+			"maxEventCountPersist": -1,
+			"maxEventCountPurgeAtOnce": 1,
+			"maxPurgedEventCountPersist": 200
+		},
+		"eventReporting": {
+			"disableReportRulesValidation": false,
+			"reportMethod": "FIFO",
+			"devEndpointURL": "https://airlytics-collector.pi-charter.net/topics/airlytics",
+			"prodEndpointURL": "https://airlytics-collector.pi.spectrum.net/topics/airlytics",
+			"backgroundBulkMessageLimitCount": 30,
+			"foregroundBulkMessageLimitCount": 5,
+			"postInitializationReportAttemptIntervalSeconds": 15,
+			"backgroundReportAttemptIntervalSeconds": 10,
+			"foregroundReportAttemptIntervalSeconds": 30,
+			"wifiReportingMethodEnabled": true,
+			"cellularReportingMethodEnabled": true,
+			"cellularReportingIntervalSeconds": 2592000,
+			"delayReportingWhenDeviceMobile": true,
+			"reportingAttemptWhenAppForeground": true,
+			"reportingAttemptWhenAppBackground": true,
+			"reportAttemptLowBatteryThreshold": 0.25,
+			"reportAttemptLowBatteryOnChargeThreshold": 0.05,
+			"reportAttemptiOSLowWifiSignalThreshold": 0.60,
+			"reportAttemptLowWifiSignalThresholdDbm": -80,
+			"isAcceleratedReportingEnabled": true,
+			"savedDataPercentageToStartAcceleratedReporting": 75,
+			"savedDataPercentageToStopAcceleratedReporting": 5,
+			"foregroundBulkMessageLimitCountOnAcceleratedReporting": 30
+		}
+	},
+	"eventConfiguration": {
+		"isSingleSim": true,
+		"purgedEvents": {
+			"enabled": false,
+			"dataReportingTimeIntervalSeconds": 10800
+		},
+		"cellSignalChanged": {
+			"enabled": true,
+			"lowCellSignalThreshold": 1,
+			"lowCellSignalThresholdDbm": -90
+		},
+		"cellNeighbor": {
+			"enabled": true,
+			"dataCollectionTimeIntervalSeconds": 60,
+			"limitCount": 10,
+			"prioritizationField": "RSRP"
+		},
+		"lowCellSignal": {
+			"enabled": true
+		},
+		"scanResult": {
+			"enabled": true,
+			"limitCount": 10,
+			"prioritizationField": "RSSI",
+			"dataCollectionTimeIntervalSeconds": 15
+		},
+		"mobilityStart": {
+			"dataCollectionThresholdSeconds": 12,
+			"dataCollectionTimeIntervalSeconds": 60,
+			"motionConfidenceIntervalSeconds": 30
+		},
+		"locationUpdate": {
+			"enabled": true,
+			"dataDiscardingTimeIntervalSeconds": 10,
+			"dataCollectionTimeIntervalSeconds": 300
+		},
+		"cellSessionStart": {
+			"dataCollectionThresholdSeconds": 5
+		},
+		"wifiSessionStart": {
+			"dataCollectionThresholdSeconds": 5
+		},
+		"periodicCellDataUsage": {
+			"enabled": true,
+			"dataCollectionTimeIntervalSeconds": 60
+		},
+		"periodicWiFiDataUsage": {
+			"enabled": true,
+			"dataCollectionTimeIntervalSeconds": 60
+		},
+		"rssiInfo": {
+			"enabled": true,
+			"dataCollectionTimeIntervalSeconds": 60
+		},
+		"latency": {
+			"enabled": true
+		},
+		"linkSpeed": {
+			"enabled": true
+		},
+		"wifiThroughput": {
+			"enabled": true
+		},
+		"hostLatency": {
+			"enabled": true,
+			"hostLatencyIndexLimit": 8
+		},
+		"commonLatencyThroughput": {
+			"firstQosTestTimeIntervalSeconds": 300,
+			"allNextQosTestsTimeIntervalSeconds": 86400
+		}
+	}
+}

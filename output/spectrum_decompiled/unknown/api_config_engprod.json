@@ -1,0 +1,217 @@
+{
+  "default": {
+    "host": "apis.shared.uat-spectrum.net",
+    "scheme": "https"
+  },
+  "services": {
+    "auth": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "buyflow": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "epgs": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "ipvs": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "reporting": {
+        "reportAPIEvents": true,
+        "reportResponseTextOnSuccess": false,
+        "reportResponseHeaders": [
+          "Failure-Trace",
+          "lantern-source"
+        ]
+      },
+      "endpoints": {
+        "getFavoritesChannelsV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1"
+        },
+        "getParentalConrolPinV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/pin"
+        },
+        "getParentalControlBlockedChannelsV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/blockedchannels"
+        },
+        "getParentalControlRatingsV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/ratings"
+        },
+        "getSmarttvBookmarksV2": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/bookmarks/v2"
+        },
+        "getSmarttvChannelsV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/channels/v1"
+        },
+        "getSmarttvChannelsV2": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/channels/v2"
+        },
+        "getSmarttvLineupV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/lineup/v1"
+        },
+        "getSmarttvParentalControlV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1"
+        },
+        "getSmarttvWatchlistV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/watchList/v1"
+        },
+        "getUserCapabilitiesV3": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/user/capabilities/v3"
+        },
+        "postBookmarksHiddenV3": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/bookmarks/v3/hidden"
+        },
+        "postFavoriteChannelsAddV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1/add"
+        },
+        "postFavoriteChannelsRemoveV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1/remove"
+        },
+        "postFavoriteChannelsSetV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1/set"
+        },
+        "postParentalControlPinV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/pin"
+        },
+        "postParentalControlEnterprisePinV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/enterprise/pin"
+        },
+        "postParentalControlAdminValidateV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/admin/validate"
+        },
+        "postParentalControlPinValidateV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/pin/validate"
+        },
+        "postParentalControlAdminEnterpriseValidateV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/admin/enterprise/validate"
+        },
+        "postSmarttvBookmarksV3": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/bookmarks/v3"
+        },
+        "postWatchlistAssetsV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/watchList/v1/assets"
+        },
+        "postWatchlistDeleteV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/watchList/v1/delete"
+        },
+        "postWatchlistSeriesV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/watchList/v1/series"
+        },
+        "postParentalControlBlockedChannelsV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/blockedchannels"
+        },
+        "putParentalControlRatingsV1": {
+          "method": "PUT",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/ratings"
+        },
+        "getJwtdrmCdvrV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/cdvr/v1"
+        },
+        "getJwtdrmLiveV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/live/v1"
+        },
+        "getJwtdrmVodV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/vod/v1"
+        },
+        "getJwtdrmTrailerV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/vod/trailer/v1"
+        },
+        "getJwtdrmTvodV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/tvod/v1"
+        }
+      }
+    },
+    "kumodvr": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "nns": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "nrs": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "pi": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    },
+    "tdcs": {
+      "host": "apis.shared.uat-spectrum.net",
+      "scheme": "https",
+      "endpoints": {
+        "getTDCSPublicInform": {
+          "method": "GET",
+          "path": "/tdcs/public/inform"
+        },
+        "getTDCSPublicErrors": {
+          "method": "GET",
+          "path": "/tdcs/public/errors"
+        },
+        "getTDCSInform": {
+          "method": "GET",
+          "path": "/tdcs/inform"
+        },
+        "postTDCSPublicInform": {
+          "method": "POST",
+          "path": "/tdcs/public/inform"
+        },
+        "postTDCSPublicErrors": {
+          "method": "POST",
+          "path": "/tdcs/public/errors"
+        },
+        "postTDCSInform": {
+          "method": "POST",
+          "path": "/tdcs/inform"
+        }
+      }
+    },
+    "vpns": {
+      "host": "pi.engprod-spectrum.net",
+      "scheme": "https",
+      "endpoints": {}
+    }
+  },
+  "version": 1.1
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="TWCTV Developer Settings" android:orderingFromXml="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Logging And Error Reporting" android:orderingFromXml="true">
+        <CheckBoxPreference android:title="Debug Logging" android:key="@string/PREF_LOGGING" android:summaryOn="Debug logging is enabled" android:summaryOff="Debug logging is disabled" />
+        <Preference android:title="View Log File" android:summary="Allow user to view logs.">
+            <intent android:action="com.twc.android.service.devprefs.ViewLogFileActivity" />
+        </Preference>
+        <Preference android:title="E-Mail Error Report" android:summary="Allow user to e-mail an error report.">
+            <intent android:action="com.twc.android.service.devprefs.EmailErrorReporterActivity" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Override Video Restrictions">
+        <CheckBoxPreference android:title="USB Debugging" android:key="@string/PREF_ALLOW_VIDEO_WITH_USB_DEBUG" android:summary="Allow video to play while USB debugging is enabled" />
+        <CheckBoxPreference android:title="HTTP Proxy" android:key="@string/PREF_ALLOW_VIDEO_WITH_PROXY" android:summary="Allow video to play with an HTTP proxy connection" />
+        <CheckBoxPreference android:title="Enable Network Logging" android:key="@string/PREF_ENABLE_NETWORK_LOGGING" android:summary="Enable logging of network responses" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Networking">
+        <CheckBoxPreference android:title="Disable Hostname Verification" android:key="@string/PREF_DISABLE_HOSTNAME_VERIFICATION" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Offline Grace Period Enabled" android:key="@string/PREF_ENABLE_OFFLINE_GRACE_PERIOD" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Web Services" android:orderingFromXml="true">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysValue android:entries="@array/DevPrefRootPI" android:title="PI Root URL" android:key="@string/PREF_ROOT_PI" android:summary="%s" android:defaultValue="@string/DevPrefRootPIDefault" android:entryValues="@array/DevPrefRootPI" />
+        <CheckBoxPreference android:title="Use Staging IPVS" android:key="@string/PREF_USE_STAGING_IPVS" android:defaultValue="false" android:summaryOn="IPVS pointing to staging" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="DRM DAI Streaming">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Live TV DAI Enabled" android:key="@string/PREF_LIVE_DAI_STATE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="VOD DAI Enabled" android:key="@string/PREF_VOD_DAI_STATE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="DAI VOD EPT Bookmark" android:key="@string/PREF_USE_EPT_BOOKMARK" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Use VAST format ad events for VOD" android:key="@string/PREF_VOD_VAST_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Use VAST format ad events for live TV" android:key="@string/PREF_LIVETV_VAST_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Player Streaming Debug">
+        <CheckBoxPreference android:title="Use hardcoded URL for Video" android:key="@string/PREF_USE_HARDCODED_STREAM" android:defaultValue="false" android:summaryOn="Using hardcoded video stream URL" android:summaryOff="NOT using hardcoded video stream URL" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysValue android:title="Hardcoded Video Stream URL" android:key="@string/PREF_HARDCODED_STREAM_URL" android:summary="%s" android:defaultValue="@string/DevPrefHardcodedStreamUrl" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Max saved licenses" android:key="@string/PREF_MAX_SAVED_LICENSES" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/DevPrefPlayerType" android:title="Linear Player Type" android:key="@string/PREF_LINEAR_PLAYER_TYPE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/DevPrefPlayerType" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/DevPrefPlayerType" android:title="VOD Player Type" android:key="@string/PREF_VOD_PLAYER_TYPE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/DevPrefPlayerType" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/DevPrefPlayerType" android:title="CDVR Player Type" android:key="@string/PREF_CDVR_PLAYER_TYPE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/DevPrefPlayerType" />
+        <CheckBoxPreference android:title="Display Debug Video Data" android:key="@string/PREF_DISPLAY_VIDEO_INFO" android:defaultValue="false" android:summaryOn="Displaying debug video data" android:summaryOff="NOT displaying debug video data" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Allow player to enter Miniplayer mode" android:key="@string/PREF_ALLOW_PICTURE_IN_PICTURE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <CheckBoxPreference android:title="Force L3" android:key="@string/PREF_FORCE_L3" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TDCS">
+        <CheckBoxPreference android:title="Use override TDCS base url" android:key="@string/PREF_USE_TDCS_OVERRIDE_BASE_URL" android:summaryOn="Using TDCS specified in override" android:summaryOff="Using same TDCS as environment" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysValue android:entries="@array/DevPrefTDCSUrl" android:title="TDCS Override Root URL" android:key="@string/PREF_TDCS_OVERRIDE_BASE_URL" android:summary="%s" android:defaultValue="@string/DevPrefRootPI_pi_sit_b" android:entryValues="@array/DevPrefTDCSUrl" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Endpoints">
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Service URL for Capabilities" android:key="@string/PREF_CAPABILITIES_URL" android:summary="%s" android:defaultValue="@string/DevPrefCapabilitiesUrlDefault" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TVOD">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="@string/DevPreferenceTvodTitle" android:key="@string/PREF_CONFIG_TVOD" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="@string/DevPreferenceTvodPlaybackOnlyTitle" android:key="@string/PREF_CONFIG_TVOD_PLAYBACK_ONLY" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Watch Next">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Enable Watch Next" android:key="@string/PREF_FEATURE_ENABLED_AUTOPLAY" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Countdown Seconds" android:key="@string/PREF_AUTOPLAY_COUNTDOWN_SECONDS" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Minimum Countdown Seconds" android:key="@string/PREF_AUTOPLAY_MIN_COUNTDOWN_SECONDS" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Max Autoplays Before Idle Check" android:key="@string/PREF_MAX_AUTOPLAYS_BEFORE_IDLE_CHECK" android:summary="%s" android:defaultValue="" />
+        <CheckBoxPreference android:title="Disable Autoplay Count Reset" android:key="@string/PREF_DISABLE_AUTOPLAY_COUNT_RESET" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Enable Watch Next Prefetch" android:key="@string/PREF_AUTOPLAY_PREFETCH_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Streaming Url prefetch expiration interval" android:key="@string/PREF_PREFETCH_STREAM_EXPIRATION_INTERVAL" android:summary="%s" android:defaultValue="" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Essentials Package Auto View-All Retrieval">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Enable Auto View-All for Essentials Package" android:key="@string/PREF_ENABLE_ESSENTIALS_PACKAGE_VIEW_ALL" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Min titles per carousel for auto fetch" android:key="@string/PREF_MIN_TITLES_PER_CAROUSEL_FOR_AUTO_FETCH_ALL" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Sort Order" android:key="@string/PREF_SORT_ORDER" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Max titles per carousel for auto fetch" android:key="@string/PREF_MAX_TITLES_PER_CAROUSEL_FOR_AUTO_FETCH_ALL" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Min titles to move carousel to bottom" android:key="@string/PREF_MIN_TITLES_TO_MOVE_CAROUSEL_TO_BOTTOM" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Number of items to fetch per svc call" android:key="@string/PREF_VIEW_ALL_FETCH_PAGE_SIZE" android:summary="%s" android:defaultValue="" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Accessibility" />
+    <PreferenceCategory android:title="Miscellaneous">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Headend Time Zone Enabled" android:key="@string/PREF_HEADEND_TIME_ZONE" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="@string/DevPreferenceFeedbackTitle" android:key="@string/PREF_CONFIG_FEEDBACK" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Timing for Stream Timeout dialog (mins)" android:key="@string/PREF_STREAM_TIMEOUT_DIALOG_TIMING" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="@string/DevPreferenceCdvrEnabledTitle" android:key="@string/PREF_CONFIG_CDVR_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <CheckBoxPreference android:title="@string/DevPreferenceNullNielsenOptOutUrl" android:key="@string/PREF_NULL_NIELSEN_OPT_OUT_URL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Chromecast">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="@string/DevPreferenceChromecastEnabledTitle" android:key="@string/PREF_ENABLE_CHROME_CAST" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="ChromeCast Receiver App ID" android:key="@string/PREF_CHROME_CAST_APP_ID" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="STVA Username" android:key="@string/PREF_CHROME_CAST_USERNAME" android:summary="%s" android:defaultValue="" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="STVA Password" android:key="@string/PREF_CHROME_CAST_PASSWORD" android:summary="%s" android:defaultValue="" />
+        <CheckBoxPreference android:title="Use hardcoded URL for Video" android:key="@string/PREF_CHROME_CAST_USE_CUSTOM_URL" android:summaryOn="Using hardcoded video stream URL" android:summaryOff="NOT using hardcoded video stream URL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Startup Channel">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Enable Power On Channel Configuration" android:key="@string/PREF_IS_POWER_ON_CHANNEL_FEATURE_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Live Guide">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="Enable GET Guide V4 Call" android:key="@string/PREF_IS_USE_GET_GUIDE_V4_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Max TMS Guide Ids per GET call" android:key="@string/PREF_GET_GUIDE_V4_MAX_TMS_GUIDE_IDS" android:summary="%s" android:defaultValue="700" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="Period duration in hours" android:key="@string/PREF_GET_GUIDE_V4_PERIOD_DURATION" android:summary="%s" android:defaultValue="6" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/DevPrefEASTitle">
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysValue android:digits="\ 0123456789" android:title="@string/EASPingPongIntervalTitle" android:key="@string/PREF_EAS_PING_PONG_INTERVAL" android:summary="%s" android:defaultValue="30" android:inputType="numberDecimal" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Analytics">
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysActivityConfigValue android:entries="@array/PreferenceBooleanWithConfigDefault" android:title="@string/DevPrefVenonaEnabledTitle" android:key="@string/PREF_VENONA_ENABLED" android:summary="%s" android:defaultValue="@string/DevPrefActivityConfig" android:entryValues="@array/PreferenceBooleanWithConfigDefault" />
+        <com.twc.android.ui.devprefs.ListPreferenceThatDisplaysValue android:entries="@array/DevPrefVenonaUrl" android:title="@string/DevPrefVenonaEndpointTitle" android:key="@string/PREF_VENONA_ENDPOINT" android:summary="%s" android:defaultValue="@string/venona_endpoint" android:entryValues="@array/DevPrefVenonaUrl" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="@string/DevPrefVenonaFlushSizeTitle" android:key="@string/PREF_VENONA_FLUSH_SIZE" android:summary="%s" android:defaultValue="" android:inputType="number" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="@string/DevPrefVenonaQueueSizeTitle" android:key="@string/PREF_VENONA_QUEUE_SIZE" android:summary="%s" android:defaultValue="" android:inputType="number" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="@string/DevPrefVenonaMessageSizeTitle" android:key="@string/PREF_VENONA_MESSAGE_SIZE" android:summary="%s" android:defaultValue="" android:inputType="number" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="@string/DevPrefVenonaStorageSizeTitle" android:key="@string/PREF_VENONA_STORAGE_SIZE" android:summary="%s" android:defaultValue="" android:inputType="number" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="@string/DevPrefVenonaRequestTimeoutTitle" android:key="@string/PREF_VENONA_REQUEST_TIMEOUT" android:summary="%s" android:defaultValue="" android:inputType="number" />
+        <com.twc.android.ui.devprefs.EditTextPreferenceThatDisplaysActivityConfigValue android:title="@string/DevPrefVenonaHeartbeatTitle" android:key="@string/PREF_VENONA_HEARTBEAT" android:summary="%s" android:defaultValue="" android:inputType="number" />
+        <EditTextPreference android:title="@string/DevPrefVenonaVisitIdTitle" android:key="@string/PREF_VENONA_VISIT_ID" android:summary="@string/DevPrefVenonaVisitIdSummary" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaLoggingTitle" android:key="@string/PREF_VENONA_LOGGING" android:defaultValue="@string/DevPrefBooleanFalse" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaDevelopModeTitle" android:key="@string/PREF_VENONA_DEVELOP_MODE" android:defaultValue="@string/DevPrefBooleanFalse" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Venona Events (Must set Venona Enabled: TRUE)">
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsLoginTitle" android:key="@string/PREF_VENONA_EVENTS_LOGIN" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsPlaybackTitle" android:key="@string/PREF_VENONA_EVENTS_PLAYBACK" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsErrorTitle" android:key="@string/PREF_VENONA_EVENTS_ERROR" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsApiTitle" android:key="@string/PREF_VENONA_EVENTS_API" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsSearchTitle" android:key="@string/PREF_VENONA_EVENTS_SEARCH" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsPageViewTitle" android:key="@string/PREF_VENONA_EVENTS_PAGE_VIEW" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsUserConfigSetTitle" android:key="@string/PREF_VENONA_EVENTS_USER_CONFIG_SET" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsSelect" android:key="@string/PREF_VENONA_EVENTS_SELECT" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsModalView" android:key="@string/PREF_VENONA_EVENTS_MODAL_VIEW" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsPurchase" android:key="@string/PREF_VENONA_EVENTS_PURCHASE" android:defaultValue="@string/DevPrefBooleanTrue" />
+        <CheckBoxPreference android:title="@string/DevPrefVenonaEventsDisplays" android:key="@string/PREF_VENONA_EVENTS_DISPLAYS" android:defaultValue="@string/DevPrefBooleanTrue" />
+    </PreferenceCategory>
+</PreferenceScreen>

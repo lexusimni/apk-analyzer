@@ -1,0 +1,338 @@
+.class public final Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/spectrum/persistence/controller/LiveAccessibilityPersistenceController;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\t\n\u0002\u0018\u0002\n\u0002\u0008\u0008\u0008\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\u0008\u0002\u00a2\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R(\u0010\u0008\u001a\u0004\u0018\u00010\u00042\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u00048V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\u001d\u0010\r\u001a\u0004\u0018\u00010\u000e8BX\u0082\u0084\u0002\u00a2\u0006\u000c\n\u0004\u0008\u0011\u0010\u0012\u001a\u0004\u0008\u000f\u0010\u0010R(\u0010\u0013\u001a\u0004\u0018\u00010\u00042\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u00048V@VX\u0096\u000e\u00a2\u0006\u000c\u001a\u0004\u0008\u0014\u0010\n\"\u0004\u0008\u0015\u0010\u000c\u00a8\u0006\u0016"
+    }
+    d2 = {
+        "Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;",
+        "Lcom/spectrum/persistence/controller/LiveAccessibilityPersistenceController;",
+        "()V",
+        "KEY_AUDIO_SELECTION",
+        "",
+        "KEY_SUBTITLE_SELECTION",
+        "STORE_NAME",
+        "value",
+        "audio",
+        "getAudio",
+        "()Ljava/lang/String;",
+        "setAudio",
+        "(Ljava/lang/String;)V",
+        "sharedPreference",
+        "Landroid/content/SharedPreferences;",
+        "getSharedPreference",
+        "()Landroid/content/SharedPreferences;",
+        "sharedPreference$delegate",
+        "Lkotlin/Lazy;",
+        "subTitle",
+        "getSubTitle",
+        "setSubTitle",
+        "SpectrumPersistence_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nLiveAccessibilityPersistenceControllerImpl.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LiveAccessibilityPersistenceControllerImpl.kt\ncom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl\n+ 2 SharedPreferences.kt\nandroidx/core/content/SharedPreferencesKt\n*L\n1#1,32:1\n39#2,12:33\n39#2,12:45\n*S KotlinDebug\n*F\n+ 1 LiveAccessibilityPersistenceControllerImpl.kt\ncom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl\n*L\n22#1:33,12\n28#1:45,12\n*E\n"
+    }
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final KEY_AUDIO_SELECTION:Ljava/lang/String; = "audio_selection"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final KEY_SUBTITLE_SELECTION:Ljava/lang/String; = "subtitle_selection"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final STORE_NAME:Ljava/lang/String; = "TWCTV"
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+.field private static final sharedPreference$delegate:Lkotlin/Lazy;
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->INSTANCE:Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;
+
+    .line 7
+    .line 8
+    sget-object v0, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl$sharedPreference$2;->INSTANCE:Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl$sharedPreference$2;
+
+    .line 9
+    .line 10
+    invoke-static {v0}, Lkotlin/LazyKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    sput-object v0, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->sharedPreference$delegate:Lkotlin/Lazy;
+
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private final getSharedPreference()Landroid/content/SharedPreferences;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->sharedPreference$delegate:Lkotlin/Lazy;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroid/content/SharedPreferences;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public getAudio()Ljava/lang/String;
+    .locals 3
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->getSharedPreference()Landroid/content/SharedPreferences;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    const-string v2, "audio_selection"
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    :cond_0
+    return-object v1
+.end method
+
+.method public getSubTitle()Ljava/lang/String;
+    .locals 3
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->getSharedPreference()Landroid/content/SharedPreferences;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    const-string v2, "subtitle_selection"
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v2, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    :cond_0
+    return-object v1
+.end method
+
+.method public setAudio(Ljava/lang/String;)V
+    .locals 2
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->getSharedPreference()Landroid/content/SharedPreferences;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    const-string v1, "editor"
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v1, "audio_selection"
+
+    .line 17
+    .line 18
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    return-void
+.end method
+
+.method public setSubTitle(Ljava/lang/String;)V
+    .locals 2
+    .param p1    # Ljava/lang/String;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+
+    .line 1
+    invoke-direct {p0}, Lcom/spectrum/persistence/controller/impl/LiveAccessibilityPersistenceControllerImpl;->getSharedPreference()Landroid/content/SharedPreferences;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    const-string v1, "editor"
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v1, "subtitle_selection"
+
+    .line 17
+    .line 18
+    invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 22
+    .line 23
+    .line 24
+    :cond_0
+    return-void
+.end method

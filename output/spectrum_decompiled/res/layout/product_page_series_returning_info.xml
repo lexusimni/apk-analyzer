@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/returningUserLayout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.charter.kite.KiteTextViewTitle3 android:id="@id/episodeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tableOfTrust" />
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="2.0dip" android:layout_marginTop="10.0dip" android:max="100" android:indeterminate="false" android:layout_centerVertical="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/episodeName" app:layout_constraintWidth_percent="0.4" style="@style/STVAAppTheme.PlayerProgressBar" />
+    <com.twc.android.ui.utils.ExpandableTextViewLayout android:id="@id/preferredEpisodeDescription" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

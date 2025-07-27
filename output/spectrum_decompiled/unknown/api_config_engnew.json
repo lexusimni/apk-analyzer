@@ -1,0 +1,934 @@
+{
+  "default": {
+    "host": "apis-vid.shared.qa-spectrum.net",
+    "scheme": "https",
+    "reporting": {
+      "reportAPIEvents": true,
+      "reportResponseHeaders": [
+        "Failure-Trace",
+        "lantern-source",
+        "x-cache"
+      ]
+    },
+    "headers": {
+      "x-client-id": "{{client_id}}",
+      "x-client-device-id": "{{device_id}}",
+      "x-client-version": "{{app_version}}",
+      "x-client-os-version": "{{os_version}}",
+      "x-client-quantum-visit-id": "{{analytics_visit_id}}"
+    }
+  },
+  "services": {
+    "auth": {
+      "host": "apis.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "getOAuthValidateSessionV2": {
+          "method": "GET",
+          "path": "/auth/oauth/v2/validateSession"
+        },
+        "postAuthAAInitialize": {
+          "method": "POST",
+          "path": "/auth/aa/initialize"
+        },
+        "postOAuthAutoAccessIPAuthV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/consumer/aa/ip/auth"
+        },
+        "postOAuthEnterpriseAAIPDeviceAuthV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/enterprise/aa/ipdeviceid/auth"
+        },
+        "postOAuthEnterpriseVideoPasswordAuthV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/enterprise/video/password/auth"
+        },
+        "postOAuthExchangeTokenAuthV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/consumer/exchange/token/auth"
+        },
+        "postOAuthLogoutLocalV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/logout/local"
+        },
+        "postOAuthLogoutSingleV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/logout/single"
+        },
+        "postOAuthRendezvousCodeV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/rendezvous/code"
+        },
+        "postOAuthRendezvousPollV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/rendezvous/poll"
+        },
+        "postOAuthTokenV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/token"
+        },
+        "postOAuthVideoDeviceVerifierAuthV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/consumer/video/deviceverifier/auth"
+        },
+        "postOAuthVideoPasswordAuthV2": {
+          "method": "POST",
+          "path": "/auth/oauth/v2/consumer/video/password/auth"
+        }
+      }
+    },
+    "buyflow": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 0,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {}
+    },
+    "datum": {
+      "host": "stva-assets.ipvideo.prd.spectrum.net",
+      "scheme": "https",
+      "endpoints": {
+        "getDatumTrendingLiveV1": {
+          "method": "GET",
+          "path": "/datum/linear/v1/{{division}}.json"
+        },
+        "getDatumOriginalsV1": {
+          "method": "GET",
+          "path": "/datum/vod/v1/spectrum-originals.json"
+        }
+      }
+    },
+    "epgs": {
+      "host": "vsi-stva-epgs-cf.vsi.spectrumtoolbox.com",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "getEpgsGuideV4": {
+          "method": "GET",
+          "path": "/epgs/api/smarttv/guide/v4/twctv/grid"
+        },
+        "getEpgsSportsV1": {
+          "method": "GET",
+          "path": "/epgs/sports/v1/games/schedule?division={{division}}&startDateTime={{secondsFromEpoch}}&hours={{hourLimit}}"
+        }
+      }
+    },
+    "idm": {
+      "host": "id.portals.qa-spectrum.net",
+      "scheme": "https",
+      "endpoints": {
+        "getCentralizedAuthLogin": {
+          "method": "GET",
+          "path": "/login"
+        },
+        "getCentralizedAuthLoginAuto": {
+          "method": "GET",
+          "path": "/login/auto"
+        }
+      }
+    },
+    "ipvs": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "deleteAegisV1": {
+          "method": "DELETE",
+          "path": "/ipvs/api/smarttv/aegis/v1"
+        },
+        "deleteRecents": {
+          "method": "DELETE",
+          "path": "/ipvs/api/smarttv/clear"
+        },
+        "deleteWatchlistAssetsV1": {
+          "method": "DELETE",
+          "path": "/ipvs/api/smarttv/watchList/v1/assets"
+        },
+        "deleteWatchlistAssetsV2": {
+          "method": "DELETE",
+          "path": "/ipvs/api/smarttv/watchList/v2/assets"
+        },
+        "deleteWatchlistSeriesV1": {
+          "method": "DELETE",
+          "path": "/ipvs/api/smarttv/watchList/v1/series"
+        },
+        "getEasStoreCustomerFipsV1": {
+          "method": "GET",
+          "path": "/ipvs/api/eas/v1/storecustomerfips"
+        },
+        "getFavoritesChannelsV1": {
+          "method": "GET",
+          "path": "/lantern/lrs/api/smarttv/favorites/channels/v1"
+        },
+        "getJwtdrmCdvrV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/cdvr/v1"
+        },
+        "getJwtdrmLiveV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/live/v1"
+        },
+        "getJwtdrmVodV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/jwtdrm/vod/v1"
+        },
+        "getJwtdrmTrailerV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/jwtdrm/vod/trailer/v1"
+        },
+        "getJwtdrmTvodV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/jwtdrm/tvod/v1"
+        },
+        "getParentalControlPinV1": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/parentalcontrol/v1/pin"
+        },
+        "getParentalControlV2": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/parentalcontrol/v2"
+        },
+        "getParentalControlBlockedChannelsV1": {
+          "method": "GET",
+          "path": "/lantern/lrs/api/smarttv/parentalcontrol/v1/blockedchannels"
+        },
+        "getParentalControlRatingsV1": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/parentalcontrol/v1/ratings"
+        },
+        "getPublicPingV1": {
+          "method": "GET",
+          "path": "/ipvs/api/public/ping/v1",
+          "retry": {
+            "retryAttempts": 1,
+            "retryDelayMs": 250,
+            "nextRetryMultiplier": 1,
+            "jitter": 0,
+            "retryStatusCodes": []
+          }
+        },
+        "getSmarttvBookmarksV2": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/bookmarks/v2"
+        },
+        "getSmarttvChannelsV2": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/channels/v2"
+        },
+        "getSmarttvChannelsV3": {
+          "method": "GET",
+          "path": "/lantern/lrs/api/smarttv/channels/v3",
+          "clientLKGCache": {
+            "maxAgeSeconds": 432000,
+            "excludeQueryParamsOnCacheKey": false,
+            "unsavableResponseCodes": [
+              400,
+              401
+            ]
+          }
+        },
+        "getSmarttvChannelsV4": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/channels/v4"
+        },
+        "getSmarttvLineupV1": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/lineup/v1"
+        },
+        "getSmarttvParentalControlV1": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/parentalcontrol/v1"
+        },
+        "getSmarttvWatchlistV1": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/watchList/v1"
+        },
+        "postStreamCdvrV2": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/stream/cdvr/v2/{{recordingId}}"
+        },
+        "getSubscriberInfoV1": {
+          "method": "GET",
+          "path": "/ipvs/api/smarttv/stream/subscriberInfo/v1",
+          "params": {
+            "lat": "{{lat}}"
+          },
+          "retry": {
+            "retryAttempts": 1,
+            "retryDelayMs": 0,
+            "nextRetryMultiplier": 1,
+            "jitter": 0,
+            "retryStatusCodes": [
+              500,
+              502,
+              503,
+              504
+            ]
+          },
+          "clientLKGCache": {
+            "maxAgeSeconds": 432000,
+            "excludeQueryParamsOnCacheKey": false,
+            "unsavableResponseCodes": [
+              400,
+              401
+            ]
+          }
+        },
+        "getUserCapabilitiesV3": {
+          "method": "GET",
+          "path": "/lantern/lrs/api/smarttv/user/capabilities/v3",
+          "clientLKGCache": {
+            "maxAgeSeconds": 432000,
+            "excludeQueryParamsOnCacheKey": false,
+            "unsavableResponseCodes": [
+              400,
+              401
+            ]
+          }
+        },
+        "getUserCapabilitiesV4": {
+          "method": "GET",
+          "path": "/lantern/api/smarttv/user/capabilities/v4"
+        },
+        "postBookmarksHiddenV2": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/bookmarks/v2/hidden"
+        },
+        "postBookmarksHiddenV3": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/bookmarks/v3/hidden"
+        },
+        "postFavoriteChannelsAddV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1/add"
+        },
+        "postFavoriteChannelsRemoveV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1/remove"
+        },
+        "postFavoriteChannelsSetV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/favorites/channels/v1/set"
+        },
+        "postParentalControlPinV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/pin"
+        },
+        "postParentalControlAdminValidateV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/admin/validate"
+        },
+        "postParentalControlPinValidateV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/pin/validate"
+        },
+        "postAddChannelToRecentV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/recent/channels/v1/add"
+        },
+        "postSmarttvBookmarksV2": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/bookmarks/v2"
+        },
+        "postSmarttvBookmarksV3": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/bookmarks/v3"
+        },
+        "postStreamLiveV4": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/stream/live/v4/{{ncsServiceId}}"
+        },
+        "postStreamLiveV5": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/stream/live/v5/{{ncsServiceId}}",
+          "params": {
+            "behindOwnModem": "{{behindOwnModem}}",
+            "inMarket": "{{inMarket}}",
+            "OTT": "{{OTT}}",
+            "parentalControlsEnabled": "{{parentalControlsEnabled}}",
+            "dai-supported": "{{dai-supported}}",
+            "storeToRecents": "{{storeToRecents}}",
+            "aegis": "{{aegis}}",
+            "parentalControlPIN": "{{parentalControlPIN}}",
+            "stateAbbr": "{{stateAbbr}}"
+          }
+        },
+        "postStreamVodV2": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/stream/vod/v2/{{providerAssetId}}"
+        },
+        "postStreamVodTrailerV2": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/stream/vod/trailer/v2/{{providerAssetId}}"
+        },
+        "postWatchlistAssetsV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/watchList/v1/assets"
+        },
+        "postWatchlistDeleteV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/watchList/v1/delete"
+        },
+        "postWatchlistSeriesV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/watchList/v1/series"
+        },
+        "postParentalControlAdminEnterpriseValidateV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/admin/enterprise/validate"
+        },
+        "postParentalControlEnterprisePinV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/enterprise/pin"
+        },
+        "postParentalControlBlockedChannelsV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/blockedchannels"
+        },
+        "putParentalControlRatingsV1": {
+          "method": "PUT",
+          "path": "/ipvs/api/smarttv/parentalcontrol/v1/ratings"
+        },
+        "postStreamContentInsertionV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/stream/contentinsertion/v1"
+        },
+        "postPLTVScheduleV1": {
+          "method": "POST",
+          "path": "/ipvs/api/smarttv/pltv/schedule/v1"
+        },
+        "getJwtdrmPauseLiveV1": {
+          "method": "GET",
+          "path": "/ipvs/api/jwtdrm/live/v1"
+        }
+      }
+    },
+    "kumodvr": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {}
+    },
+    "lantern": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "getManifestV1": {
+          "method": "GET",
+          "path": "/lantern/manifest/api/v1/manifest"
+        }
+      }
+    },
+    "nns": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "params": {
+        "division": "{{division}}",
+        "vodId": "{{vodId}}",
+        "lineup": "{{lineupId}}",
+        "profile": "{{profile}}",
+        "app": "{{app}}",
+        "flickable": "{{flickable}}",
+        "dvr": "{{dvr}}",
+        "cdvrEnabled": "{{cdvrEnabled}}",
+        "rdvrVersion": "{{rdvrVersion}}",
+        "tvodRent": "{{tvodRent}}",
+        "tvodWatch": "{{tvodWatch}}",
+        "watchOnDemand": "{{watchOnDemand}}",
+        "tuneToChannel": "{{tuneToChannel}}",
+        "watchLive": "{{watchLive}}",
+        "support4k": "{{support4k}}",
+        "hideOnDemand": "{{hideOnDemand}}",
+        "hideLinear": "{{hideLinear}}",
+        "spp": "{{spp}}",
+        "macaddress": "{{macAddress}}",
+        "displayOutOfHomeOnly": "{{displayOutOfHomeOnly}}",
+        "deviceOutOfHome": "{{deviceOutOfHome}}",
+        "deviceOutOfRegion": "{{deviceOutOfRegion}}",
+        "deviceLocation": "{{deviceLocation}}"
+      },
+      "endpoints": {
+        "getEventByTmsProviderProgramIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/tmsid/{{tmsId}}",
+          "params": {
+            "application": "{{application}}",
+            "airtimeUtcSec": "{{airtimeUtcSec}}",
+            "tmsGuideServiceId": "{{tmsGuideServiceId}}"
+          }
+        },
+        "getEventByProviderAssetIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/providerassetid/{{providerAssetId}}",
+          "params": {
+            "application": "{{application}}",
+            "airtimeUtcSec": "{{airtimeUtcSec}}"
+          }
+        },
+        "getEventByTitleAssetIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/titleassetid/{{titleAssetId}}"
+        },
+        "getEventByThePlatformMediaIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/theplatformmediaid/{{thePlatformMediaId}}"
+        },
+        "getEventByDeliveryIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/deliveryid/{{deliveryId}}"
+        },
+        "getEventByOfferingIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/offeringid/{{offeringId}}"
+        },
+        "getEventByNationalMetadataIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/preludenationalmetadataid/{preludeNationalMetadataId}"
+        },
+        "getEventByOndemandProviderProgramIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/event/ondemandproviderprogramid/{{onDemandProviderProgramId}}"
+        },
+        "getSeriesByTmsSeriesIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/series/tmsproviderseriesid/{{tmsProviderSeriesId}}",
+          "params": {
+            "application": "{{application}}",
+            "airtimeUtcSec": "{{airtimeUtcSec}}",
+            "episodeTmsId": "{{episodeTmsId}}",
+            "tmsGuideServiceId": "{{tmsGuideServiceId}}"
+          }
+        },
+        "getSeriesByTmsProviderProgramIdForSeriesV1": {
+          "method": "GET",
+          "path": "/nns/V1/series/tmsproviderprogramid/{{tmsProviderProgramId}}"
+        },
+        "getTopSearchesV1": {
+          "method": "GET",
+          "path": "/nns/V1/search/topsearches"
+        },
+        "getNetworksGridFrontDoorV1": {
+          "method": "GET",
+          "path": "/nns/V1/networksgrid/frontdoor"
+        },
+        "getVodPortalFrontDoorV1": {
+          "method": "GET",
+          "path": "/nns/V1/vodportal/frontdoor"
+        },
+        "getActorV1": {
+          "method": "GET",
+          "path": "/nns/V1/recommendations/tmsid/{{tmsId}}/actor/{{personId}}",
+          "params": {
+            "application": "BROWSE"
+          }
+        },
+        "getDirectorV1": {
+          "method": "GET",
+          "path": "/nns/V1/recommendations/tmsid/{{tmsId}}/director/{{personId}}",
+          "params": {
+            "application": "BROWSE"
+          }
+        },
+        "getSimilarToByTmsProviderProgramIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/recommendations/tmsid/{{tmsId}}/similarto",
+          "params": {
+            "application": "BROWSE"
+          }
+        },
+        "getSimilarToByTmsSeriesIdV1": {
+          "method": "GET",
+          "path": "/nns/V1/recommendations/tmsproviderseriesid/{{tmsProviderSeriesId}}/similarto",
+          "params": {
+            "application": "BROWSE"
+          }
+        },
+        "getNetworksGridMenuV1": {
+          "method": "GET",
+          "path": "/nns/V1/networksgrid/menu",
+          "params": {
+            "path": 0
+          }
+        },
+        "getAppChannelV1": {
+          "method": "GET",
+          "path": "/nns/V1/appchannel"
+        },
+        "getMyLibraryFrontDoor": {
+          "method": "GET",
+          "path": "/nns/V1/mylibrary/frontdoor",
+          "params": {
+            "context": "{{context}}"
+          }
+        },
+        "getCategoryAdHocV1": {
+          "method": "GET",
+          "path": "/nns/V1/category/adhoc"
+        },
+        "getCategoryBulkV1": {
+          "method": "GET",
+          "path": "/nns/V1/category/bulk"
+        },
+        "getDvrManagerFrontDoorV1": {
+          "method": "GET",
+          "path": "/nns/V1/dvrmanager/frontdoor"
+        },
+        "getRecommendationsV1": {
+          "method": "GET",
+          "path": "/nns/V1/recommendations/personalized",
+          "params": {
+            "recommendationKey": "{{recommendationKey}}",
+            "useridhash": "{{userIdHash}}"
+          }
+        },
+        "getSearchAutoCompleteV1": {
+          "method": "GET",
+          "path": "/nns/V1/search/autocomplete",
+          "params": {
+            "searchString": "{{searchString}}",
+            "limit": "{{limit}}"
+          }
+        },
+        "getSearchV1": {
+          "method": "GET",
+          "path": "/nns/V1/search",
+          "params": {
+            "dsField": "{{dsField}}",
+            "fieldDisplay": "{{fieldDisplay}}",
+            "dsValue": "{{dsValue}}",
+            "field": "{{field}}"
+          }
+        },
+        "getMyLibraryViewAll": {
+          "method": "GET",
+          "path": "/nns/V1/mylibrary/viewall",
+          "params": {
+            "context": "{{context}}",
+            "application": "MY_LIBRARY"
+          }
+        },
+        "getNetworksGridApplicationMenuV1": {
+          "method": "GET",
+          "path": "/nns/V1/networksgrid/applicationid/{{applicationid}}/menu",
+          "params": {
+            "application": "{{application}}"
+          }
+        }
+      }
+    },
+    "nrs": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {}
+    },
+    "pi": {
+      "host": "apis.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "getLocationV2": {
+          "method": "GET",
+          "path": "/pinxt/customer/location/v1"
+        },
+        "getEnterpriseInfo": {
+          "method": "GET",
+          "path": "/enterprise/info",
+          "host": "apis-vid.shared.qa-spectrum.net"
+        },
+        "getSpecuDomainV1": {
+          "method": "GET",
+          "path": "/pi/specu/domain/{{domain}}",
+          "host": "apis-vid.shared.qa-spectrum.net"
+        }
+      }
+    },
+    "promo-service": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "getImpression": {
+          "method": "GET",
+          "path": "/promo-service/impression",
+          "retry": {
+            "retryAttempts": 2,
+            "retryDelayMs": 1000,
+            "nextRetryMultiplier": 1,
+            "jitter": 0,
+            "retryStatusCodes": []
+          }
+        },
+        "getSelection": {
+          "method": "GET",
+          "path": "/promo-service/selection",
+          "retry": {
+            "retryAttempts": 2,
+            "retryDelayMs": 1000,
+            "nextRetryMultiplier": 1,
+            "jitter": 0,
+            "retryStatusCodes": []
+          }
+        },
+        "getTigs": {
+          "method": "GET",
+          "path": "/promo-service/tigs",
+          "params": {
+            "locations": "{{tig_locations}}",
+            "csid": "{{csid}}"
+          },
+          "retry": {
+            "retryAttempts": 2,
+            "retryDelayMs": 1000,
+            "nextRetryMultiplier": 1,
+            "jitter": 0,
+            "retryStatusCodes": [
+              500,
+              502,
+              503,
+              504
+            ]
+          }
+        },
+        "getTigsV2": {
+          "method": "GET",
+          "path": "/promo-service/tigs",
+          "params": {
+            "csid": "{{csid}}",
+            "watchChannelGuideId": "{{watchChannelGuideId}}",
+            "vcid": "{{vcid}}",
+            "tigCount": "{{tigCount}}"
+          },
+          "retry": {
+            "retryAttempts": 2,
+            "retryDelayMs": 1000,
+            "nextRetryMultiplier": 1,
+            "jitter": 0,
+            "retryStatusCodes": [
+              500,
+              502,
+              503,
+              504
+            ]
+          }
+        }
+      }
+    },
+    "tdcs": {
+      "retry": {
+        "retryAttempts": 2,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "endpoints": {
+        "getTDCSPublicInform": {
+          "method": "GET",
+          "path": "/tdcs/public/inform",
+          "clientLKGCache": {
+            "maxAgeSeconds": 432000,
+            "excludeQueryParamsOnCacheKey": false,
+            "unsavableResponseCodes": [
+              400,
+              401
+            ]
+          }
+        },
+        "getTDCSPublicErrors": {
+          "method": "GET",
+          "path": "/tdcs/public/errors"
+        },
+        "getTDCSInform": {
+          "method": "GET",
+          "path": "/tdcs/inform",
+          "clientLKGCache": {
+            "maxAgeSeconds": 432000,
+            "excludeQueryParamsOnCacheKey": false,
+            "unsavableResponseCodes": [
+              400,
+              401
+            ]
+          }
+        },
+        "postTDCSPublicErrors": {
+          "method": "POST",
+          "path": "/tdcs/public/errors"
+        }
+      }
+    },
+    "vpns": {
+      "host": "apis-vid.shared.qa-spectrum.net",
+      "scheme": "https",
+      "retry": {
+        "retryAttempts": 0,
+        "retryDelayMs": 0,
+        "nextRetryMultiplier": 1,
+        "jitter": 0,
+        "retryStatusCodes": [
+          500,
+          502,
+          503,
+          504
+        ]
+      },
+      "endpoints": {
+        "postVPNSWebsocketRegister": {
+          "method": "POST",
+          "path": "/vpns/websocket-register"
+        },
+        "socketSubscribe": {
+          "scheme": "wss",
+          "host": "vpns.vsi.spectrumflow.net",
+          "path": "/cn/subscribe"
+        }
+      }
+    },
+    "pltvs": {
+      "endpoints": {
+        "getPltvRecordingUrlV1": {
+          "method": "GET",
+          "path": "/pltv/pltvs/v1/recording/{{recordingId}}/url"
+        },
+        "putPltvHeartbeatV1": {
+          "method": "PUT",
+          "path": "/pltv/pltvs/v1/recording/{{recordingId}}/heartbeat"
+        },
+        "putPltvStopV1": {
+          "method": "PUT",
+          "path": "/pltv/pltvs/v1/recording/{{recordingId}}/stop"
+        }
+      }
+    },
+    "edgeLinear": {
+      "host": "edge-linear.spectrum.net",
+      "scheme": "http",
+      "endpoints": {
+        "incomingEASMessage": {
+          "mthod": "GET",
+          "path": "/EAS"
+        }
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:theme="@style/Theme.Kite.Dark" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/settings_about_top_margin">
+        <TextView android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/privacyPolicyButton" android:background="?android:selectableItemBackground" android:padding="@dimen/list_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/yourPrivacyRights" style="@style/Widget.Kite.TextView.Body" />
+        <TextView android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/termsAndConditionButton" android:background="?android:selectableItemBackground" android:padding="@dimen/list_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/policies" style="@style/Widget.Kite.TextView.Body" />
+        <TextView android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/nielsenOptOutButton" android:background="?android:selectableItemBackground" android:padding="@dimen/list_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settingsAboutNielsenOptions" style="@style/Widget.Kite.TextView.Body" />
+        <com.charter.kite.KiteTextViewEyebrow android:textColor="@color/kite_light_blue_10" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/application" android:textAllCaps="true" android:accessibilityHeading="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/usernameLayout" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutUsername" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/username" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutVersionNumber" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/versionNumber" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutBuildDate" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/buildDate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.charter.kite.KiteTextViewEyebrow android:textColor="@color/kite_light_blue_10" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/device" android:textAllCaps="true" android:accessibilityHeading="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/deviceMakeContainer" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutDeviceMake" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/deviceMake" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deviceModelContainer" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutDeviceModel" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/deviceModel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deviceSoftwareVersionContainer" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutDeviceSoftwareVersion" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/deviceSoftwareVersion" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deviceIdContainer" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutDeviceId" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/deviceId" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ViewStub android:id="@id/viewStub" android:layout="@layout/view_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.charter.kite.KiteTextViewEyebrow android:textColor="@color/kite_light_blue_10" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/network" android:textAllCaps="true" android:accessibilityHeading="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/connectionTypeLayout" android:padding="@dimen/list_item_padding" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/settingsAboutConnectionType" />
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/connectionType" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@id/mduLine" android:background="@color/kite_dark_blue_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mduAboutDescriptionContainer" android:padding="@dimen/list_item_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:id="@id/mduAboutDescription" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?darkBlue2" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?H3" android:textColor="?gray1" android:layout_gravity="center_horizontal" android:id="@id/searchStatusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/search_hint" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/searchList" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</FrameLayout>

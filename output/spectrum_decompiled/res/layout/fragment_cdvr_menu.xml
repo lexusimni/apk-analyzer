@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/darkBlue2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/tabFrameLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center|bottom" android:background="@color/darkBlue2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.twc.android.util.CustomTypefaceTabLayout android:layout_gravity="center|top" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabMode="scrollable" style="@style/UnifiedTabStyle">
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recorded" />
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled" />
+        </com.twc.android.util.CustomTypefaceTabLayout>
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/cdvrMainContentViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/bulkMduEmptyRecordingsImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_recordings_empty_state" />
+    </androidx.viewpager.widget.ViewPager>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/mduView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/mduImage" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="40.0dip" android:src="@drawable/my_recordings_empty_state" android:adjustViewBounds="true" android:maxHeight="100.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/my_recordings_empty_state" />
+        <TextView android:textAppearance="@style/H1.Bold" android:textSize="26.0sp" android:id="@id/mduHeader" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/cdvr_mdu_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mduImage" />
+        <TextView android:textAppearance="@style/H3" android:textSize="16.0sp" android:autoLink="web" android:id="@id/mduBody" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="40.0dip" android:text="@string/cdvr_mdu_body" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mduHeader" />
+        <Button android:textSize="16.0sp" android:id="@id/mduButton" android:background="@drawable/signin_button_selector" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="32.0dip" android:text="@string/cdvr_mdu_button" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/mduBody" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

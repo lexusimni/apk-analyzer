@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/test_text_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Label" app:errorEnabled="true" app:helperTextEnabled="true" style="@style/Widget.Kite.TextInputLayout.Secure">
+        <com.google.android.material.textfield.TextInputEditText android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

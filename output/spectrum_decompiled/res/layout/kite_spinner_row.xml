@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/buttonTextSize" android:textColor="?kiteSpinnerRowTextColor" android:ellipsize="end" android:gravity="center_vertical" android:id="@android:id/text1" android:background="@drawable/kite_spinner_row_background_selector" android:layout_width="fill_parent" android:layout_height="@dimen/section_xsmall" android:singleLine="true" android:paddingStart="@dimen/space_xsmall" android:paddingEnd="@dimen/space_xsmall"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

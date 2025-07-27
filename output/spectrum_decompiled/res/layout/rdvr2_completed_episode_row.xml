@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.rdvr2.CompletedRecRowEpisode android:orientation="horizontal" android:background="@drawable/shr_list_selector" android:paddingLeft="@dimen/rdvr2CompletedEpisodeRowPaddingLeft" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:twc="http://schemas.android.com/apk/res-auto">
+    <com.twc.android.ui.utils.HierarchicalCheckBox android:id="@id/delete" android:layout_width="@dimen/rdvr2DeleteCheckBoxWidth" android:layout_height="@dimen/rdvr2DeleteCheckBoxHeight" style="@style/rdvr2DeleteCheckBoxStyle" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rdvr2CompletedEpisodeLayoutMarginLeft" android:layout_weight="1.0">
+        <TextView android:textAppearance="?H3Light" android:id="@id/episodeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/rdvr2RecordingRowTitleStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?H4Light" android:textColor="@color/dvr_highlighted_text_selector" android:id="@id/seasonAndEpisode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.twc.android.ui.utils.TimeTextView android:textAppearance="?H4Light" android:textColor="@color/dvr_secondary_text_selector" android:id="@id/recordingDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" twc:timeFormat="@string/rdvr2CompletedTimestampFormat" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/showBlocked" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/vod_lock" android:scaleType="fitCenter" />
+</com.twc.android.ui.rdvr2.CompletedRecRowEpisode>

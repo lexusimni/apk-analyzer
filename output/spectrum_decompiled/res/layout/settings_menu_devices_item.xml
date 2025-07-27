@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Kite.Dark" android:gravity="center_vertical" android:orientation="vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_gray_10" android:gravity="center_vertical" android:id="@id/menuDeviceItem" android:paddingLeft="@dimen/settingsItemLeftPadding" android:paddingRight="@dimen/settingsItemRightPadding" android:layout_width="fill_parent" android:layout_height="24.0dip" />
+    <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/selectedStb" android:paddingLeft="@dimen/settingsItemLeftPadding" android:paddingRight="@dimen/settingsItemRightPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

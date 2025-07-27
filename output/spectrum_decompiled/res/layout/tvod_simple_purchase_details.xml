@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?H2" android:layout_width="wrap_content" android:layout_height="@dimen/tvodAreYouSureHeight" android:layout_marginTop="@dimen/tvodAreYouSureTopMargin" android:text="@string/tvodAreYouSure" />
+            <com.twc.android.ui.utils.UrlImageView android:id="@id/poster" android:layout_width="@dimen/tvodPosterWidth" android:layout_height="@dimen/tvodPosterHeight" android:layout_marginTop="@dimen/tvodPosterMarginTop" android:scaleType="centerCrop" />
+            <TextView android:textAppearance="?H1" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="@dimen/tvodTitleHeight" android:layout_marginTop="@dimen/tvodTitleMarginTop" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tvodRatingYearDurationMarginTop">
+                <TextView android:gravity="center_horizontal" android:id="@id/rating" android:layout_width="70.0dip" android:layout_height="37.0dip" android:layout_marginRight="4.0dip" />
+                <TextView android:textAppearance="?H3" android:textColor="?gray4" android:gravity="center_horizontal" android:id="@id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tvodYearMarginLeft" android:layout_marginRight="4.0dip" />
+                <TextView android:textAppearance="?H3" android:textColor="?gray2" android:gravity="center_horizontal" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tvodDurationMarginLeft" android:layout_marginRight="@dimen/tvodDurationMarginRight" />
+            </LinearLayout>
+            <TextView android:textAppearance="?H1" android:textColor="?gold" android:gravity="center_horizontal" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="@dimen/tvodPriceHeight" android:layout_marginTop="@dimen/tvodPriceMarginTop" />
+            <TextView android:textAppearance="?H3" android:gravity="center_horizontal" android:id="@id/expiration" android:layout_width="@dimen/tvodExpirationWidth" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tvodExpirationMarginTop" />
+            <TextView android:textAppearance="?H3" android:textColor="?gray2" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tvodInHomeWarningMarginTop" android:text="@string/tvodInHomeWarning" />
+            <TextView android:textAppearance="?H3" android:textColor="@color/red2" android:gravity="center" android:id="@id/errorMessage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" android:text="@string/tvodRentalFailureMessage" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Button android:id="@id/cancelButton" android:layout_width="145.0dip" android:layout_height="45.0dip" android:layout_marginRight="10.0dip" android:text="@string/tvodCancel" style="?defaultButtonStyle" />
+                <Button android:id="@id/rentButton" android:layout_width="145.0dip" android:layout_height="45.0dip" android:text="@string/tvodRent" style="?ctaButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</merge>

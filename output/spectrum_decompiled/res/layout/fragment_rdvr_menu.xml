@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/darkBlue2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:layout_gravity="center|bottom" android:background="@color/darkBlue2" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.twc.android.util.CustomTypefaceTabLayout android:layout_gravity="center|top" android:id="@id/tabLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabMode="scrollable" style="@style/UnifiedTabStyle">
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recorded" />
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scheduled" />
+            <com.google.android.material.tabs.TabItem android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/priority" />
+        </com.twc.android.util.CustomTypefaceTabLayout>
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

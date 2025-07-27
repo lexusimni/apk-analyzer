@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gray_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/createUsername" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginStart="20.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ki_linkout" android:layout_marginEnd="20.0dip" />
+        <com.charter.kite.KiteTextViewBody android:textSize="16.0sp" android:textColor="@color/kite_dark_blue_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/register" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/forgotUsernamePassword" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginStart="20.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ki_linkout" android:layout_marginEnd="20.0dip" />
+        <com.charter.kite.KiteTextViewBody android:textSize="16.0sp" android:textColor="@color/kite_dark_blue_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manual_sign_in_forgot" />
+    </LinearLayout>
+</LinearLayout>

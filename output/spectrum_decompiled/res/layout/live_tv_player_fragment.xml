@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.twc.android.ui.livetv.CustomHorizontalScrollView android:id="@id/live_tv_horizontal_scroll_view" android:background="@color/kite_black" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/live_tv_video_and_recent_channels_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/live_tv_video_container_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <include android:id="@id/live_tv_video_container" layout="@layout/live_tv_video_container" />
+        </FrameLayout>
+        <androidx.fragment.app.FragmentContainerView android:name="com.twc.android.ui.livetv.LiveTvRecentChannelsFrag" android:id="@id/live_tv_recent_channels" android:background="@color/kite_black" android:layout_width="wrap_content" android:layout_height="0.0dip" android:elevation="1000.0dip" app:layout_constraintBottom_toBottomOf="@id/live_tv_video_container_frame" app:layout_constraintLeft_toRightOf="@id/live_tv_video_container_frame" app:layout_constraintTop_toTopOf="@id/live_tv_video_container_frame" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.twc.android.ui.livetv.CustomHorizontalScrollView>

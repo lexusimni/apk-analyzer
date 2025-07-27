@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/toolbarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarTheme" android:id="@id/toolbar" android:background="?darkBlue1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:contentDescription="@null" app:titleTextAppearance="@style/Toolbar.TitleText">
+        <TextView android:textSize="21.0sp" android:textColor="@color/kite_white" android:id="@id/accessibleToolbarTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.twc.android.ui.utils.UrlImageView android:layout_gravity="end" android:id="@id/networkLogo" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginEnd="16.0dip" style="?channelLogoIcon" />
+    </androidx.appcompat.widget.Toolbar>
+    <ProgressBar android:id="@id/toolbarProgressBar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/loadingLinearProgressBarHeight" android:layout_marginBottom="-30.0dip" android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+</LinearLayout>

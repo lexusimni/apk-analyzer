@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Kite.Dark" android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/settings_about_top_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/spectrumLogo" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:adjustViewBounds="true" android:contentDescription="@string/app_logo_description" app:srcCompat="@drawable/app_logo" />
+    <ImageView android:id="@id/brandingLogo" android:visibility="gone" android:layout_width="205.0dip" android:layout_height="100.0dip" android:layout_marginBottom="24.0dip" android:adjustViewBounds="true" android:maxHeight="120.0dip" android:minHeight="100.0dip" />
+    <com.charter.kite.KiteTextViewTitle3 android:textColor="@color/kite_gray_10" android:id="@id/SupportHeader" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_light_blue_10" android:id="@id/establishmentName" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_light_blue_10" android:id="@id/establishmentItHelpDesk" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.charter.kite.KiteTextViewBody android:textColor="@color/kite_blue_10" android:autoLink="email" android:id="@id/establishmentEmail" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.charter.kite.KiteTextViewBody android:autoLink="phone" android:id="@id/establishmentPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="full_banner_ratio">2.30</string>
+    <string name="live_guide_channel_number_location">right</string>
+    <string name="productPageConstraintDimensionRatio">H,16:9</string>
+</resources>

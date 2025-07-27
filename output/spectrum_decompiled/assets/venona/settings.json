@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "requestTimeout" : 10000,
+  "flushTimeout" : 10000,
+  "flushSize" : 10,
+  "messageSize" : 5000,
+  "queueSize" : 2000,
+  "requestConcurrency" : 2,
+  "storageSize" : 1000,
+  "heartbeat" : 30000,
+  "appName" : "TWCTV",
+  "endPoint" : "https://collector.dp.aws.charter.com/api/collector",
+  "domain" : "video",
+  "customer" : "Charter Communications",
+  "logging" : false
+}

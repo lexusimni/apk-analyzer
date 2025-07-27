@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/SpectrumKiteDarkTheme" android:id="@id/loginLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/rootCoordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:layout_gravity="left|bottom" android:id="@id/developerSettings" android:visibility="gone" android:layout="@layout/devprefs_fab_layout" android:inflatedId="@id/developerSettings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:contentDescription="@string/developer_preferences" />
+        <TextView android:id="@id/developerEnvironmentDetails" android:background="@color/darkBlue28" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

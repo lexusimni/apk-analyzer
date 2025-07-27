@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/SpectrumKiteDarkTheme" android:id="@id/rootConstraintLayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbarContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/toolbar" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/chromecast_not_block_padding" android:fillViewport="true" app:layout_constraintBottom_toBottomOf="@id/cast_controller_fragment" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbarContainer" app:layout_goneMarginBottom="0.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/productPageInfoMarginLeft" />
+            <com.charter.kite.KiteTextViewBody android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guideline_margin_left" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ratingGenreCommonSenseContainer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guideline_margin_left" app:layout_constraintTop_toBottomOf="@id/description">
+                <include android:id="@id/commonSenseLayout" layout="@layout/product_page_common_sense" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.charter.kite.KiteTextViewCaption1 android:textColor="@color/kite_light_blue_10" android:id="@id/releaseDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guideline_margin_left" app:layout_constraintTop_toBottomOf="@id/ratingGenreCommonSenseContainer" />
+            <include android:id="@id/castRelatedAssetContainer" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guideline_margin_left" app:layout_constraintTop_toBottomOf="@id/releaseDate" layout="@layout/product_page_cast_related_assets" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/cast" />
+</androidx.constraintlayout.widget.ConstraintLayout>

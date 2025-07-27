@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/live_tv_tab_container_root" android:background="@color/kite_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/live_tv_player_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_player_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/live_tv_guide_parental_controls_container" layout="@layout/live_tv_guide_parental_controls_container" />
+    <include android:id="@id/chromecast_overlay" layout="@layout/chromecast_overlay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

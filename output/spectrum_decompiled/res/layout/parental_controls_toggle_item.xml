@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.charter.kite.KiteSwitch android:theme="@style/Theme.Kite.Dark" android:id="@id/item" android:paddingLeft="@dimen/settingsItemLeftPadding" android:paddingRight="@dimen/settingsToggleRightPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:minHeight="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

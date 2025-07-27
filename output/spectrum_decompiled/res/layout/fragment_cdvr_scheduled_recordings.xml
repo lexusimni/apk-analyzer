@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/scheduled_header" layout="@layout/cdvr_my_recordings_header" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/headerLayout" android:background="@color/darkBlue1" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textAppearance="?P1" android:textColor="?lightBlue" android:ellipsize="end" android:gravity="bottom" android:id="@id/dateHeader" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/lightBlue" android:gravity="center_horizontal" android:id="@id/noScheduledRecordings" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="16.0dip" android:text="@string/cdvr_no_recordings_schedule_text" style="@style/Widget.Kite.TextView.Body" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/cdvrMyRecordings" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

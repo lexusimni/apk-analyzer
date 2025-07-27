@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="H1Text">32.0sp</dimen>
+    <dimen name="H2Text">22.0sp</dimen>
+    <dimen name="H3Text">21.0sp</dimen>
+    <dimen name="H4Text">19.0sp</dimen>
+    <dimen name="H5Text">17.0sp</dimen>
+    <dimen name="P1Text">16.0sp</dimen>
+    <dimen name="P2Text">14.0sp</dimen>
+    <dimen name="P3Line">19.0dip</dimen>
+    <dimen name="P3Text">13.0sp</dimen>
+    <dimen name="RecordingOptionsButtonHeight">50.0dip</dimen>
+    <dimen name="SettingsMenuSignOutButtonMarginTop">60.0dip</dimen>
+    <dimen name="SettingsParentalControlPadding">35.0dip</dimen>
+    <dimen name="USSportsMarginLeft">5.0dip</dimen>
+    <dimen name="USSportsPadding">10.0dip</dimen>
+    <dimen name="UnifiedActionButtonHeight">75.0dip</dimen>
+    <dimen name="UnifiedActionButtonWidth">93.0dip</dimen>
+    <dimen name="UnifiedActionMarginRight">10.0dip</dimen>
+    <dimen name="UnifiedCrewImageHeight">200.0dip</dimen>
+    <dimen name="UnifiedCrewImageWidth">150.0dip</dimen>
+    <dimen name="UnifiedROTabButtonHeight">60.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">55.000008%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="eulaLayoutMargin">25.0dip</dimen>
+    <dimen name="eulaTextSize">22.0sp</dimen>
+    <dimen name="kiteImageViewHeight">200.0dip</dimen>
+    <dimen name="kiteImageViewWidth">280.0dip</dimen>
+    <dimen name="liveTvFilterNameTextSize">25.0sp</dimen>
+    <dimen name="liveTvRecentChannelLogoWidth">90.0dip</dimen>
+    <dimen name="liveTvRecentChannelTextSize">20.0sp</dimen>
+    <dimen name="liveTvVideoErrorTextSize">20.0sp</dimen>
+    <dimen name="loginMarginLeft">40.0dip</dimen>
+    <dimen name="loginMarginRight">40.0dip</dimen>
+    <dimen name="rdvr2ConflictDoneButtonWidth">300.0dip</dimen>
+    <dimen name="rdvr2DeleteCheckBoxHeight">40.0dip</dimen>
+    <dimen name="rdvr2DeleteCheckBoxWidth">40.0dip</dimen>
+    <dimen name="rdvr2ShowCardHeight">90.0dip</dimen>
+    <dimen name="rdvr2ShowCardWidth">60.0dip</dimen>
+    <item type="dimen" name="settingsWidthPercentage">0.61</item>
+    <dimen name="vodNetworkUnauthorizedBannerWidth">35.0dip</dimen>
+    <dimen name="vodShowCardHeight">237.0dip</dimen>
+    <dimen name="vodShowCardListHeight">267.0dip</dimen>
+    <dimen name="vodShowCardMovieHeight">237.0dip</dimen>
+    <dimen name="vodShowCardMovieWidth">316.0dip</dimen>
+    <dimen name="vodShowCardWidth">158.0dip</dimen>
+    <dimen name="vodTextWidth">158.0dip</dimen>
+    <dimen name="vod_show_card_banner_width">280.0dip</dimen>
+    <dimen name="ProductDetailsWidth">880.0dip</dimen>
+    <dimen name="USSportsRecyclerViewHeight">300.0dip</dimen>
+    <dimen name="rdvr2CompletedEpisodeMetaDataMarginLeft">17.0dip</dimen>
+    <dimen name="rdvr2CompletedEpisodeMetaDataMarginRight">15.0dip</dimen>
+    <dimen name="rdvr2CompletedEpisodePaddingLeft">78.0dip</dimen>
+</resources>
